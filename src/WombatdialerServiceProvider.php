@@ -1,8 +1,10 @@
+<?php
+
 namespace WombatDialer;
 
 class WombatdialerServiceProvider
 {
-  function test()
+  public static function test()
   {
     return 'hello world';
   }
