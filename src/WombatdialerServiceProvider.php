@@ -2,6 +2,8 @@
 
 namespace WombatDialer;
 use Illuminate\Support\ServiceProvider;
+use WombatDialer\Commands\WombatDialerInstall;
+
 
 class WombatdialerServiceProvider extends ServiceProvider
 {
@@ -16,6 +18,12 @@ class WombatdialerServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/wombatdialer.php' => config_path('wombatdialer.php'),
         ], 'wombatdialer-config');
+        // Load Commands
+        if ($this->app->runningInConsole() && !file_exists(config_path('wombatdialer.php'))) {
+            $this->commands([
+                WombatDialerInstall::class,
+            ]);
+        }
     }
 
     /**
