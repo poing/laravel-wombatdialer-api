@@ -1,9 +1,9 @@
 <?php
 namespace WombatDialer\Controllers\edit;
-
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Http\Request;
+
 use Mail;
 
 abstract class Wombat extends Controller
@@ -51,8 +51,8 @@ abstract class Wombat extends Controller
     public function __construct()
     {
         $this->resource = config('wombatdialer.url');
-        $this->user = config('default.admin.user');
-        $this->pass = config('default.admin.pass');
+        $this->user = config('wombatdialer.admin.user');
+        $this->pass = config('wombatdialer.admin.pass');
     }
 
      /**

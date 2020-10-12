@@ -2,7 +2,7 @@
 namespace WombatDialer\Controllers\edit\Campaign;
 
 use WombatDialer\Controllers\edit\WombatMovable;
-use WombatDialer\Controllers\edit\Wombatlist;
+
 
 
 class Wombatlist extends WombatMovable
@@ -19,7 +19,7 @@ class Wombatlist extends WombatMovable
      */
     public function update($data)
     {
-        $list = new Wombatlist;
+        $list = new \WombatDialer\Controllers\edit\Wombatlist;
         $response = $list->update($data);
         return $response;
 
