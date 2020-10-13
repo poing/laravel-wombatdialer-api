@@ -1,7 +1,7 @@
 <?php
-namespace WombatDialer\Controllers\edit\Campaign;
+namespace WombatDialer\Controllers\Edit\Campaign;
 
-use WombatDialer\Controllers\edit\Wombat;
+use WombatDialer\Controllers\Edit\Wombat;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 

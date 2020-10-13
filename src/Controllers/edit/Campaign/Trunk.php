@@ -1,7 +1,7 @@
 <?php
-namespace WombatDialer\Controllers\edit\Campaign;
+namespace WombatDialer\Controllers\Edit\Campaign;
 
-use WombatDialer\Controllers\edit\WombatMovable;
+use WombatDialer\Controllers\Edit\WombatMovable;
 
 
 class Trunk extends WombatMovable
@@ -18,7 +18,7 @@ class Trunk extends WombatMovable
      */
     public function update($data)
     {
-        $trunk = new \WombatDialer\Controllers\edit\Trunk;
+        $trunk = new \WombatDialer\Controllers\Edit\Trunk;
         $response = $trunk->update($data);
         return $response;
 

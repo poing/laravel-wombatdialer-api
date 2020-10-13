@@ -1,7 +1,7 @@
 <?php
-namespace WombatDialer\Controllers\edit\Campaign;
+namespace WombatDialer\Controllers\Edit\Campaign;
 
-use WombatDialer\Controllers\edit\WombatMovable;
+use WombatDialer\Controllers\Edit\WombatMovable;
 
 
 class Oh extends WombatMovable
@@ -18,7 +18,7 @@ class Oh extends WombatMovable
      */
     public function update($data)
     {
-        $oh = new \WombatDialer\Controllers\edit\Oh;
+        $oh = new \WombatDialer\Controllers\Edit\Oh;
         $response = $oh->update($data);
         return $response;
 

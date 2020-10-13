@@ -1,5 +1,5 @@
 <?php
-namespace WombatDialer\Controllers\edit;
+namespace WombatDialer\Controllers\Edit;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;

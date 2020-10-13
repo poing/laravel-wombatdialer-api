@@ -1,9 +1,9 @@
 <?php
 
-namespace WombatDialer\Controllers\edit;
+namespace WombatDialer\Controllers\Edit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use WombatDialer\Controllers\edit\Wombat;
+use WombatDialer\Controllers\Edit\Wombat;
 
 abstract class WombatMovable extends Wombat
 {

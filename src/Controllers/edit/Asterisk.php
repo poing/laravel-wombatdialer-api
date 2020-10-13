@@ -1,7 +1,7 @@
 <?php
 
-namespace WombatDialer\Controllers\edit;
-use WombatDialer\Controllers\edit\Wombat;
+namespace WombatDialer\Controllers\Edit;
+use WombatDialer\Controllers\Edit\Wombat;
 
 class Asterisk extends Wombat
 {

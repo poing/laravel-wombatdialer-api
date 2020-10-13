@@ -1,7 +1,7 @@
 <?php
-namespace WombatDialer\Controllers\edit\Campaign;
+namespace WombatDialer\Controllers\Edit\Campaign;
 
-use \WombatDialer\Controllers\edit\Campaign\RescheduleRules;
+use \WombatDialer\Controllers\Edit\Campaign\RescheduleRules;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
