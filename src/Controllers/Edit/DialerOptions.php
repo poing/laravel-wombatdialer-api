@@ -1,13 +1,12 @@
 <?php
 
 namespace WombatDialer\Controllers\Edit;
-use WombatDialer\Controllers\Edit\Wombat;
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Http;
 
 class DialerOptions extends Wombat
 {
-   protected $path = '/dialer/';
+    protected $path = '/dialer/';
 
     /**
      * Perform API GET.
@@ -20,8 +19,9 @@ class DialerOptions extends Wombat
     {
         $op = $op ? $op : null;
         $this->query = ['op' => $op];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
 }

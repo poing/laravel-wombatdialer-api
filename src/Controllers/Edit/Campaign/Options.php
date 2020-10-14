@@ -1,16 +1,15 @@
 <?php
+
 namespace WombatDialer\Controllers\Edit\Campaign;
 
-use WombatDialer\Controllers\Edit\Wombat;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-
+use WombatDialer\Controllers\Edit\Wombat;
 
 class Options extends Wombat
 {
     protected $path = '/campaigns/';
 
-     /**
+    /**
      * Perform API GET.
      * Used to perform operations like 'start', 'pause', 'unpause','reload' on the existing Campaign ID's.
      *
@@ -22,12 +21,13 @@ class Options extends Wombat
         $op = $op ? $op : null;
         $campaign = $campaign ? $campaign : null;
         $this->query = ['op' => $op, 'campaign' => $campaign];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
 
-     /**
+    /**
      * Perform API GET.
      * Used to Clone the newly created Campaign API with the existing Campaign API, It will clone only the Campaign definition.
      *
@@ -40,12 +40,13 @@ class Options extends Wombat
         $campaign = $campaign ? $campaign : null;
         $newcampaign = $newcampaign ? $newcampaign : null;
         $this->query = ['op' => $op, 'campaign' => $campaign, 'newcampaign' => $newcampaign];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
 
-     /**
+    /**
      * Perform API GET.
      * Used to add the existing List to the Campaign API(Cloned one).
      * It will not work on running campaigns as they will not pick-up the new configuration until restarted.
@@ -59,12 +60,13 @@ class Options extends Wombat
         $campaign = $campaign ? $campaign : null;
         $list = $list ? $list : null;
         $this->query = ['op' => $op, 'campaign' => $campaign, 'list' => $list];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
 
-     /**
+    /**
      * Perform API GET.
      * Used to set boost factor on a running campaign.
      *
@@ -77,10 +79,9 @@ class Options extends Wombat
         $campaign = $campaign ? $campaign : null;
         $factor = $factor ? $factor : null;
         $this->query = ['op' => $op, 'campaign' => $campaign, 'factor' => $factor];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
-
 }
-

@@ -1,18 +1,18 @@
 <?php
+
 namespace WombatDialer\Controllers\Edit;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Http\Request;
-
 use Mail;
 
 abstract class Wombat extends Controller
 {
-   /**
+    /**
      * The connection resource for WombatDialer.
      *
      * @var array
-    */
+     */
     protected $resource = [];
 
     /**
@@ -55,7 +55,7 @@ abstract class Wombat extends Controller
         $this->pass = config('wombatdialer.admin.pass');
     }
 
-     /**
+    /**
      * User authentication.
      *
      * @return void
@@ -82,10 +82,10 @@ abstract class Wombat extends Controller
      */
     public function connection()
     {
-
         $this->appendPath()
             ->addQuery()
             ->unparse_url();
+
         return $this->url;
     }
 
@@ -97,6 +97,7 @@ abstract class Wombat extends Controller
     public function appendPath()
     {
         $this->addPath();
+
         return $this;
     }
 
@@ -110,12 +111,11 @@ abstract class Wombat extends Controller
     public function addQuery()
     {
         //$this->query = ['mode' => 'L',];
-        if (!empty($this->query))
-        {
+        if (! empty($this->query)) {
             $this->resource['query'] = http_build_query($this->query);
         }
-        return $this;
 
+        return $this;
     }
 
     /**
@@ -125,17 +125,18 @@ abstract class Wombat extends Controller
      */
     private function unparse_url()
     {
-        $scheme = isset($this->resource['scheme']) ? $this->resource['scheme'] . '://' : '';
+        $scheme = isset($this->resource['scheme']) ? $this->resource['scheme'].'://' : '';
         $host = isset($this->resource['host']) ? $this->resource['host'] : '';
-        $port = isset($this->resource['port']) ? ':' . $this->resource['port'] : '';
+        $port = isset($this->resource['port']) ? ':'.$this->resource['port'] : '';
         $user = isset($this->resource['user']) ? $this->resource['user'] : '';
-        $pass = isset($this->resource['pass']) ? ':' . $this->resource['pass'] : '';
+        $pass = isset($this->resource['pass']) ? ':'.$this->resource['pass'] : '';
         $pass = ($user || $pass) ? "$pass@" : '';
         $path = isset($this->resource['path']) ? $this->resource['path'] : '';
-        $query = isset($this->resource['query']) ? '?' . $this->resource['query'] : '';
-        $fragment = isset($this->resource['fragment']) ? '#' . $this->resource['fragment'] : '';
+        $query = isset($this->resource['query']) ? '?'.$this->resource['query'] : '';
+        $fragment = isset($this->resource['fragment']) ? '#'.$this->resource['fragment'] : '';
 
         $this->url = "$scheme$user$pass$host$port$path$query$fragment";
+
         return $this;
     }
 
@@ -151,10 +152,9 @@ abstract class Wombat extends Controller
         $new_uri = array_merge($org_uri, $add_uri);
 
         $slash = $this->trailingslash ? '/' : null;
-        $this->resource['path'] = '/' . implode('/', array_filter($new_uri)) . $slash;
+        $this->resource['path'] = '/'.implode('/', array_filter($new_uri)).$slash;
 
         return $this;
-
     }
 
     /**
@@ -169,10 +169,10 @@ abstract class Wombat extends Controller
         $items = $items ? $items : null;
         $from = $from ? $from : null;
         $this->query = ['items' => $items, 'from' => $from];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
-        return $response->json();
 
+        return $response->json();
     }
 
     /**
@@ -184,11 +184,11 @@ abstract class Wombat extends Controller
      */
     public function show($id)
     {
-
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
         $record = collect($response->json() ['results'])
             ->where($this->primaryKeyname, $id)->first();
+
         return $record;
     }
 
@@ -203,13 +203,12 @@ abstract class Wombat extends Controller
     {
         $this->query = ['mode' => 'E']; // E for Edit
         $newData = array_merge($this->default, $data);
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
-            ->post($this->connection() , ['data' => json_encode($newData) ]);
+            ->post($this->connection(), ['data' => json_encode($newData)]);
 
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
-
     }
 
     /**
@@ -219,14 +218,13 @@ abstract class Wombat extends Controller
      * @param  array  $data
      * @return array
      */
-
     public function update($data)
     {
         //$this->create($data);
         $this->query = ['mode' => 'E']; // E for Edit
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
-            ->post($this->connection() , ['data' => json_encode($data) ]);
+            ->post($this->connection(), ['data' => json_encode($data)]);
 
         return $response->json();
     }
@@ -242,9 +240,10 @@ abstract class Wombat extends Controller
     {
         $this->query = ['mode' => 'D'];
         $myData = [$this->primaryKeyname => $id];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
-            ->post($this->connection() , ['data' => json_encode($myData) ]);
+            ->post($this->connection(), ['data' => json_encode($myData)]);
+
         return $response->json();
     }
 
@@ -256,19 +255,14 @@ abstract class Wombat extends Controller
      */
     public function html_email()
     {
-
-        if ($response->failed() || $response->serverError() || $response->clientError())
-        {
-            Mail::send([], [], function ($message) use ($response)
-            {
+        if ($response->failed() || $response->serverError() || $response->clientError()) {
+            Mail::send([], [], function ($message) use ($response) {
                 $message->to('dev@invite-comm.jp')
-                    ->subject('Sample test with API' . time())
+                    ->subject('Sample test with API'.time())
                     ->setBody($response, 'text/html');
             });
         }
-        return "Mail Sent Successfully";
+
+        return 'Mail Sent Successfully';
     }
-
-
 }
-

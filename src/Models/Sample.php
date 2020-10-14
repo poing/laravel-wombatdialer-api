@@ -6,9 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sample extends Model
 {
-      protected $fillable = [
-         'email', 'name', 'value'
+    protected $fillable = [
+        'email', 'name', 'value',
     ];
-     public $timestamps = false;
-
+    public $timestamps = false;
 }
