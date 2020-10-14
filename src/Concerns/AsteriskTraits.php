@@ -16,8 +16,6 @@ trait AsteriskTraits
         'unit_len' => 50,
         'msg_per_unit' => 5,
         'securityKey' => 'alpha',
-        'state' => 'DOWN'
+        'state' => 'DOWN',
     ];
-
 }
-

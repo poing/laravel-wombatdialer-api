@@ -1,16 +1,16 @@
 <?php
 
 namespace WombatDialer\Controllers\Edit\Reports;
-use WombatDialer\Controllers\Edit\Wombat;
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Http;
+use WombatDialer\Controllers\Edit\Wombat;
 
 class Logs extends Wombat
 {
-   //protected $path = '/edit/asterisk';
-   use \WombatDialer\Concerns\LiveCallsandReportsTraits;
-   
-     /**
+    //protected $path = '/edit/asterisk';
+    use \WombatDialer\Concerns\LiveCallsandReportsTraits;
+
+    /**
      * Perform API GET.
      * Returns the Log set for the set of runs.
      *
@@ -24,9 +24,9 @@ class Logs extends Wombat
         $items = $items ? $items : null;
         $id = $id ? $id : null;
         $this->query = ['from' => $from, 'items' => $items, 'id' => $id];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->json();
     }
-
 }

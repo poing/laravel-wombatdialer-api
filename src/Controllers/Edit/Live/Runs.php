@@ -1,15 +1,15 @@
 <?php
 
 namespace WombatDialer\Controllers\Edit\Live;
-use WombatDialer\Controllers\Edit\Wombat;
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Http;
+use WombatDialer\Controllers\Edit\Wombat;
 
 class Runs extends Wombat
 {
-   //protected $path = '/edit/asterisk';
-   use \WombatDialer\Concerns\LiveCallsandReportsTraits;
-   
+    //protected $path = '/edit/asterisk';
+    use \WombatDialer\Concerns\LiveCallsandReportsTraits;
+
     /**
      * Perform API GET.
      * Returns the List of Live status of the Campaigns.
@@ -19,13 +19,13 @@ class Runs extends Wombat
     public function liveRuns()
     {
         $this->path = '/live/runs/';
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
-        return $response->json();
 
+        return $response->json();
     }
 
-     /**
+    /**
      * Perform API GET.
      * Returns the List of Live status of the Campaigns.
      *
@@ -34,7 +34,5 @@ class Runs extends Wombat
     public function showliveRuns()
     {
         return $this->liveRuns();
-
     }
-
 }

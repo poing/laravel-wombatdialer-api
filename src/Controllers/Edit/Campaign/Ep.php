@@ -1,13 +1,11 @@
 <?php
+
 namespace WombatDialer\Controllers\Edit\Campaign;
 
 use WombatDialer\Controllers\Edit\WombatMovable;
 
-
-
 class Ep extends WombatMovable
 {
-
     protected $path = '/edit/campaign/ep/';
 
     /**
@@ -21,9 +19,7 @@ class Ep extends WombatMovable
     {
         $ep = new  \WombatDialer\Controllers\Edit\Ep;
         $response = $ep->update($data);
+
         return $response;
-
     }
-
 }
-

@@ -1,16 +1,16 @@
 <?php
 
 namespace WombatDialer\Controllers\Edit\Reports;
-use WombatDialer\Controllers\Edit\Wombat;
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Http;
+use WombatDialer\Controllers\Edit\Wombat;
 
 class Runs extends Wombat
 {
-   //protected $path = '/edit/asterisk';
-   use \WombatDialer\Concerns\LiveCallsandReportsTraits;
-   
-     /**
+    //protected $path = '/edit/asterisk';
+    use \WombatDialer\Concerns\LiveCallsandReportsTraits;
+
+    /**
      * Perform API GET.
      * Returns the list of  call runs made in the specific period ($from and $to).
      *
@@ -24,10 +24,9 @@ class Runs extends Wombat
         $to = $to ? $to : null;
         $this->query = ['from' => $from, 'to' => $to];
 
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->json();
-
     }
-
 }

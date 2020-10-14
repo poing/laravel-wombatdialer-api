@@ -1,6 +1,7 @@
 <?php
 
 namespace WombatDialer\Commands;
+
 use Illuminate\Console\Command;
 
 class WombatDialerInstall extends Command

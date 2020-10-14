@@ -1,15 +1,14 @@
 <?php
 
 namespace WombatDialer\Controllers\Edit;
-use WombatDialer\Controllers\Edit\Wombat;
-use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Http;
 
 class Campaign extends Wombat
 {
-   //protected $path = '/edit/asterisk';
-   use \WombatDialer\Concerns\CampaignTraits;
-   
+    //protected $path = '/edit/asterisk';
+    use \WombatDialer\Concerns\CampaignTraits;
+
     /**
      * Perform API POST.
      * Deletes  the record based on the primary key for the API record.
@@ -21,11 +20,11 @@ class Campaign extends Wombat
     {
         $this->query = ['mode' => 'D'];
         $myData = [$this->primaryKeyname => $id];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
-            ->post($this->connection() , ['data' => json_encode($myData) ]);
-        return false; // Campaign API Record cannot be removed using WombatDialler
+            ->post($this->connection(), ['data' => json_encode($myData)]);
 
+        return false; // Campaign API Record cannot be removed using WombatDialler
     }
 
     /**
@@ -35,14 +34,11 @@ class Campaign extends Wombat
      */
     public function setDow($data)
     {
-
-        $data[$this->dow] = array_map(function ($val)
-        {
+        $data[$this->dow] = array_map(function ($val) {
             return $val + 1;
-
-        }
-        , $data[$this->dow]);
+        }, $data[$this->dow]);
         $data[$this->dow] = implode($data[$this->dow]);
+
         return $data;
     }
 
@@ -53,21 +49,16 @@ class Campaign extends Wombat
      */
     public function getDow($data)
     {
-        array_walk_recursive($data, function (&$item, $key)
-        {
-            if ($key == $this->dow)
-            {
+        array_walk_recursive($data, function (&$item, $key) {
+            if ($key == $this->dow) {
                 $item = str_split($item);
-                $item = array_map(function ($val)
-                {
+                $item = array_map(function ($val) {
                     return $val - 1;
-
                 }, $item);
-
             }
         });
-        return $data;
 
+        return $data;
     }
 
     /**
@@ -77,10 +68,9 @@ class Campaign extends Wombat
      */
     public function index($items = null, $from = null)
     {
-
         $response = parent::index($items, $from);
-        return $this->getDow($response);
 
+        return $this->getDow($response);
     }
 
     /**
@@ -90,10 +80,8 @@ class Campaign extends Wombat
      */
     public function show($id)
     {
-
         $response = parent::show($id);
+
         return $this->getDow($response);
-
     }
-
 }
