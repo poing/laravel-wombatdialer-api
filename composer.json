@@ -1,0 +1,36 @@
+{
+  "name": "poing/laravel-wombatdialer-api",
+  "description": "WombatDialer API Library for Laravel",
+  "type": "library",
+  "require": {
+    "laravel/framework": ">=7.0"
+  },
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "poing",
+      "email": "brian.lavallee@invite-comm.jp"
+    },
+    {
+      "name": "Komal.Raja",
+      "email": "komal.raja@invite-comm.jp"
+    }
+  ],
+  "homepage": "https://github.com/poing/laravel-wombatdialer-api",
+  "support": {
+    "issues": "https://github.com/poing/laravel-wombatdialer-api/issues",
+    "irc": "irc://irc.freenode.org/poing"
+  },
+  "autoload": {
+    "psr-4": {
+      "WombatDialer\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "WombatDialer\\WombatdialerServiceProvider"
+      ]
+    }
+  }
+}
