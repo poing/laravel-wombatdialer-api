@@ -1,27 +1,29 @@
 <?php
 
-namespace WombatDialer\Controllers\Edit\Reports;
+namespace WombatDialer\Reports;
 
 use Illuminate\Support\Facades\Http;
 use WombatDialer\Controllers\Edit\Wombat;
 
-class Stats extends Wombat
+class Runs extends Wombat
 {
     //protected $path = '/edit/asterisk';
     use \WombatDialer\Concerns\LiveCallsandReportsTraits;
 
     /**
      * Perform API GET.
-     * Returns the call runs statistics for a single run , based on the parameter $id.
+     * Returns the list of  call runs made in the specific period ($from and $to).
      *
-     * @params $id
+     * @params  $from and $to
      * @return json response
      */
-    public function reportStats($id = null)
+    public function reportRuns($from, $to)
     {
-        $this->path = '/reports/stats/';
-        $id = $id ? $id : null;
-        $this->query = ['id' => $id];
+        $this->path = '/reports/runs/';
+        $from = $from ? $from : null;
+        $to = $to ? $to : null;
+        $this->query = ['from' => $from, 'to' => $to];
+
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
 

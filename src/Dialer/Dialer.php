@@ -1,10 +1,10 @@
 <?php
 
-namespace WombatDialer\Controllers\Edit;
-
+namespace WombatDialer\Dialer;
+use WombatDialer\Controllers\Edit\Wombat;
 use Illuminate\Support\Facades\Http;
 
-class DialerOptions extends Wombat
+class Dialer extends Wombat
 {
     protected $path = '/dialer/';
 
