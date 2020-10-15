@@ -5,7 +5,7 @@ namespace WombatDialer\Controllers\Edit\Campaign;
 use Illuminate\Support\Facades\Http;
 use WombatDialer\Controllers\Edit\WombatMovable;
 
-class RescheduleRules extends WombatMovable
+class Reschedule extends WombatMovable
 {
     protected $path = '/edit/campaign/reschedule/';
     use \WombatDialer\Concerns\RulesTraits;

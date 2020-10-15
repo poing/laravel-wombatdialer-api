@@ -4,7 +4,7 @@ namespace WombatDialer\Controllers\Edit\Campaign;
 
 use Illuminate\Support\Facades\Http;
 
-class DispositionRules extends RescheduleRules
+class Disposition extends Reschedule
 {
     protected $path = '/edit/campaign/disposition/';
     use \WombatDialer\Concerns\RulesTraits;

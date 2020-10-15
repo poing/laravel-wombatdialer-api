@@ -2,8 +2,8 @@
 
 namespace WombatDialer\Controllers\Edit;
 
-class WombatList extends Wombat
+class Lists extends Wombat
 {
     //protected $path = '/edit/asterisk';
-    use \WombatDialer\Concerns\WombatlistTraits;
+    use \WombatDialer\Concerns\ListTraits;
 }
