@@ -1,6 +1,6 @@
 <?php
 
-namespace WombatDialer\Reports;
+namespace WombatDialer\Controllers\Reports;
 
 use Illuminate\Support\Facades\Http;
 use WombatDialer\Controllers\Edit\Wombat;

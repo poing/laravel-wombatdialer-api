@@ -1,9 +1,9 @@
 <?php
 
-namespace WombatDialer\Campaigns;
+namespace WombatDialer\Controllers\Campaigns;
 
 use Illuminate\Support\Facades\Http;
-use \WombatDialer\Controllers\Edit\Wombat;
+use WombatDialer\Controllers\Edit\Wombat;
 
 class Campaigns extends Wombat
 {
