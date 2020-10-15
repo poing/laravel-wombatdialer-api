@@ -79,6 +79,32 @@ api
 └── sysup
     └── jmx
 ```
+#### Note:
+From the Structure under the `Edit` , there were 6 APIs.
+
+```
+Asterisk
+Campaign
+Ep
+List \\ List is used as Lists
+Oh
+Trunk
+```
+And under the `Edit\Campaign\`:
+
+```
+Ep
+List  \\List is used as Lists 
+Oh
+Trunk
+Reschedule
+Disposition
+```
+
+The `List` API has been replaced as `Lists` in the package. Since `List` can neither used as a namespace or a className. But the `URL` remains the same as 
+
+`'/edit/list/'`
+
 ### 5 .Link for Reference
 
 [wombat-manual](https://manuals.loway.ch/WD_UserManual-chunked/)
