@@ -4,7 +4,6 @@ namespace WombatDialer\Lists;
 
 use Illuminate\Support\Facades\Http;
 use WombatDialer\Controllers\Edit\Wombat;
-use WombatDialer\Models\Sample;
 
 class Lists extends Wombat
 {

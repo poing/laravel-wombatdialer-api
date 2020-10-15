@@ -1,8 +1,9 @@
 <?php
 
 namespace WombatDialer\Dialer;
-use WombatDialer\Controllers\Edit\Wombat;
+
 use Illuminate\Support\Facades\Http;
+use WombatDialer\Controllers\Edit\Wombat;
 
 class Dialer extends Wombat
 {
