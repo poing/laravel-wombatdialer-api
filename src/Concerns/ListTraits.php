@@ -2,7 +2,7 @@
 
 namespace WombatDialer\Concerns;
 
-trait WombatlistTraits
+trait ListTraits
 {
     protected $path = '/edit/list/';
     protected $primaryKeyname = 'listId';

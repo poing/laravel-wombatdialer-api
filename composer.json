@@ -1,11 +1,12 @@
 {
   "name": "poing/laravel-wombatdialer-api",
   "description": "WombatDialer API Library for Laravel",
+  "keywords": ["WombatDialer", "Wombat", "Dialer", "Laravel", "API", "outbound calling", "outbound", "calling", "call center", "callcenter", "PBX"],
   "type": "library",
   "require": {
     "laravel/framework": ">=7.0"
   },
-  "license": "GPL",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "poing",

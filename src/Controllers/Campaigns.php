@@ -1,11 +1,11 @@
 <?php
 
-namespace WombatDialer\Controllers\Edit\Campaign;
+namespace WombatDialer\Controllers;
 
 use Illuminate\Support\Facades\Http;
 use WombatDialer\Controllers\Edit\Wombat;
 
-class Options extends Wombat
+class Campaigns extends Wombat
 {
     protected $path = '/campaigns/';
 

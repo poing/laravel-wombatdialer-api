@@ -4,7 +4,7 @@ namespace WombatDialer\Controllers\Edit\Campaign;
 
 use WombatDialer\Controllers\Edit\WombatMovable;
 
-class WombatList extends WombatMovable
+class Lists extends WombatMovable
 {
     protected $path = '/edit/campaign/list/';
 
@@ -17,7 +17,7 @@ class WombatList extends WombatMovable
      */
     public function update($data)
     {
-        $list = new \WombatDialer\Controllers\Edit\WombatList;
+        $list = new \WombatDialer\Controllers\Edit\Lists;
         $response = $list->update($data);
 
         return $response;

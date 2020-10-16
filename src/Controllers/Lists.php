@@ -1,10 +1,11 @@
 <?php
 
-namespace WombatDialer\Controllers\Edit;
+namespace WombatDialer\Controllers;
 
 use Illuminate\Support\Facades\Http;
+use WombatDialer\Controllers\Edit\Wombat;
 
-class NumberList extends Wombat
+class Lists extends Wombat
 {
     protected $path = '/lists/';
 
@@ -25,7 +26,7 @@ class NumberList extends Wombat
 
         $numbers = implode('|', $numbers);
 
-        $this->query = ['op' => 'addToList', 'list' => 'ListSample', 'numbers' => $numbers];
+        $this->query = ['op' => 'addToList', 'list' => 'TestList', 'numbers' => $numbers];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection());
