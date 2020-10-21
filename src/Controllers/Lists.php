@@ -9,7 +9,7 @@ class Lists extends Wombat
 {
     protected $path = '/lists/';
 
-   /**
+    /**
      * Used to format TableData.
      *
      * @param $samples is the Data and $valueField is the column.
@@ -19,14 +19,14 @@ class Lists extends Wombat
     {
         $numbers = [];
         //$valueField = 'value';
-        foreach ($samples as $item)
-        {
-            $numbers[] = $item->$valueField . ',id:' . $item->id . ',email:' . $item->email . ',name:' . $item->name;
+        foreach ($samples as $item) {
+            $numbers[] = $item->$valueField.',id:'.$item->id.',email:'.$item->email.',name:'.$item->name;
         }
+
         return $numbers;
     }
 
-     /**
+    /**
      * Used to convert the array to a string using implode.
      *
      * @param  $numbers is the data and value in the data should be separated by '|'.
@@ -35,10 +35,9 @@ class Lists extends Wombat
     public function myImplode($numbers)
     {
         return implode('|', $numbers);
-
     }
 
-     /**
+    /**
      * Used to format the results returned from the Model Data.
      *
      * @param $array is the data and $column is the column to be formatted.
@@ -48,10 +47,11 @@ class Lists extends Wombat
     {
         $compact = $this->formatTableData($array, $column);
         $string = $this->myImplode($compact);
-        return $string;
 
+        return $string;
     }
-     /**
+
+    /**
      * Perform API POST.
      * Updates the List API with the newly creates ListName and the Numbers.
      *
@@ -61,13 +61,14 @@ class Lists extends Wombat
     public function addToList($list, $numbers)
     {
         $this->query = ['op' => 'addToList', 'list' => $list, 'numbers' => $numbers];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection());
+
         return $response->body();
     }
 
-     /**
+    /**
      * Used to update the List API.
      * If the data is larger , It is broken into chunks using chunk().
      *
@@ -77,30 +78,29 @@ class Lists extends Wombat
     public function updateList($list, $model, $column)
     {
         $chunks = config('wombatdialer.chunk_size');
-        $model->chunk($chunks, function ($records) use ($list, $column)
-        {
+        $model->chunk($chunks, function ($records) use ($list, $column) {
             $data = $this->formatResults($records, $column);
             $someOutput = $this->addToList($list, $data);
         });
+
         return 'List has been successfully updated!';
     }
 
-     /**
+    /**
      * Used to insert the tableData's into List.
      * @params $list, $model, $column were declared in tableToList().
      *
      * @returns String.
      */
-     public function tableToList()
-     {
+    public function tableToList()
+    {
+        $list = new WombatDialer\Controllers\Edit\Lists;
+        $valueField = 'value';
+        $modelName = new \App\Sample();
+        $myList = $list->create(['name' => 'Alpha_012', 'securityKey' => 'Test']);
+        $listName = $myList['results'][0]['name'];
+        $finalResult = $this->updateList($listName, $modelName, $valueField);
 
-     $list = new WombatDialer\Controllers\Edit\Lists;
-     $valueField = 'value';
-     $modelName =  new \App\Sample();
-     $myList = $list->create(['name' => 'Alpha_012', 'securityKey' => 'Test']);
-     $listName = $myList['results'][0]['name'];
-     $finalResult = $this->updateList($listName , $modelName, $valueField);
-     return $finalResult;
-
-}
+        return $finalResult;
+    }
 }
