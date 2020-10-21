@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM centos6
+FROM centos:centos6
 
 MAINTAINER Brian LaVallee <brian.lavallee@invite-comm.jp>
 
