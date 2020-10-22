@@ -85,22 +85,4 @@ class Lists extends Wombat
 
         return 'List has been successfully updated!';
     }
-
-    /**
-     * Used to insert the tableData's into List.
-     * @params $list, $model, $column were declared in tableToList().
-     *
-     * @returns String.
-     */
-    public function tableToList()
-    {
-        $list = new WombatDialer\Controllers\Edit\Lists;
-        $valueField = 'value';
-        $modelName = new \App\Sample();
-        $myList = $list->create(['name' => 'Alpha_012', 'securityKey' => 'Test']);
-        $listName = $myList['results'][0]['name'];
-        $finalResult = $this->updateList($listName, $modelName, $valueField);
-
-        return $finalResult;
-    }
 }
