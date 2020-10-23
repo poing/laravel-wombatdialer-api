@@ -48,13 +48,25 @@ abstract class Wombat extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user=null, $pass=null)
     {
         $this->resource = config('wombatdialer.url');
+        if(isset($user) && isset($pass))
+        {
+         $this->user = $user;
+         $this->pass = $pass;
+        }
+         elseif (Session::has(config('wombatdialer.session.user')) &&  Session::has(config('wombatdialer.session.pass')))
+        {
+           $this->user =  Session::get(config('wombatdialer.session.user'));
+           $this->pass = Session::get(config('wombatdialer.session.pass'));
+        }
+        else
+        {
         $this->user = config('wombatdialer.admin.user');
         $this->pass = config('wombatdialer.admin.pass');
+        }
     }
-
     /**
      * User authentication.
      *
