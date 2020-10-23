@@ -19,9 +19,9 @@ return [
         'path' =>   env('WOMBAT_PATH', '/wombat/api/'),
     ],
     'session' => [
-	'user' => env('WOMBAT_SESSION_USER' , 'wbt_user'),
-	'pass' =>   env('WOMBAT_SESSION_PASS', 'wbt_pass'),
-   ],
+        'user' => env('WOMBAT_SESSION_USER', 'wbt_user'),
+        'pass' =>   env('WOMBAT_SESSION_PASS', 'wbt_pass'),
+    ],
      'chunk_size' => 100,
 
     /*
