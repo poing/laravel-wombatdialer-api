@@ -4,8 +4,8 @@ namespace WombatDialer\Controllers\Edit;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
-use Session;
 use Illuminate\Support\Facades\Mail;
+use Session;
 
 abstract class Wombat extends Controller
 {
@@ -182,6 +182,7 @@ abstract class Wombat extends Controller
             ->get($this->connection());
         // check response & send mail if error
         $this->html_mail($response);
+
         return $response->json();
     }
 
@@ -219,7 +220,7 @@ abstract class Wombat extends Controller
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($newData)]);
         // check response & send mail if error
-         $this->html_mail($response);
+        $this->html_mail($response);
 
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
@@ -240,7 +241,7 @@ abstract class Wombat extends Controller
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
         // check response & send mail if error
-         $this->html_mail($response);
+        $this->html_mail($response);
 
         return $response->json();
     }
@@ -260,7 +261,8 @@ abstract class Wombat extends Controller
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($myData)]);
         // check response & send mail if error
-         $this->html_mail($response);
+        $this->html_mail($response);
+
         return $response->json();
     }
 
