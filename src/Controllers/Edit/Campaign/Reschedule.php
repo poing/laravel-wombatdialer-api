@@ -23,11 +23,12 @@ class Reschedule extends WombatMovable
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
+         //check response and &send mail if error
+        $this->html_mail($response);
         if (! in_array($data['status'], $this->statusOptions())) {
             trigger_error('Value not found in option array!');
         }
-        //check response and &send mail if error
-        $this->html_mail($response);
+       
 
         return $response->json();
     }
@@ -63,11 +64,12 @@ class Reschedule extends WombatMovable
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
+        //check response and &send mail if error
+        $this->html_mail($response);
         if (! in_array($data['status'], $this->statusOptions())) {
             trigger_error('Value not found in option array!');
         }
-        //check response and &send mail if error
-        $this->html_mail($response);
+        
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
     }
