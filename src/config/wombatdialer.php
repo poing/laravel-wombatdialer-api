@@ -23,6 +23,7 @@ return [
         'pass' =>   env('WOMBAT_SESSION_PASS', 'wbt_pass'),
     ],
      'chunk_size' => 100,
+     'toAddress' => 'abc@example.com',
 
     /*
     |--------------------------------------------------------------------------
