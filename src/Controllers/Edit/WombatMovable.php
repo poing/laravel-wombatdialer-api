@@ -19,7 +19,8 @@ abstract class WombatMovable extends Wombat
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
-
+        // check response & send mail if errors
+         $this->html_mail($response);
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
     }
@@ -52,7 +53,8 @@ abstract class WombatMovable extends Wombat
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
-
+         // check response & send mail if errors
+         $this->html_mail($response);
         return $response->json();
     }
 
@@ -68,7 +70,8 @@ abstract class WombatMovable extends Wombat
         $this->query = ['parent' => $campaignId];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
-
+         // check response & send mail if errors
+         $this->html_mail($response);
         return $response->json();
     }
 
@@ -85,7 +88,8 @@ abstract class WombatMovable extends Wombat
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
-
+         // check response & send mail if errors
+         $this->html_mail($response);
         return $response->json();
     }
 
@@ -102,7 +106,15 @@ abstract class WombatMovable extends Wombat
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
-
+         // check response & send mail if errors
+         $this->html_mail($response);
         return $response->json();
     }
+     public function html_mail($response)
+    {
+     $response = parent::html_mail($response);
+     return "mail Sent successfully!";
+
+    }
+
 }
