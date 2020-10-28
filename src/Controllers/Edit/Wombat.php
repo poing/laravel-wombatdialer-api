@@ -4,7 +4,8 @@ namespace WombatDialer\Controllers\Edit;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
-use Mail;
+use Session;
+use Illuminate\Support\Facades\Mail;
 
 abstract class Wombat extends Controller
 {
@@ -179,7 +180,8 @@ abstract class Wombat extends Controller
         $this->query = ['items' => $items, 'from' => $from];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
-
+        // check response & send mail if error
+        $this->html_mail($response);
         return $response->json();
     }
 
@@ -194,6 +196,8 @@ abstract class Wombat extends Controller
     {
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+        // check response & send mail if error
+        $this->html_mail($response);
         $record = collect($response->json() ['results'])
             ->where($this->primaryKeyname, $id)->first();
 
@@ -214,6 +218,8 @@ abstract class Wombat extends Controller
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($newData)]);
+        // check response & send mail if error
+         $this->html_mail($response);
 
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
@@ -233,6 +239,8 @@ abstract class Wombat extends Controller
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
+        // check response & send mail if error
+         $this->html_mail($response);
 
         return $response->json();
     }
@@ -251,7 +259,8 @@ abstract class Wombat extends Controller
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($myData)]);
-
+        // check response & send mail if error
+         $this->html_mail($response);
         return $response->json();
     }
 
@@ -261,7 +270,7 @@ abstract class Wombat extends Controller
      *
      * @return string
      */
-    public function html_email()
+    public function html_mail($response)
     {
         if ($response->failed() || $response->serverError() || $response->clientError()) {
             Mail::send([], [], function ($message) use ($response) {
