@@ -266,7 +266,7 @@ abstract class Wombat extends Controller
         if ($response->failed() || $response->serverError() || $response->clientError()) {
             Mail::send([], [], function ($message) use ($response) {
                 $message->to(config('wombatdialer.toAddress'));
-                $message->subject('Sample test with API' . time());
+                $message->subject('Sample test with API'.time());
                 $message->setBody($response, 'text/html');
             });
         }
