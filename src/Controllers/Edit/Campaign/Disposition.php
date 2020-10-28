@@ -23,7 +23,7 @@ class Disposition extends Reschedule
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
         //check response and send mail if errors
-         $this->html_mail($response);
+        $this->html_mail($response);
         if ((! in_array($data['onState'], $this->statusOptions())) || (! in_array($data['verb'], $this->actionsOptions()))) {
             trigger_error('Value not found in option array!');
         }
@@ -44,16 +44,17 @@ class Disposition extends Reschedule
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
-          //check response and send mail if errors
-         $this->html_mail($response);
+        //check response and send mail if errors
+        $this->html_mail($response);
         if ((! in_array($data['onState'], $this->statusOptions())) || (! in_array($data['verb'], $this->actionsOptions()))) {
             trigger_error('Value not found in option array!');
         }
-        
+
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
     }
-     /**
+
+    /**
      * Generates a  Formatted HTML_MAIL.
      * @param $response fails, It generates a html_mail.
      *
@@ -61,8 +62,8 @@ class Disposition extends Reschedule
      */
     public function html_mail($response)
     {
-     $response = parent::html_mail($response);
-     return "mail Sent successfully!";
+        $response = parent::html_mail($response);
 
+        return 'mail Sent successfully!';
     }
 }
