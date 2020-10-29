@@ -1,0 +1,32 @@
+services:
+  wombatdialer:
+    build:
+      context: .
+      dockerfile: $TRAVIS_BUILD_DIR/test/build/Dockerfile
+#      args:
+#        python: $TRAVIS_PYTHON_VERSION
+#    environment:
+#      - TRAVIS_BUILD_DIR=$TRAVIS_BUILD_DIR
+#    volumes:
+#      # Mount travis build directory.  Must be same path for coverage to work!
+#      - $TRAVIS_BUILD_DIR:$TRAVIS_BUILD_DIR:rw
+#      - ./support/etc/asterisk/manager.conf:/etc/asterisk/manager.conf
+#      #- ../.coverage:/var/lib/asterisk/agi-bin/.coverage
+##    image: andrius/asterisk
+#          #- ./:/usr/src/app
+##      - type: bind
+##        source: $PWD
+##        target: /var/lib/asterisk/agi-bin
+##        bind:
+##          propagation: rshared
+    networks:
+      mynet:
+        ipv4_address: 172.25.0.101
+    ports:
+      - 8080
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: 172.25.0.0/24

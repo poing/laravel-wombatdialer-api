@@ -22,7 +22,7 @@ trait CampaignTraits
         'timeDow' => '345',
         'maxCallLength' => 0,
         'batchSize' => 1,
-        'httpNotify' => 'https://worker.alpha.invite-comm.jp/wombat/wxyz123',
+        'httpNotify' => 'https://example.com',
         'loggingAlias' => '',
         'securityKey' => 'admin',
         'autopause' => false,
