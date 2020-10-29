@@ -1,0 +1,45 @@
+#! /bin/bash
+
+WCFG=/ww/cfg
+WFILES=/ww/files
+
+WOMBAT=/usr/local/queuemetrics/tomcat/webapps/wombat
+
+# creates folders on the data directory
+mkdir -p /data/mysql
+mkdir -p /data/wbt
+
+# As we have to initialize MySQL, we will have to run it 
+# in order to load data. As firstboot is not supposed to
+# start services, we will start mysql, configure it and then
+# stop it.
+
+# start mysql and wait for a while until it's up
+echo ==== CREATE DB
+/etc/init.d/mysqld start
+sleep 5
+
+echo === UPLOAD DB
+mysql mysql <  $WOMBAT/WEB-INF/DB/wombat_create.sql
+mysql -h127.0.0.1 -uwombat -pdials wombat <  $WOMBAT/WEB-INF/DB/wombat_schema.sql
+mysql -h127.0.0.1 -uwombat -pdials wombat <  $WFILES/phpunit.mysql
+
+cp $WFILES/tpf.properties /data/wbt/tpf.properties
+rm -rf $WOMBAT/WEB-INF/tpf.properties
+cd $WOMBAT/WEB-INF/
+ln -s /data/wbt/tpf.properties tpf.properties
+
+# redirect visitors from ROOT/index.jsp to /wombat/
+cp $WFILES/tomcat_index.jsp /usr/local/queuemetrics/tomcat/webapps/ROOT/index.jsp
+rm -f /usr/local/queuemetrics/tomcat/webapps/ROOT/index.html
+
+# does not use 'su' to overrid eold Docker bug 
+sed -i -e 's/su .TOMCAT_OWNER -c//g' /etc/init.d/qm-tomcat6
+
+# stop mysql
+/etc/init.d/mysqld stop
+
+
+
+
+
