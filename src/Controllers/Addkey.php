@@ -26,5 +26,4 @@ class Addkey extends Wombat
 
         return $response->json();
     }
-
 }

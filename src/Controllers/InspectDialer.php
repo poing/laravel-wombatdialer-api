@@ -25,5 +25,4 @@ class InspectDialer extends Wombat
 
         return $response->json();
     }
-
 }

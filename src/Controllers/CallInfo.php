@@ -14,7 +14,7 @@ class CallInfo extends Wombat
      * Used to get the details of the currently live or scheduled call.
      *
      * @param  $id
-     * @return response 
+     * @return response
      */
     public function callInfo($id)
     {
@@ -25,5 +25,4 @@ class CallInfo extends Wombat
 
         return $response->json();
     }
-
 }

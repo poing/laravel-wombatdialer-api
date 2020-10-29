@@ -14,9 +14,9 @@ class RunLists extends Wombat
      * Used to perform operations like 'start/add', pause and unpause the list isn the campaign.
      *
      * @param $op and $campaign and List to add.
-     * @return response 
+     * @return response
      */
-   public function listOperations($op, $campaign, $list)
+    public function listOperations($op, $campaign, $list)
     {
         $op = $op ? $op : null;
         $campaign = $campaign ? $campaign : null;
@@ -24,25 +24,25 @@ class RunLists extends Wombat
         $this->query = ['op' => $op, 'campaign' => $campaign, 'list' => $list];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
-    
+
     /**
      * Perform API GET.
      * Used to show the lists on a running campaign.
      *
      * @param $op and $campaign
-     * @return response 
+     * @return response
      */
-     public function showLists($op, $campaign)
+    public function showLists($op, $campaign)
     {
         $op = $op ? $op : null;
         $campaign = $campaign ? $campaign : null;
         $this->query = ['op' => $op, 'campaign' => $campaign];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
-    
-   
 }

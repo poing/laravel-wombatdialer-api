@@ -14,9 +14,9 @@ class Calls extends Wombat
      * Used to add a call to a campaign that is either running or idling.
      *
      * @param  $op (addcall), $campaign, $number(number to add)
-     * @return response 
+     * @return response
      */
-   public function calls($op, $campaign, $number)
+    public function calls($op, $campaign, $number)
     {
         $op = $op ? $op : null;
         $campaign = $campaign ? $campaign : null;
@@ -27,5 +27,4 @@ class Calls extends Wombat
 
         return $response->body();
     }
-    
 }
