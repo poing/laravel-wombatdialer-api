@@ -15,15 +15,16 @@ class Runs extends Wombat
      * Used to get the runs information based on th runId.
      *
      * @param  'runId', 'mode' and 'cbr'.
-     * @return response 
+     * @return response
      */
-   public function runsInfo($array)
+    public function runsInfo($array)
     {
         //$array = [1, 3,4];
         $runId = implode(',', $array);
-        $this->query = ['runId' => $runId, 'mode' => 'csv','cbr'=> '455'];
+        $this->query = ['runId' => $runId, 'mode' => 'csv', 'cbr'=> '455'];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
 }
