@@ -4,7 +4,8 @@ namespace WombatDialer\Controllers\Edit;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
-use Mail;
+use Illuminate\Support\Facades\Mail;
+use Session;
 
 abstract class Wombat extends Controller
 {
@@ -48,11 +49,19 @@ abstract class Wombat extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($user = null, $pass = null)
     {
         $this->resource = config('wombatdialer.url');
-        $this->user = config('wombatdialer.admin.user');
-        $this->pass = config('wombatdialer.admin.pass');
+        if (isset($user) && isset($pass)) {
+            $this->user = $user;
+            $this->pass = $pass;
+        } elseif (Session::has(config('wombatdialer.session.user')) && Session::has(config('wombatdialer.session.pass'))) {
+            $this->user = Session::get(config('wombatdialer.session.user'));
+            $this->pass = Session::get(config('wombatdialer.session.pass'));
+        } else {
+            $this->user = config('wombatdialer.admin.user');
+            $this->pass = config('wombatdialer.admin.pass');
+        }
     }
 
     /**
@@ -171,6 +180,8 @@ abstract class Wombat extends Controller
         $this->query = ['items' => $items, 'from' => $from];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+        // check response & send mail if error
+        $this->html_mail($response);
 
         return $response->json();
     }
@@ -186,6 +197,8 @@ abstract class Wombat extends Controller
     {
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+        // check response & send mail if error
+        $this->html_mail($response);
         $record = collect($response->json() ['results'])
             ->where($this->primaryKeyname, $id)->first();
 
@@ -206,6 +219,8 @@ abstract class Wombat extends Controller
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($newData)]);
+        // check response & send mail if error
+        $this->html_mail($response);
 
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
@@ -225,6 +240,8 @@ abstract class Wombat extends Controller
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
+        // check response & send mail if error
+        $this->html_mail($response);
 
         return $response->json();
     }
@@ -243,6 +260,8 @@ abstract class Wombat extends Controller
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($myData)]);
+        // check response & send mail if error
+        $this->html_mail($response);
 
         return $response->json();
     }
@@ -253,13 +272,13 @@ abstract class Wombat extends Controller
      *
      * @return string
      */
-    public function html_email()
+    public function html_mail($response)
     {
         if ($response->failed() || $response->serverError() || $response->clientError()) {
             Mail::send([], [], function ($message) use ($response) {
-                $message->to('dev@invite-comm.jp')
-                    ->subject('Sample test with API'.time())
-                    ->setBody($response, 'text/html');
+                $message->to(config('wombatdialer.toAddress'));
+                $message->subject('Sample test with API'.time());
+                $message->setBody($response, 'text/html');
             });
         }
 
