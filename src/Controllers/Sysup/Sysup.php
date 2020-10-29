@@ -19,7 +19,7 @@ class Sysup extends Wombat
     {
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->json();
     }
-
 }

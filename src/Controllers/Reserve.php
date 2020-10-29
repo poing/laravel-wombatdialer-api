@@ -14,17 +14,16 @@ class Reserve extends Wombat
      * Used to reserve the call.
      *
      * @param $op(reserve) and $id(WombatId).
-     * @return response 
+     * @return response
      */
-   public function reservedCall($op, $id)
+    public function reservedCall($op, $id)
     {
         $op = $op ? $op : null;
         $id = $id ? $id : null;
         $this->query = ['op' => $op, 'id' => $id];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
+
         return $response->body();
     }
-   
-   
 }
