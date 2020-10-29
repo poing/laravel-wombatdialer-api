@@ -1,4 +1,4 @@
-[![StyleCI](https://github.styleci.io/repos/301573810/shield?branch=master)](https://github.styleci.io/repos/301573810?branch=master)
+[![StyleCI](https://github.styleci.io/repos/301573810/shield?branch=main)](https://github.styleci.io/repos/301573810?branch=main)
 
 # laravel-wombatdialer-api
 WombatDialer API Library for Laravel
