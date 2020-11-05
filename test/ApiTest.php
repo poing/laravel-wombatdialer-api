@@ -1,14 +1,24 @@
 <?php
+  
+namespace WombatDialer\Test;
 
-namespace WombatDialer\test;
+use WombatDialer\Test\UnitAbstract;
 
-use PHPUnit\Framework\TestCase;
-
-class ApiTest extends TestCase
+class MyTestCase extends UnitAbstract
 {
-    public function testConfig()
-    {
-        $value = 'demoadmin';
-        $this->assertEquals($value, config('wombatdialer.admin.user'));
-    }
+    /**
+     * A basic unit test example.
+     *
+     * @return void
+     */
+	public function testExample()
+	{
+		$this->assertTrue(true);
+	}
+
+	public function testConfigAccess()
+	{
+		$value = 'demoadmin';
+		$this->assertEquals($value, config('wombatdialer.admin.user'));
+	}
 }
