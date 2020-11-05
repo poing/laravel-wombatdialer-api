@@ -1,8 +1,6 @@
 <?php
-  
-namespace WombatDialer\Test;
 
-use WombatDialer\Test\UnitAbstract;
+namespace WombatDialer\Test;
 
 class MyTestCase extends UnitAbstract
 {
@@ -11,14 +9,14 @@ class MyTestCase extends UnitAbstract
      *
      * @return void
      */
-	public function testExample()
-	{
-		$this->assertTrue(true);
-	}
+    public function testExample()
+    {
+        $this->assertTrue(true);
+    }
 
-	public function testConfigAccess()
-	{
-		$value = 'demoadmin';
-		$this->assertEquals($value, config('wombatdialer.admin.user'));
-	}
+    public function testConfigAccess()
+    {
+        $value = 'demoadmin';
+        $this->assertEquals($value, config('wombatdialer.admin.user'));
+    }
 }
