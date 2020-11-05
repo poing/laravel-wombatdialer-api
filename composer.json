@@ -27,11 +27,19 @@
       "WombatDialer\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "WombatDialer\\Test\\": "test/"
+    }
+  },
   "extra": {
     "laravel": {
       "providers": [
         "WombatDialer\\WombatdialerServiceProvider"
       ]
     }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.4"
   }
 }

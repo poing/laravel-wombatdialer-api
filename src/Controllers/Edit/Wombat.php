@@ -2,12 +2,12 @@
 
 namespace WombatDialer\Controllers\Edit;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Session;
 
-abstract class Wombat extends Controller
+abstract class Wombat extends BaseController
 {
     /**
      * The connection resource for WombatDialer.
