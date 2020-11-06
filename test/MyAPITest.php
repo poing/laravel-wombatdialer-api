@@ -1,12 +1,9 @@
 <?php
 
-
 namespace WombatDialer\Test;
-
 
 class MyAPITest extends UnitAbstract
 {
-
     /**
      * A basic unit test example.
      *
@@ -23,4 +20,3 @@ class MyAPITest extends UnitAbstract
         $this->assertEquals($value, config('wombatdialer.admin.user'));
     }
 }
-
