@@ -5,10 +5,10 @@ php:
   # - 5.6 # Version 5.6.40 | End of Life: 10 Jan 2019
   # - 7.0 # Version 7.0.33 | End of Life: 10 Jan 2019
   # - 7.1 # Version 7.1.33 | End of Life: 1 Dec 2019
-  - 7.2 # Version 7.2.30 | End of Life: 30 Nov 2020
+  # - 7.2 # Version 7.2.30 | End of Life: 30 Nov 2020
   - 7.3 # End of Life: 6 Dec 2021
-  # - 7.4 # End of Life: 28 Nov 2022
-  # - hhvm
+  - 7.4 # End of Life: 28 Nov 2022
+  - hhvm
 
 env:
   global:
