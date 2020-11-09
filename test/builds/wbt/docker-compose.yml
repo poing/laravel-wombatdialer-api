@@ -2,7 +2,7 @@ services:
   wombatdialer:
     build:
       context: .
-      dockerfile: $TRAVIS_BUILD_DIR/test/docker/Dockerfile
+      dockerfile: $TRAVIS_BUILD_DIR/test/builds/wbt/Dockerfile
 #      args:
 #        python: $TRAVIS_PYTHON_VERSION
 #    environment:
@@ -20,13 +20,13 @@ services:
 ##        bind:
 ##          propagation: rshared
     networks:
-      mynet:
-        ipv4_address: 172.25.0.101
+      wbt:
+        ipv4_address: 172.77.62.74
     ports:
       - 8080
 networks:
-  mynet:
+  wbt:
     driver: bridge
     ipam:
       config:
-      - subnet: 172.25.0.0/24
+      - subnet: 172.77.62.0/24
