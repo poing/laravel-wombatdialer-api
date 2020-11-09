@@ -15,7 +15,7 @@ env:
   #- TESTBENCH=3.8.*
   #- TESTBENCH=3.*
   #- TESTBENCH=4.*
-  - TESTBENCH=5.*
+  #- TESTBENCH=5.*
   #- TESTBENCH=dev-master
   - DOCKER_COMPOSE_VERSION=1.27.4
   - WOMBAT_HOST=172.77.62.74
@@ -49,18 +49,18 @@ install:
   - docker-compose -f test/builds/wbt/docker-compose.yml up -d
 
 # optionally set up exclusions and allowed failures in the matrix
-matrix:
-  exclude:
-    - php: 7.2
-      env: TESTBENCH=dev-master
-    - php: 7.3
-      env: TESTBENCH=dev-master
-    - php: hhvm
-      env: TESTBENCH=3.8.*
-    - php: hhvm
-      env: TESTBENCH=3.9.*
-    - php: hhvm
-      env: TESTBENCH=4.*
+#matrix:
+#  exclude:
+#    - php: 7.2
+#      env: TESTBENCH=dev-master
+#    - php: 7.3
+#      env: TESTBENCH=dev-master
+#    - php: hhvm
+#      env: TESTBENCH=3.8.*
+#    - php: hhvm
+#      env: TESTBENCH=3.9.*
+#    - php: hhvm
+#      env: TESTBENCH=4.*
 #  allow_failures:
 #    # https://github.com/sebastianbergmann/phpunit/issues/4038
 #    - php: 7.3
