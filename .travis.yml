@@ -11,14 +11,16 @@ php:
   # - hhvm
 
 env:
+  global:
+    - DOCKER_COMPOSE_VERSION=1.27.4
+    - WOMBAT_HOST=172.77.62.74
   #- TESTBENCH=3.7.*
   #- TESTBENCH=3.8.*
   #- TESTBENCH=3.*
   #- TESTBENCH=4.*
   #- TESTBENCH=5.*
   #- TESTBENCH=dev-master
-  - DOCKER_COMPOSE_VERSION=1.27.4
-  - WOMBAT_HOST=172.77.62.74
+
 
 services:
   - docker
