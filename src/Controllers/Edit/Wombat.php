@@ -43,6 +43,7 @@ abstract class Wombat extends BaseController
      * @var string|true(default)
      */
     protected $trailingslash = true;
+    protected $pathAdded = false;
 
     /**
      * Fetch the URL, Username and Password from the Config File.
@@ -52,6 +53,7 @@ abstract class Wombat extends BaseController
     public function __construct($user = null, $pass = null)
     {
         $this->resource = config('wombatdialer.url');
+         
         if (isset($user) && isset($pass)) {
             $this->user = $user;
             $this->pass = $pass;
@@ -91,11 +93,10 @@ abstract class Wombat extends BaseController
      */
     public function connection()
     {
-        $this->appendPath()
+      $this->appendPath()
             ->addQuery()
-            ->unparse_url();
-
-        return $this->url;
+            ->unparse_url(); 
+    return $this->url;
     }
 
     /**
@@ -156,14 +157,21 @@ abstract class Wombat extends BaseController
      */
     public function addPath()
     {
+       if($this->pathAdded === false) {
         $org_uri = explode('/', $this->resource['path']);
         $add_uri = explode('/', $this->path);
+       
         $new_uri = array_merge($org_uri, $add_uri);
 
         $slash = $this->trailingslash ? '/' : null;
+       
         $this->resource['path'] = '/'.implode('/', array_filter($new_uri)).$slash;
-
+        $this->pathAdded = true;
+        }
+       
         return $this;
+    
+        
     }
 
     /**
@@ -195,7 +203,7 @@ abstract class Wombat extends BaseController
      */
     public function show($id)
     {
-        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
+      $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
         // check response & send mail if error
         $this->html_mail($response);
