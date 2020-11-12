@@ -43,7 +43,12 @@ abstract class Wombat extends BaseController
      * @var string|true(default)
      */
     protected $trailingslash = true;
-
+     /**
+     * The pathAdded  to the 'resource['path'] is set using a flag.
+     *
+     * @var string|false(default)
+     */
+    protected $pathAdded = false;
     /**
      * Fetch the URL, Username and Password from the Config File.
      *
@@ -156,12 +161,15 @@ abstract class Wombat extends BaseController
      */
     public function addPath()
     {
+        if($this->pathAdded === false) {
         $org_uri = explode('/', $this->resource['path']);
         $add_uri = explode('/', $this->path);
         $new_uri = array_merge($org_uri, $add_uri);
 
         $slash = $this->trailingslash ? '/' : null;
         $this->resource['path'] = '/'.implode('/', array_filter($new_uri)).$slash;
+        $this->pathAdded = true;
+        }
 
         return $this;
     }
