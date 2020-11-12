@@ -41,20 +41,20 @@ class AsteriskTest extends UnitAbstract
       $this->assertContains('BravoTest', $create['results'][5], 'The Value is not present in the array');
       
       //testIndex and show
-            //$id = 267;
-            //$show = $asterisk->show($id);
-            //$this->assertIsArray($show, 'The response is not an array');
-            //$this->assertCount(15, $show, 'The  Number of records does not matches the given count');
+              $id = 267;
+              $show = $asterisk->show($id);
+              $this->assertIsArray($show, 'The response is not an array');
+              $this->assertCount(15, $show, 'The  Number of records does not matches the given count');
       
  }
-public  function testShow()
+/*public  function testShow()
   {
     $asterisk = new \WombatDialer\Controllers\Edit\Asterisk;
     $id= 264;
     $response = $asterisk->show($id);
     $this->assertIsArray($response, 'The response is not an array');
     $this->assertCount(15, $response, 'The  Number of records does not matches the given count');
- }
+ }*/
 /* public  function testIndex()
   {
     $asterisk = new \WombatDialer\Controllers\Edit\Asterisk;

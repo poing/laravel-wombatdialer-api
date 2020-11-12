@@ -43,6 +43,12 @@ abstract class Wombat extends BaseController
      * @var string|true(default)
      */
     protected $trailingslash = true;
+    
+     /**
+     * The pathAdded  to the 'resource['path'] is set using a flag.
+     *
+     * @var string|false(default)
+     */
     protected $pathAdded = false;
 
     /**

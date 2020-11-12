@@ -1,0 +1,8910 @@
+version: 1
+creator: xdebug 2.9.8 (PHP 7.4.3)
+cmd: /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/phpunit
+part: 1
+positions: line
+
+events: Time Memory
+
+fl=(1) php:internal
+fn=(1) php::version_compare
+12 38 0
+
+fl=(1)
+fn=(2) php::ini_get
+26 1 0
+
+fl=(1)
+fn=(3) php::ini_set
+27 5 0
+
+fl=(1)
+fn=(4) php::file_exists
+31 11 0
+
+fl=(1)
+fn=(5) php::define
+32 2 24
+
+fl=(1)
+fn=(6) php::getopt
+51 1 56
+
+fl=(2) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/autoload_real.php
+fn=(7) require_once::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/autoload_real.php
+1 63 0
+
+fl=(1)
+fn=(8) php::extension_loaded
+12 7 0
+
+fl=(1)
+fn=(8)
+13 0 0
+
+fl=(1)
+fn=(8)
+14 0 0
+
+fl=(1)
+fn=(8)
+15 0 0
+
+fl=(1)
+fn=(8)
+16 0 0
+
+fl=(1)
+fn=(8)
+17 0 0
+
+fl=(1)
+fn=(8)
+18 0 0
+
+fl=(1)
+fn=(8)
+19 0 0
+
+fl=(1)
+fn=(8)
+20 0 0
+
+fl=(1)
+fn=(8)
+21 0 0
+
+fl=(1)
+fn=(8)
+22 0 0
+
+fl=(1)
+fn=(8)
+23 0 0
+
+fl=(1)
+fn=(8)
+24 0 0
+
+fl=(3) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/platform_check.php
+fn=(9) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/platform_check.php
+1 117 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+12 7 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+13 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+14 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+15 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+16 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+17 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+18 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+19 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+20 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+21 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+22 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+23 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+24 0 0
+
+fl=(1)
+fn=(10) php::spl_autoload_register
+27 6 520
+
+fl=(4) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/ClassLoader.php
+fn=(11) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/ClassLoader.php
+1 0 0
+
+fl=(2)
+fn=(12) ComposerAutoloaderInitbe23d0c15098c61ab53f740cdb375374::loadClassLoader
+9 315 42920
+cfl=(4)
+cfn=(11)
+calls=1 0 0
+12 0 0
+
+fl=(1)
+fn=(13) php::spl_autoload_call
+28 13 0
+cfl=(2)
+cfn=(12)
+calls=1 0 0
+28 316 42920
+
+fl=(1)
+fn=(14) php::spl_autoload_unregister
+29 0 -144
+
+fl=(1)
+fn=(15) php::function_exists
+31 1 0
+
+fl=(5) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/autoload_static.php
+fn=(16) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/autoload_static.php
+1 0 0
+
+fl=(1)
+fn=(17) php::Closure::bind
+1139 0 920
+
+fl=(5)
+fn=(18) Composer\Autoload\ComposerStaticInitbe23d0c15098c61ab53f740cdb375374::getInitializer
+1131 18 0
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+1139 0 920
+
+fl=(5)
+fn=(19) Composer\Autoload\ClassLoader::Composer\Autoload\{closure:/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/composer/autoload_static.php:1133-1139}
+1133 5 -920
+
+fl=(1)
+fn=(10)
+302 0 128
+
+fl=(4)
+fn=(20) Composer\Autoload\ClassLoader->register
+300 14 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+302 0 128
+
+fl=(1)
+fn=(5)
+19 0 24
+
+fl=(1)
+fn=(15)
+22 0 0
+
+fl=(1)
+fn=(15)
+25 0 0
+
+fl=(1)
+fn=(15)
+28 0 0
+
+fl=(1)
+fn=(15)
+31 0 0
+
+fl=(1)
+fn=(15)
+34 0 0
+
+fl=(1)
+fn=(15)
+37 0 0
+
+fl=(1)
+fn=(15)
+40 0 0
+
+fl=(6) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-php80/bootstrap.php
+fn=(21) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-php80/bootstrap.php
+1 70 0
+cfl=(1)
+cfn=(5)
+calls=1 0 0
+19 0 24
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+22 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+25 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+28 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+31 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+34 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+37 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+40 0 0
+
+fl=(2)
+fn=(22) composerRequirebe23d0c15098c61ab53f740cdb375374
+68 127 7488
+cfl=(6)
+cfn=(21)
+calls=1 0 0
+71 72 24
+
+fl=(1)
+fn=(15)
+74 0 0
+
+fl=(1)
+fn=(15)
+95 0 0
+
+fl=(1)
+fn=(15)
+116 0 0
+
+fl=(1)
+fn=(15)
+134 0 0
+
+fl=(1)
+fn=(15)
+141 0 0
+
+fl=(1)
+fn=(15)
+159 0 0
+
+fl=(1)
+fn=(15)
+166 0 0
+
+fl=(1)
+fn=(15)
+183 0 0
+
+fl=(1)
+fn=(15)
+200 0 0
+
+fl=(1)
+fn=(15)
+217 0 0
+
+fl=(1)
+fn=(15)
+237 0 0
+
+fl=(1)
+fn=(15)
+257 0 0
+
+fl=(1)
+fn=(15)
+274 0 0
+
+fl=(1)
+fn=(15)
+291 0 0
+
+fl=(1)
+fn=(15)
+308 0 0
+
+fl=(1)
+fn=(15)
+325 0 0
+
+fl=(1)
+fn=(15)
+342 0 0
+
+fl=(1)
+fn=(15)
+359 0 0
+
+fl=(1)
+fn=(15)
+376 0 0
+
+fl=(1)
+fn=(15)
+393 0 0
+
+fl=(1)
+fn=(15)
+407 0 0
+
+fl=(1)
+fn=(15)
+426 0 0
+
+fl=(1)
+fn=(15)
+445 0 0
+
+fl=(1)
+fn=(15)
+462 0 0
+
+fl=(1)
+fn=(15)
+479 0 0
+
+fl=(1)
+fn=(15)
+496 0 0
+
+fl=(1)
+fn=(15)
+513 0 0
+
+fl=(1)
+fn=(15)
+531 0 0
+
+fl=(1)
+fn=(15)
+549 0 0
+
+fl=(1)
+fn=(15)
+567 0 0
+
+fl=(1)
+fn=(15)
+585 0 0
+
+fl=(1)
+fn=(15)
+603 1 0
+
+fl=(1)
+fn=(15)
+621 0 0
+
+fl=(1)
+fn=(15)
+639 0 0
+
+fl=(1)
+fn=(15)
+657 0 0
+
+fl=(1)
+fn=(15)
+675 0 0
+
+fl=(1)
+fn=(15)
+693 0 0
+
+fl=(1)
+fn=(15)
+711 0 0
+
+fl=(1)
+fn=(15)
+729 0 0
+
+fl=(1)
+fn=(15)
+746 0 0
+
+fl=(1)
+fn=(15)
+763 0 0
+
+fl=(1)
+fn=(15)
+784 0 0
+
+fl=(1)
+fn=(15)
+801 0 0
+
+fl=(1)
+fn=(15)
+818 0 0
+
+fl=(1)
+fn=(15)
+839 0 0
+
+fl=(1)
+fn=(15)
+856 0 0
+
+fl=(1)
+fn=(15)
+873 1 0
+
+fl=(1)
+fn=(15)
+894 0 0
+
+fl=(1)
+fn=(15)
+911 0 0
+
+fl=(1)
+fn=(15)
+928 0 0
+
+fl=(1)
+fn=(15)
+949 0 0
+
+fl=(1)
+fn=(15)
+966 0 0
+
+fl=(1)
+fn=(15)
+983 0 0
+
+fl=(1)
+fn=(15)
+1004 0 0
+
+fl=(1)
+fn=(15)
+1021 0 0
+
+fl=(1)
+fn=(15)
+1038 0 0
+
+fl=(1)
+fn=(15)
+1059 0 0
+
+fl=(1)
+fn=(15)
+1076 0 0
+
+fl=(1)
+fn=(15)
+1093 0 0
+
+fl=(1)
+fn=(15)
+1114 0 0
+
+fl=(1)
+fn=(15)
+1131 0 0
+
+fl=(1)
+fn=(15)
+1148 0 0
+
+fl=(1)
+fn=(15)
+1169 0 0
+
+fl=(1)
+fn=(15)
+1188 0 0
+
+fl=(1)
+fn=(15)
+1207 0 0
+
+fl=(1)
+fn=(15)
+1226 0 0
+
+fl=(1)
+fn=(15)
+1245 0 0
+
+fl=(1)
+fn=(15)
+1264 0 0
+
+fl=(1)
+fn=(15)
+1283 0 0
+
+fl=(1)
+fn=(15)
+1300 0 0
+
+fl=(1)
+fn=(15)
+1317 0 0
+
+fl=(1)
+fn=(15)
+1334 0 0
+
+fl=(1)
+fn=(15)
+1352 0 0
+
+fl=(1)
+fn=(15)
+1370 0 0
+
+fl=(1)
+fn=(15)
+1388 0 0
+
+fl=(1)
+fn=(15)
+1406 0 0
+
+fl=(1)
+fn=(15)
+1426 0 0
+
+fl=(1)
+fn=(15)
+1446 0 0
+
+fl=(1)
+fn=(15)
+1469 0 0
+
+fl=(1)
+fn=(15)
+1488 0 0
+
+fl=(1)
+fn=(15)
+1510 0 0
+
+fl=(1)
+fn=(15)
+1532 0 0
+
+fl=(1)
+fn=(15)
+1551 0 0
+
+fl=(1)
+fn=(15)
+1570 0 0
+
+fl=(1)
+fn=(15)
+1589 0 0
+
+fl=(1)
+fn=(15)
+1608 0 0
+
+fl=(1)
+fn=(15)
+1627 0 0
+
+fl=(1)
+fn=(15)
+1646 0 0
+
+fl=(1)
+fn=(15)
+1665 0 0
+
+fl=(1)
+fn=(15)
+1684 0 0
+
+fl=(1)
+fn=(15)
+1703 0 0
+
+fl=(1)
+fn=(15)
+1722 0 0
+
+fl=(1)
+fn=(15)
+1741 0 0
+
+fl=(1)
+fn=(15)
+1760 0 0
+
+fl=(1)
+fn=(15)
+1779 0 0
+
+fl=(1)
+fn=(15)
+1798 0 0
+
+fl=(1)
+fn=(15)
+1817 0 0
+
+fl=(1)
+fn=(15)
+1836 1 0
+
+fl=(1)
+fn=(15)
+1855 0 0
+
+fl=(1)
+fn=(15)
+1874 0 0
+
+fl=(1)
+fn=(15)
+1893 0 0
+
+fl=(1)
+fn=(15)
+1912 0 0
+
+fl=(1)
+fn=(15)
+1931 0 0
+
+fl=(1)
+fn=(15)
+1950 0 0
+
+fl=(1)
+fn=(15)
+1969 0 0
+
+fl=(1)
+fn=(15)
+1988 0 0
+
+fl=(1)
+fn=(15)
+2005 0 0
+
+fl=(1)
+fn=(15)
+2026 0 0
+
+fl=(1)
+fn=(15)
+2043 0 0
+
+fl=(1)
+fn=(15)
+2064 0 0
+
+fl=(1)
+fn=(15)
+2086 0 0
+
+fl=(1)
+fn=(15)
+2108 0 0
+
+fl=(1)
+fn=(15)
+2125 0 0
+
+fl=(1)
+fn=(15)
+2142 0 0
+
+fl=(1)
+fn=(15)
+2159 0 0
+
+fl=(1)
+fn=(15)
+2176 0 0
+
+fl=(1)
+fn=(15)
+2193 0 0
+
+fl=(1)
+fn=(15)
+2213 0 0
+
+fl=(1)
+fn=(15)
+2228 0 0
+
+fl=(1)
+fn=(15)
+2243 0 0
+
+fl=(1)
+fn=(15)
+2258 0 0
+
+fl=(1)
+fn=(15)
+2273 0 0
+
+fl=(1)
+fn=(15)
+2290 0 0
+
+fl=(1)
+fn=(15)
+2307 0 0
+
+fl=(1)
+fn=(15)
+2325 0 0
+
+fl=(1)
+fn=(15)
+2343 1 0
+
+fl=(1)
+fn=(15)
+2363 0 0
+
+fl=(1)
+fn=(15)
+2383 0 0
+
+fl=(1)
+fn=(15)
+2404 0 0
+
+fl=(1)
+fn=(15)
+2425 0 0
+
+fl=(1)
+fn=(15)
+2447 0 0
+
+fl=(1)
+fn=(15)
+2464 0 0
+
+fl=(1)
+fn=(15)
+2481 1 0
+
+fl=(1)
+fn=(15)
+2498 0 0
+
+fl=(1)
+fn=(15)
+2518 0 0
+
+fl=(1)
+fn=(15)
+2535 0 0
+
+fl=(1)
+fn=(15)
+2552 0 0
+
+fl=(1)
+fn=(15)
+2569 0 0
+
+fl=(1)
+fn=(15)
+2586 0 0
+
+fl=(1)
+fn=(15)
+2593 0 0
+
+fl=(1)
+fn=(15)
+2600 0 0
+
+fl=(1)
+fn=(15)
+2607 0 0
+
+fl=(1)
+fn=(15)
+2614 1 0
+
+fl=(1)
+fn=(15)
+2621 0 0
+
+fl=(1)
+fn=(15)
+2628 0 0
+
+fl=(1)
+fn=(15)
+2635 0 0
+
+fl=(1)
+fn=(15)
+2642 0 0
+
+fl=(1)
+fn=(15)
+2649 0 0
+
+fl=(1)
+fn=(15)
+2656 0 0
+
+fl=(1)
+fn=(15)
+2663 0 0
+
+fl=(1)
+fn=(15)
+2670 0 0
+
+fl=(1)
+fn=(15)
+2677 0 0
+
+fl=(1)
+fn=(15)
+2684 0 0
+
+fl=(1)
+fn=(15)
+2691 0 0
+
+fl=(1)
+fn=(15)
+2698 0 0
+
+fl=(1)
+fn=(15)
+2705 0 0
+
+fl=(1)
+fn=(15)
+2712 0 0
+
+fl=(1)
+fn=(15)
+2719 1 0
+
+fl=(1)
+fn=(15)
+2726 0 0
+
+fl=(1)
+fn=(15)
+2733 0 0
+
+fl=(1)
+fn=(15)
+2740 0 0
+
+fl=(1)
+fn=(15)
+2747 0 0
+
+fl=(1)
+fn=(15)
+2754 0 0
+
+fl=(1)
+fn=(15)
+2761 0 0
+
+fl=(1)
+fn=(15)
+2768 0 0
+
+fl=(1)
+fn=(15)
+2775 0 0
+
+fl=(1)
+fn=(15)
+2782 0 0
+
+fl=(1)
+fn=(15)
+2789 0 0
+
+fl=(1)
+fn=(15)
+2796 0 0
+
+fl=(1)
+fn=(15)
+2803 0 0
+
+fl=(1)
+fn=(15)
+2810 0 0
+
+fl=(1)
+fn=(15)
+2817 0 0
+
+fl=(1)
+fn=(15)
+2824 0 0
+
+fl=(1)
+fn=(15)
+2831 0 0
+
+fl=(1)
+fn=(15)
+2838 0 0
+
+fl=(1)
+fn=(15)
+2845 0 0
+
+fl=(1)
+fn=(15)
+2852 0 0
+
+fl=(1)
+fn=(15)
+2859 0 0
+
+fl=(1)
+fn=(15)
+2866 0 0
+
+fl=(1)
+fn=(15)
+2873 0 0
+
+fl=(1)
+fn=(15)
+2880 0 0
+
+fl=(1)
+fn=(15)
+2887 0 0
+
+fl=(1)
+fn=(15)
+2894 0 0
+
+fl=(1)
+fn=(15)
+2905 0 0
+
+fl=(1)
+fn=(15)
+2915 0 0
+
+fl=(1)
+fn=(15)
+2928 0 0
+
+fl=(1)
+fn=(15)
+2938 0 0
+
+fl=(1)
+fn=(15)
+2948 0 0
+
+fl=(1)
+fn=(15)
+2959 0 0
+
+fl=(1)
+fn=(15)
+2970 0 0
+
+fl=(1)
+fn=(15)
+2981 0 0
+
+fl=(1)
+fn=(15)
+2988 0 0
+
+fl=(1)
+fn=(15)
+2995 0 0
+
+fl=(1)
+fn=(15)
+3002 1 0
+
+fl=(1)
+fn=(15)
+3009 0 0
+
+fl=(1)
+fn=(15)
+3021 1 0
+
+fl=(1)
+fn=(15)
+3028 0 0
+
+fl=(7) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php
+fn=(23) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Framework/Assert/Functions.php
+1 1170 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+74 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+95 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+116 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+134 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+141 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+159 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+166 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+183 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+200 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+217 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+237 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+257 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+274 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+291 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+308 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+325 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+342 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+359 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+376 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+393 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+407 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+426 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+445 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+462 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+479 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+496 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+513 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+531 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+549 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+567 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+585 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+603 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+621 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+639 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+657 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+675 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+693 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+711 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+729 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+746 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+763 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+784 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+801 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+818 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+839 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+856 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+873 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+894 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+911 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+928 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+949 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+966 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+983 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1004 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1021 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1038 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1059 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1076 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1093 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1114 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1131 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1148 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1169 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1188 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1207 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1226 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1245 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1264 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1283 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1300 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1317 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1334 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1352 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1370 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1388 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1406 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1426 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1446 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1469 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1488 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1510 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1532 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1551 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1570 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1589 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1608 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1627 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1646 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1665 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1684 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1703 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1722 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1741 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1760 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1779 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1798 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1817 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1836 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1855 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1874 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1893 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1912 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1931 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1950 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1969 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+1988 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2005 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2026 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2043 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2064 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2086 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2108 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2125 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2142 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2159 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2176 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2193 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2213 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2228 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2243 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2258 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2273 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2290 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2307 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2325 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2343 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2363 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2383 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2404 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2425 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2447 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2464 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2481 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2498 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2518 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2535 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2552 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2569 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2586 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2593 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2600 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2607 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2614 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2621 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2628 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2635 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2642 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2649 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2656 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2663 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2670 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2677 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2684 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2691 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2698 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2705 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2712 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2719 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2726 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2733 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2740 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2747 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2754 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2761 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2768 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2775 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2782 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2789 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2796 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2803 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2810 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2817 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2824 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2831 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2838 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2845 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2852 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2859 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2866 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2873 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2880 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2887 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2894 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2905 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2915 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2928 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2938 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2948 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2959 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2970 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2981 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2988 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+2995 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+3002 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+3009 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+3021 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+3028 0 0
+
+fl=(2)
+fn=(22)
+68 1567 328992
+cfl=(7)
+cfn=(23)
+calls=1 0 0
+71 1218 0
+
+fl=(1)
+fn=(15)
+12 0 0
+
+fl=(8) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/deprecation-contracts/function.php
+fn=(24) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/deprecation-contracts/function.php
+1 10 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+12 0 0
+
+fl=(2)
+fn=(22)
+68 84 3408
+cfl=(8)
+cfn=(24)
+calls=1 0 0
+71 10 0
+
+fl=(1)
+fn=(15)
+14 0 0
+
+fl=(1)
+fn=(15)
+17 0 0
+
+fl=(1)
+fn=(15)
+20 0 0
+
+fl=(1)
+fn=(15)
+23 0 0
+
+fl=(1)
+fn=(15)
+26 0 0
+
+fl=(1)
+fn=(15)
+29 0 0
+
+fl=(1)
+fn=(15)
+32 0 0
+
+fl=(1)
+fn=(15)
+35 0 0
+
+fl=(1)
+fn=(15)
+38 0 0
+
+fl=(1)
+fn=(15)
+41 0 0
+
+fl=(1)
+fn=(15)
+44 0 0
+
+fl=(1)
+fn=(15)
+47 0 0
+
+fl=(1)
+fn=(15)
+50 0 0
+
+fl=(1)
+fn=(15)
+53 0 0
+
+fl=(1)
+fn=(15)
+56 0 0
+
+fl=(1)
+fn=(15)
+59 0 0
+
+fl=(1)
+fn=(15)
+62 0 0
+
+fl=(1)
+fn=(15)
+65 0 0
+
+fl=(1)
+fn=(15)
+68 0 0
+
+fl=(1)
+fn=(15)
+71 0 0
+
+fl=(1)
+fn=(15)
+74 0 0
+
+fl=(1)
+fn=(15)
+77 0 0
+
+fl=(1)
+fn=(15)
+80 0 0
+
+fl=(1)
+fn=(15)
+83 0 0
+
+fl=(1)
+fn=(15)
+86 0 0
+
+fl=(1)
+fn=(15)
+89 0 0
+
+fl=(1)
+fn=(15)
+92 0 0
+
+fl=(1)
+fn=(15)
+95 0 0
+
+fl=(1)
+fn=(15)
+98 0 0
+
+fl=(1)
+fn=(15)
+101 0 0
+
+fl=(1)
+fn=(15)
+104 0 0
+
+fl=(1)
+fn=(15)
+107 0 0
+
+fl=(1)
+fn=(15)
+110 0 0
+
+fl=(1)
+fn=(15)
+114 0 0
+
+fl=(1)
+fn=(15)
+122 0 0
+
+fl=(1)
+fn=(15)
+125 0 0
+
+fl=(1)
+fn=(15)
+128 0 0
+
+fl=(1)
+fn=(15)
+131 0 0
+
+fl=(1)
+fn=(8)
+135 0 0
+
+fl=(9) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-mbstring/bootstrap.php
+fn=(25) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-mbstring/bootstrap.php
+1 219 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+14 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+17 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+20 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+23 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+26 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+29 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+32 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+35 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+38 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+41 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+44 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+47 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+50 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+53 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+56 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+59 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+62 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+65 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+68 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+71 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+74 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+77 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+80 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+83 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+86 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+89 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+92 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+95 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+98 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+101 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+104 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+107 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+110 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+114 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+122 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+125 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+128 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+131 0 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+135 0 0
+
+fl=(2)
+fn=(22)
+68 282 36560
+cfl=(9)
+cfn=(25)
+calls=1 0 0
+71 224 0
+
+fl=(1)
+fn=(15)
+14 0 0
+
+fl=(1)
+fn=(15)
+17 0 0
+
+fl=(10) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-intl-normalizer/bootstrap.php
+fn=(26) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-intl-normalizer/bootstrap.php
+1 15 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+14 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+17 0 0
+
+fl=(2)
+fn=(22)
+68 72 68024
+cfl=(10)
+cfn=(26)
+calls=1 0 0
+71 16 0
+
+fl=(11) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-php72/bootstrap.php
+fn=(27) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-php72/bootstrap.php
+1 0 0
+
+fl=(2)
+fn=(22)
+68 112 7104
+cfl=(11)
+cfn=(27)
+calls=1 0 0
+71 0 0
+
+fl=(1)
+fn=(8)
+14 0 0
+
+fl=(12) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-intl-idn/bootstrap.php
+fn=(28) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-intl-idn/bootstrap.php
+1 10 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+14 0 0
+
+fl=(2)
+fn=(22)
+68 145 5456
+cfl=(12)
+cfn=(28)
+calls=1 0 0
+71 10 0
+
+fl=(1)
+fn=(15)
+14 1 0
+
+fl=(1)
+fn=(15)
+17 0 0
+
+fl=(1)
+fn=(15)
+20 0 0
+
+fl=(1)
+fn=(15)
+23 0 0
+
+fl=(1)
+fn=(15)
+26 0 0
+
+fl=(1)
+fn=(15)
+29 0 0
+
+fl=(1)
+fn=(15)
+32 0 0
+
+fl=(1)
+fn=(15)
+35 0 0
+
+fl=(1)
+fn=(15)
+38 0 0
+
+fl=(1)
+fn=(15)
+41 0 0
+
+fl=(1)
+fn=(15)
+44 0 0
+
+fl=(13) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-ctype/bootstrap.php
+fn=(29) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-ctype/bootstrap.php
+1 61 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+14 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+17 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+20 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+23 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+26 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+29 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+32 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+35 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+38 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+41 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+44 0 0
+
+fl=(2)
+fn=(22)
+68 101 8400
+cfl=(13)
+cfn=(29)
+calls=1 0 0
+71 66 0
+
+fl=(14) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-php73/bootstrap.php
+fn=(30) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-php73/bootstrap.php
+1 0 0
+
+fl=(2)
+fn=(22)
+68 87 4528
+cfl=(14)
+cfn=(30)
+calls=1 0 0
+71 0 0
+
+fl=(1)
+fn=(15)
+14 0 0
+
+fl=(1)
+fn=(15)
+34 0 0
+
+fl=(15) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/var-dumper/Resources/functions/dump.php
+fn=(31) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/var-dumper/Resources/functions/dump.php
+1 18 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+14 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+34 0 0
+
+fl=(2)
+fn=(22)
+68 78 3048
+cfl=(15)
+cfn=(31)
+calls=1 0 0
+71 18 0
+
+fl=(1)
+fn=(8)
+14 0 0
+
+fl=(16) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-iconv/bootstrap.php
+fn=(32) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-iconv/bootstrap.php
+1 10 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+14 0 0
+
+fl=(2)
+fn=(22)
+68 149 18408
+cfl=(16)
+cfn=(32)
+calls=1 0 0
+71 11 0
+
+fl=(17) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php
+fn=(33) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/swiftmailer/swiftmailer/lib/classes/Swift.php
+1 0 0
+
+fl=(1)
+fn=(10)
+76 1 88
+
+fl=(17)
+fn=(34) Swift::registerAutoload
+71 9 376
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+76 1 88
+
+fl=(18) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/swiftmailer/swiftmailer/lib/swift_required.php
+fn=(35) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/swiftmailer/swiftmailer/lib/swift_required.php
+1 100 6568
+cfl=(17)
+cfn=(33)
+calls=1 0 0
+11 0 0
+cfl=(17)
+cfn=(34)
+calls=1 0 0
+22 10 464
+
+fl=(2)
+fn=(22)
+68 69 2256
+cfl=(18)
+cfn=(35)
+calls=1 0 0
+71 111 7032
+
+fl=(1)
+fn=(15)
+3 0 0
+
+fl=(19) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/ralouphie/getallheaders/src/getallheaders.php
+fn=(36) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/ralouphie/getallheaders/src/getallheaders.php
+1 10 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+3 0 0
+
+fl=(2)
+fn=(22)
+68 96 10112
+cfl=(19)
+cfn=(36)
+calls=1 0 0
+71 10 0
+
+fl=(1)
+fn=(15)
+4 0 0
+
+fl=(20) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/promises/src/functions.php
+fn=(37) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/promises/src/functions.php
+1 1 0
+
+fl=(21) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/promises/src/functions_include.php
+fn=(38) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/promises/src/functions_include.php
+1 133 23704
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+4 0 0
+cfl=(20)
+cfn=(37)
+calls=1 0 0
+5 1 0
+
+fl=(2)
+fn=(22)
+68 62 536
+cfl=(21)
+cfn=(38)
+calls=1 0 0
+71 134 23704
+
+fl=(1)
+fn=(15)
+4 0 0
+
+fl=(22) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/psr7/src/functions.php
+fn=(39) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/psr7/src/functions.php
+1 0 0
+
+fl=(23) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/psr7/src/functions_include.php
+fn=(40) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/psr7/src/functions_include.php
+1 156 28968
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+4 0 0
+cfl=(22)
+cfn=(39)
+calls=1 0 0
+5 0 0
+
+fl=(2)
+fn=(22)
+68 59 528
+cfl=(23)
+cfn=(40)
+calls=1 0 0
+71 157 28968
+
+fl=(1)
+fn=(15)
+4 0 0
+
+fl=(24) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/guzzle/src/functions.php
+fn=(41) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/guzzle/src/functions.php
+1 0 0
+
+fl=(25) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/guzzle/src/functions_include.php
+fn=(42) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/guzzlehttp/guzzle/src/functions_include.php
+1 100 13216
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+4 0 0
+cfl=(24)
+cfn=(41)
+calls=1 0 0
+5 0 0
+
+fl=(2)
+fn=(22)
+68 58 536
+cfl=(25)
+cfn=(42)
+calls=1 0 0
+71 101 13216
+
+fl=(26) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/opis/closure/functions.php
+fn=(43) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/opis/closure/functions.php
+1 0 0
+
+fl=(2)
+fn=(22)
+68 72 4320
+cfl=(26)
+cfn=(43)
+calls=1 0 0
+71 0 0
+
+fl=(27) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/ramsey/uuid/src/functions.php
+fn=(44) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/ramsey/uuid/src/functions.php
+1 0 0
+
+fl=(2)
+fn=(22)
+68 92 8496
+cfl=(27)
+cfn=(44)
+calls=1 0 0
+71 0 0
+
+fl=(1)
+fn=(15)
+6 0 0
+
+fl=(1)
+fn=(15)
+19 0 0
+
+fl=(1)
+fn=(15)
+34 0 0
+
+fl=(1)
+fn=(15)
+87 0 0
+
+fl=(1)
+fn=(15)
+149 0 0
+
+fl=(1)
+fn=(15)
+162 0 0
+
+fl=(1)
+fn=(15)
+175 0 0
+
+fl=(28) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Collections/helpers.php
+fn=(45) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Collections/helpers.php
+1 46 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+6 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+19 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+34 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+87 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+149 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+162 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+175 0 0
+
+fl=(2)
+fn=(22)
+68 175 23560
+cfl=(28)
+cfn=(45)
+calls=1 0 0
+71 47 0
+
+fl=(1)
+fn=(15)
+7 0 0
+
+fl=(29) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Events/functions.php
+fn=(46) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Events/functions.php
+1 11 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+7 0 0
+
+fl=(2)
+fn=(22)
+68 60 1616
+cfl=(29)
+cfn=(46)
+calls=1 0 0
+71 11 0
+
+fl=(1)
+fn=(15)
+24 0 0
+
+fl=(1)
+fn=(15)
+48 0 0
+
+fl=(1)
+fn=(15)
+69 0 0
+
+fl=(1)
+fn=(15)
+90 0 0
+
+fl=(1)
+fn=(15)
+105 0 0
+
+fl=(1)
+fn=(15)
+123 0 0
+
+fl=(1)
+fn=(15)
+136 0 0
+
+fl=(1)
+fn=(15)
+150 0 0
+
+fl=(1)
+fn=(15)
+167 0 0
+
+fl=(1)
+fn=(15)
+182 0 0
+
+fl=(1)
+fn=(15)
+195 0 0
+
+fl=(1)
+fn=(15)
+209 0 0
+
+fl=(1)
+fn=(15)
+222 0 0
+
+fl=(1)
+fn=(15)
+255 0 0
+
+fl=(1)
+fn=(15)
+279 0 0
+
+fl=(1)
+fn=(15)
+292 0 0
+
+fl=(1)
+fn=(15)
+319 0 0
+
+fl=(1)
+fn=(15)
+331 0 0
+
+fl=(1)
+fn=(15)
+351 0 0
+
+fl=(1)
+fn=(15)
+364 0 0
+
+fl=(1)
+fn=(15)
+378 0 0
+
+fl=(1)
+fn=(15)
+393 0 0
+
+fl=(1)
+fn=(15)
+407 0 0
+
+fl=(1)
+fn=(15)
+421 0 0
+
+fl=(1)
+fn=(15)
+436 0 0
+
+fl=(1)
+fn=(15)
+450 0 0
+
+fl=(1)
+fn=(15)
+468 0 0
+
+fl=(1)
+fn=(15)
+481 0 0
+
+fl=(1)
+fn=(15)
+494 0 0
+
+fl=(1)
+fn=(15)
+510 0 0
+
+fl=(1)
+fn=(15)
+523 0 0
+
+fl=(1)
+fn=(15)
+537 0 0
+
+fl=(1)
+fn=(15)
+552 0 0
+
+fl=(1)
+fn=(15)
+565 0 0
+
+fl=(1)
+fn=(15)
+585 1 0
+
+fl=(1)
+fn=(15)
+598 0 0
+
+fl=(1)
+fn=(15)
+622 0 0
+
+fl=(1)
+fn=(15)
+645 0 0
+
+fl=(1)
+fn=(15)
+659 0 0
+
+fl=(1)
+fn=(15)
+672 0 0
+
+fl=(1)
+fn=(15)
+693 0 0
+
+fl=(1)
+fn=(15)
+708 0 0
+
+fl=(1)
+fn=(15)
+721 0 0
+
+fl=(1)
+fn=(15)
+735 0 0
+
+fl=(1)
+fn=(15)
+759 0 0
+
+fl=(1)
+fn=(15)
+772 0 0
+
+fl=(1)
+fn=(15)
+785 0 0
+
+fl=(1)
+fn=(15)
+804 0 0
+
+fl=(1)
+fn=(15)
+820 0 0
+
+fl=(1)
+fn=(15)
+839 0 0
+
+fl=(1)
+fn=(15)
+858 0 0
+
+fl=(1)
+fn=(15)
+880 0 0
+
+fl=(30) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php
+fn=(47) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php
+1 310 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+24 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+48 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+69 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+90 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+105 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+123 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+136 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+150 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+167 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+182 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+195 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+209 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+222 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+255 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+279 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+292 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+319 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+331 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+351 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+364 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+378 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+393 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+407 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+421 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+436 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+450 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+468 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+481 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+494 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+510 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+523 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+537 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+552 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+565 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+585 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+598 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+622 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+645 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+659 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+672 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+693 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+708 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+721 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+735 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+759 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+772 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+785 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+804 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+820 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+839 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+858 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+880 0 0
+
+fl=(2)
+fn=(22)
+68 491 80688
+cfl=(30)
+cfn=(47)
+calls=1 0 0
+71 317 0
+
+fl=(1)
+fn=(15)
+10 0 0
+
+fl=(1)
+fn=(15)
+33 0 0
+
+fl=(1)
+fn=(15)
+62 0 0
+
+fl=(1)
+fn=(15)
+77 0 0
+
+fl=(1)
+fn=(15)
+100 0 0
+
+fl=(1)
+fn=(15)
+122 0 0
+
+fl=(1)
+fn=(15)
+136 0 0
+
+fl=(1)
+fn=(15)
+149 0 0
+
+fl=(1)
+fn=(15)
+176 0 0
+
+fl=(1)
+fn=(15)
+194 0 0
+
+fl=(1)
+fn=(15)
+213 0 0
+
+fl=(1)
+fn=(15)
+249 0 0
+
+fl=(1)
+fn=(15)
+269 0 0
+
+fl=(1)
+fn=(15)
+290 0 0
+
+fl=(1)
+fn=(15)
+311 0 0
+
+fl=(1)
+fn=(15)
+330 0 0
+
+fl=(1)
+fn=(15)
+353 1 0
+
+fl=(1)
+fn=(15)
+365 0 0
+
+fl=(31) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Support/helpers.php
+fn=(48) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/laravel/framework/src/Illuminate/Support/helpers.php
+1 106 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+10 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+33 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+62 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+77 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+100 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+122 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+136 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+149 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+176 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+194 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+213 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+249 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+269 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+290 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+311 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+330 0 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+353 1 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+365 0 0
+
+fl=(2)
+fn=(22)
+68 244 31376
+cfl=(31)
+cfn=(48)
+calls=1 0 0
+71 110 0
+
+fl=(1)
+fn=(8)
+14 0 0
+
+fl=(32) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-intl-grapheme/bootstrap.php
+fn=(49) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/polyfill-intl-grapheme/bootstrap.php
+1 10 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+14 0 0
+
+fl=(2)
+fn=(22)
+68 118 11576
+cfl=(32)
+cfn=(49)
+calls=1 0 0
+71 10 0
+
+fl=(1)
+fn=(15)
+7 0 0
+
+fl=(33) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/myclabs/deep-copy/src/DeepCopy/deep_copy.php
+fn=(50) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/myclabs/deep-copy/src/DeepCopy/deep_copy.php
+1 11 0
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+7 0 0
+
+fl=(2)
+fn=(22)
+68 77 1648
+cfl=(33)
+cfn=(50)
+calls=1 0 0
+71 11 0
+
+fl=(34) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/string/Resources/functions.php
+fn=(51) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/symfony/string/Resources/functions.php
+1 0 0
+
+fl=(2)
+fn=(22)
+68 76 3416
+cfl=(34)
+cfn=(51)
+calls=1 0 0
+71 0 0
+
+fl=(2)
+fn=(52) ComposerAutoloaderInitbe23d0c15098c61ab53f740cdb375374::getLoader
+19 1429 287952
+cfl=(3)
+cfn=(9)
+calls=1 0 0
+25 126 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+27 6 520
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+28 330 42920
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+29 0 -144
+cfl=(1)
+cfn=(15)
+calls=1 0 0
+31 1 0
+cfl=(5)
+cfn=(16)
+calls=1 0 0
+33 0 0
+cfl=(5)
+cfn=(18)
+calls=1 0 0
+35 19 920
+cfl=(5)
+cfn=(19)
+calls=1 0 0
+35 5 -920
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+53 15 128
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 199 7512
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 2785 328992
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 95 3408
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 506 36560
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 88 68024
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 113 7104
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 156 5456
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 168 8400
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 87 4528
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 97 3048
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 161 18408
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 180 9288
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 107 10112
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 197 24240
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 216 29496
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 159 13752
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 73 4320
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 92 8496
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 223 23560
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 72 1616
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 808 80688
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 355 31376
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 129 11576
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 89 1648
+cfl=(2)
+cfn=(22)
+calls=1 0 0
+61 76 3416
+
+fl=(35) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/autoload.php
+fn=(53) require::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/autoload.php
+1 231 13824
+cfl=(2)
+cfn=(7)
+calls=1 0 0
+5 63 0
+cfl=(2)
+cfn=(52)
+calls=1 0 0
+7 9181 1076400
+
+fl=(4)
+fn=(54) Composer\Autoload\ClassLoader->findFile
+335 5 0
+
+fl=(36) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/Command.php
+fn=(55) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/Command.php
+1 1 0
+
+fl=(4)
+fn=(56) Composer\Autoload\includeFile
+442 629 195336
+cfl=(36)
+cfn=(55)
+calls=1 0 0
+444 1 0
+
+fl=(4)
+fn=(57) Composer\Autoload\ClassLoader->loadClass
+319 20 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 5 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 631 195336
+
+fl=(1)
+fn=(13)
+61 11 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+61 657 195336
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(37) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/CliArguments/Builder.php
+fn=(58) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/CliArguments/Builder.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 447 80672
+cfl=(37)
+cfn=(58)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 17 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 448 80672
+
+fl=(1)
+fn=(13)
+224 9 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+224 467 80672
+
+fl=(1)
+fn=(59) php::array_keys
+224 3 0
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(38) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/sebastian/cli-parser/src/Parser.php
+fn=(60) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/sebastian/cli-parser/src/Parser.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 210 24760
+cfl=(38)
+cfn=(60)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 17 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 211 24760
+
+fl=(1)
+fn=(13)
+128 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+128 229 24760
+
+fl=(1)
+fn=(61) php::array_merge
+131 1 0
+
+fl=(1)
+fn=(62) php::sort
+54 13 8248
+
+fl=(1)
+fn=(63) php::array_shift
+58 3 376
+
+fl=(1)
+fn=(64) php::reset
+61 0 0
+
+fl=(1)
+fn=(65) php::trim
+63 0 0
+
+fl=(1)
+fn=(66) php::array_map
+63 10 376
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+63 0 0
+
+fl=(1)
+fn=(67) php::current
+65 0 0
+
+fl=(1)
+fn=(68) php::key
+66 0 0
+
+fl=(1)
+fn=(69) php::assert
+68 0 0
+
+fl=(1)
+fn=(70) php::next
+70 0 0
+
+fl=(1)
+fn=(71) php::substr
+90 0 48
+
+fl=(1)
+fn=(72) php::explode
+160 1 376
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 48
+
+fl=(1)
+fn=(71)
+171 0 48
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 48
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 48
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 48
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+171 0 0
+
+fl=(1)
+fn=(71)
+177 0 0
+
+fl=(1)
+fn=(71)
+183 0 0
+
+fl=(1)
+fn=(73) php::preg_replace
+196 146 352
+
+fl=(38)
+fn=(74) SebastianBergmann\CliParser\Parser->parseLongOption
+157 313 136
+cfl=(1)
+cfn=(72)
+calls=1 0 0
+160 1 376
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 48
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 48
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 48
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 48
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 48
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+171 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+177 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+183 0 0
+cfl=(1)
+cfn=(73)
+calls=1 0 0
+196 146 352
+
+fl=(1)
+fn=(67)
+65 0 0
+
+fl=(38)
+fn=(75) SebastianBergmann\CliParser\Parser->parse
+44 160 -8624
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+54 13 8248
+cfl=(1)
+cfn=(63)
+calls=1 0 0
+58 3 376
+cfl=(1)
+cfn=(64)
+calls=1 0 0
+61 0 0
+cfl=(1)
+cfn=(66)
+calls=1 0 0
+63 10 376
+cfl=(1)
+cfn=(67)
+calls=1 0 0
+65 0 0
+cfl=(1)
+cfn=(68)
+calls=1 0 0
+66 0 0
+cfl=(1)
+cfn=(69)
+calls=1 0 0
+68 0 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+70 0 0
+cfl=(1)
+cfn=(71)
+calls=1 0 0
+90 0 48
+cfl=(38)
+cfn=(74)
+calls=1 0 0
+90 462 1104
+cfl=(1)
+cfn=(67)
+calls=1 0 0
+65 0 0
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(39) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/CliArguments/Configuration.php
+fn=(76) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/CliArguments/Configuration.php
+1 2 0
+
+fl=(4)
+fn=(56)
+442 737 243336
+cfl=(39)
+cfn=(76)
+calls=1 0 0
+444 2 0
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 740 243336
+
+fl=(1)
+fn=(13)
+791 11 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+791 756 243336
+
+fl=(39)
+fn=(77) PHPUnit\TextUI\CliArguments\Configuration->__construct
+478 6 0
+
+fl=(37)
+fn=(78) PHPUnit\TextUI\CliArguments\Builder->fromParameters
+125 72 360
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+128 240 24760
+cfl=(1)
+cfn=(61)
+calls=1 0 0
+131 1 0
+cfl=(38)
+cfn=(75)
+calls=1 0 0
+131 651 1528
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+791 768 243336
+cfl=(39)
+cfn=(77)
+calls=1 0 0
+792 6 0
+
+fl=(1)
+fn=(69)
+229 0 0
+
+fl=(39)
+fn=(79) PHPUnit\TextUI\CliArguments\Configuration->hasGenerateConfiguration
+1270 0 0
+
+fl=(39)
+fn=(80) PHPUnit\TextUI\CliArguments\Configuration->hasAtLeastVersion
+590 0 0
+
+fl=(39)
+fn=(81) PHPUnit\TextUI\CliArguments\Configuration->hasVersion
+2074 0 0
+
+fl=(39)
+fn=(82) PHPUnit\TextUI\CliArguments\Configuration->hasCheckVersion
+726 0 0
+
+fl=(39)
+fn=(83) PHPUnit\TextUI\CliArguments\Configuration->hasHelp
+1355 0 0
+
+fl=(39)
+fn=(84) PHPUnit\TextUI\CliArguments\Configuration->hasUnrecognizedOrderBy
+2023 0 0
+
+fl=(39)
+fn=(85) PHPUnit\TextUI\CliArguments\Configuration->hasIniSettings
+1389 0 0
+
+fl=(39)
+fn=(86) PHPUnit\TextUI\CliArguments\Configuration->hasIncludePath
+1372 0 0
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(40) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/CliArguments/Mapper.php
+fn=(87) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/CliArguments/Mapper.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 216 38696
+cfl=(40)
+cfn=(87)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 217 38696
+
+fl=(1)
+fn=(13)
+281 9 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+281 234 38696
+
+fl=(39)
+fn=(88) PHPUnit\TextUI\CliArguments\Configuration->hasColors
+743 0 0
+
+fl=(39)
+fn=(89) PHPUnit\TextUI\CliArguments\Configuration->hasBootstrap
+675 1 0
+
+fl=(39)
+fn=(90) PHPUnit\TextUI\CliArguments\Configuration->hasCacheResult
+692 0 0
+
+fl=(39)
+fn=(91) PHPUnit\TextUI\CliArguments\Configuration->hasCacheResultFile
+709 0 0
+
+fl=(39)
+fn=(92) PHPUnit\TextUI\CliArguments\Configuration->hasColumns
+760 0 0
+
+fl=(39)
+fn=(93) PHPUnit\TextUI\CliArguments\Configuration->hasConfiguration
+777 0 0
+
+fl=(39)
+fn=(94) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageCacheDirectory
+981 0 0
+
+fl=(39)
+fn=(95) PHPUnit\TextUI\CliArguments\Configuration->hasWarmCoverageCache
+998 0 0
+
+fl=(39)
+fn=(96) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageClover
+811 0 0
+
+fl=(39)
+fn=(97) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageCobertura
+828 0 0
+
+fl=(39)
+fn=(98) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageCrap4J
+845 0 0
+
+fl=(39)
+fn=(99) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageHtml
+862 1 0
+
+fl=(39)
+fn=(100) PHPUnit\TextUI\CliArguments\Configuration->hasCoveragePhp
+879 0 0
+
+fl=(39)
+fn=(101) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageText
+896 0 0
+
+fl=(39)
+fn=(102) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageTextShowUncoveredFiles
+913 0 0
+
+fl=(39)
+fn=(103) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageTextShowOnlySummary
+930 0 0
+
+fl=(39)
+fn=(104) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageXml
+947 0 0
+
+fl=(39)
+fn=(105) PHPUnit\TextUI\CliArguments\Configuration->hasPathCoverage
+964 0 0
+
+fl=(39)
+fn=(106) PHPUnit\TextUI\CliArguments\Configuration->hasDebug
+1015 0 0
+
+fl=(39)
+fn=(83)
+1355 0 0
+
+fl=(39)
+fn=(107) PHPUnit\TextUI\CliArguments\Configuration->hasFilter
+1253 0 0
+
+fl=(39)
+fn=(108) PHPUnit\TextUI\CliArguments\Configuration->hasTestSuite
+2001 0 0
+
+fl=(39)
+fn=(109) PHPUnit\TextUI\CliArguments\Configuration->hasGroups
+1304 0 0
+
+fl=(39)
+fn=(110) PHPUnit\TextUI\CliArguments\Configuration->hasExcludeGroups
+1117 0 0
+
+fl=(39)
+fn=(111) PHPUnit\TextUI\CliArguments\Configuration->hasTestsCovering
+1321 0 0
+
+fl=(39)
+fn=(112) PHPUnit\TextUI\CliArguments\Configuration->hasTestsUsing
+1338 0 0
+
+fl=(39)
+fn=(113) PHPUnit\TextUI\CliArguments\Configuration->hasTestSuffixes
+1984 0 0
+
+fl=(39)
+fn=(86)
+1372 0 0
+
+fl=(39)
+fn=(114) PHPUnit\TextUI\CliArguments\Configuration->hasListGroups
+1423 1 0
+
+fl=(39)
+fn=(115) PHPUnit\TextUI\CliArguments\Configuration->hasListSuites
+1440 0 0
+
+fl=(39)
+fn=(116) PHPUnit\TextUI\CliArguments\Configuration->hasListTests
+1457 0 0
+
+fl=(39)
+fn=(117) PHPUnit\TextUI\CliArguments\Configuration->hasListTestsXml
+1474 0 0
+
+fl=(39)
+fn=(118) PHPUnit\TextUI\CliArguments\Configuration->hasPrinter
+1610 0 0
+
+fl=(39)
+fn=(119) PHPUnit\TextUI\CliArguments\Configuration->hasLoader
+1491 0 0
+
+fl=(39)
+fn=(120) PHPUnit\TextUI\CliArguments\Configuration->hasJunitLogfile
+1406 0 0
+
+fl=(39)
+fn=(121) PHPUnit\TextUI\CliArguments\Configuration->hasTeamcityLogfile
+1882 0 0
+
+fl=(39)
+fn=(122) PHPUnit\TextUI\CliArguments\Configuration->hasExecutionOrder
+1134 0 0
+
+fl=(39)
+fn=(123) PHPUnit\TextUI\CliArguments\Configuration->hasExecutionOrderDefects
+1151 0 0
+
+fl=(39)
+fn=(124) PHPUnit\TextUI\CliArguments\Configuration->hasExtensions
+1542 0 0
+
+fl=(39)
+fn=(125) PHPUnit\TextUI\CliArguments\Configuration->hasUnavailableExtensions
+1559 0 0
+
+fl=(39)
+fn=(126) PHPUnit\TextUI\CliArguments\Configuration->hasResolveDependencies
+1695 0 0
+
+fl=(39)
+fn=(127) PHPUnit\TextUI\CliArguments\Configuration->hasProcessIsolation
+1627 0 0
+
+fl=(39)
+fn=(128) PHPUnit\TextUI\CliArguments\Configuration->hasRepeat
+1661 0 0
+
+fl=(39)
+fn=(129) PHPUnit\TextUI\CliArguments\Configuration->hasStderr
+1729 0 0
+
+fl=(39)
+fn=(130) PHPUnit\TextUI\CliArguments\Configuration->hasStopOnDefect
+1763 0 0
+
+fl=(39)
+fn=(131) PHPUnit\TextUI\CliArguments\Configuration->hasStopOnError
+1780 1 0
+
+fl=(39)
+fn=(132) PHPUnit\TextUI\CliArguments\Configuration->hasStopOnFailure
+1797 0 0
+
+fl=(39)
+fn=(133) PHPUnit\TextUI\CliArguments\Configuration->hasStopOnWarning
+1865 0 0
+
+fl=(39)
+fn=(134) PHPUnit\TextUI\CliArguments\Configuration->hasStopOnIncomplete
+1814 0 0
+
+fl=(39)
+fn=(135) PHPUnit\TextUI\CliArguments\Configuration->hasStopOnRisky
+1831 0 0
+
+fl=(39)
+fn=(136) PHPUnit\TextUI\CliArguments\Configuration->hasStopOnSkipped
+1848 1 0
+
+fl=(39)
+fn=(137) PHPUnit\TextUI\CliArguments\Configuration->hasFailOnEmptyTestSuite
+1168 0 0
+
+fl=(39)
+fn=(138) PHPUnit\TextUI\CliArguments\Configuration->hasFailOnIncomplete
+1185 0 0
+
+fl=(39)
+fn=(139) PHPUnit\TextUI\CliArguments\Configuration->hasFailOnRisky
+1202 0 0
+
+fl=(39)
+fn=(140) PHPUnit\TextUI\CliArguments\Configuration->hasFailOnSkipped
+1219 0 0
+
+fl=(39)
+fn=(141) PHPUnit\TextUI\CliArguments\Configuration->hasFailOnWarning
+1236 0 0
+
+fl=(39)
+fn=(142) PHPUnit\TextUI\CliArguments\Configuration->hasTestdoxGroups
+1916 0 0
+
+fl=(39)
+fn=(143) PHPUnit\TextUI\CliArguments\Configuration->hasTestdoxExcludeGroups
+1899 0 0
+
+fl=(39)
+fn=(144) PHPUnit\TextUI\CliArguments\Configuration->hasTestdoxHtmlFile
+1933 0 0
+
+fl=(39)
+fn=(145) PHPUnit\TextUI\CliArguments\Configuration->hasTestdoxTextFile
+1950 0 0
+
+fl=(39)
+fn=(146) PHPUnit\TextUI\CliArguments\Configuration->hasTestdoxXmlFile
+1967 0 0
+
+fl=(39)
+fn=(147) PHPUnit\TextUI\CliArguments\Configuration->hasUseDefaultConfiguration
+2040 0 0
+
+fl=(39)
+fn=(148) PHPUnit\TextUI\CliArguments\Configuration->hasNoExtensions
+1525 0 0
+
+fl=(39)
+fn=(149) PHPUnit\TextUI\CliArguments\Configuration->hasNoCoverage
+1508 0 0
+
+fl=(39)
+fn=(150) PHPUnit\TextUI\CliArguments\Configuration->hasNoLogging
+1593 0 0
+
+fl=(39)
+fn=(151) PHPUnit\TextUI\CliArguments\Configuration->hasNoInteraction
+1576 0 0
+
+fl=(39)
+fn=(152) PHPUnit\TextUI\CliArguments\Configuration->hasBackupGlobals
+607 0 0
+
+fl=(39)
+fn=(153) PHPUnit\TextUI\CliArguments\Configuration->hasBackupStaticAttributes
+624 0 0
+
+fl=(39)
+fn=(154) PHPUnit\TextUI\CliArguments\Configuration->hasVerbose
+2057 1 0
+
+fl=(39)
+fn=(155) PHPUnit\TextUI\CliArguments\Configuration->hasReportUselessTests
+1678 0 0
+
+fl=(39)
+fn=(156) PHPUnit\TextUI\CliArguments\Configuration->hasStrictCoverage
+1746 0 0
+
+fl=(39)
+fn=(157) PHPUnit\TextUI\CliArguments\Configuration->hasDisableCodeCoverageIgnore
+1049 0 0
+
+fl=(39)
+fn=(158) PHPUnit\TextUI\CliArguments\Configuration->hasBeStrictAboutChangesToGlobalState
+641 0 0
+
+fl=(39)
+fn=(159) PHPUnit\TextUI\CliArguments\Configuration->hasDisallowTestOutput
+1066 0 0
+
+fl=(39)
+fn=(160) PHPUnit\TextUI\CliArguments\Configuration->hasBeStrictAboutResourceUsageDuringSmallTests
+658 0 0
+
+fl=(39)
+fn=(161) PHPUnit\TextUI\CliArguments\Configuration->hasDefaultTimeLimit
+1032 0 0
+
+fl=(39)
+fn=(162) PHPUnit\TextUI\CliArguments\Configuration->hasEnforceTimeLimit
+1100 0 0
+
+fl=(39)
+fn=(163) PHPUnit\TextUI\CliArguments\Configuration->hasDisallowTodoAnnotatedTests
+1083 0 0
+
+fl=(39)
+fn=(164) PHPUnit\TextUI\CliArguments\Configuration->hasReverseList
+1712 0 0
+
+fl=(39)
+fn=(165) PHPUnit\TextUI\CliArguments\Configuration->hasCoverageFilter
+794 0 0
+
+fl=(39)
+fn=(166) PHPUnit\TextUI\CliArguments\Configuration->hasRandomOrderSeed
+1644 0 0
+
+fl=(39)
+fn=(167) PHPUnit\TextUI\CliArguments\Configuration->hasXdebugFilterFile
+2091 0 0
+
+fl=(40)
+fn=(168) PHPUnit\TextUI\CliArguments\Mapper->mapToLegacyArray
+20 587 0
+cfl=(39)
+cfn=(88)
+calls=1 0 0
+35 0 0
+cfl=(39)
+cfn=(89)
+calls=1 0 0
+39 1 0
+cfl=(39)
+cfn=(90)
+calls=1 0 0
+43 0 0
+cfl=(39)
+cfn=(91)
+calls=1 0 0
+47 0 0
+cfl=(39)
+cfn=(92)
+calls=1 0 0
+51 0 0
+cfl=(39)
+cfn=(93)
+calls=1 0 0
+55 0 0
+cfl=(39)
+cfn=(94)
+calls=1 0 0
+59 0 0
+cfl=(39)
+cfn=(95)
+calls=1 0 0
+63 0 0
+cfl=(39)
+cfn=(96)
+calls=1 0 0
+67 0 0
+cfl=(39)
+cfn=(97)
+calls=1 0 0
+71 0 0
+cfl=(39)
+cfn=(98)
+calls=1 0 0
+75 0 0
+cfl=(39)
+cfn=(99)
+calls=1 0 0
+79 1 0
+cfl=(39)
+cfn=(100)
+calls=1 0 0
+83 0 0
+cfl=(39)
+cfn=(101)
+calls=1 0 0
+87 0 0
+cfl=(39)
+cfn=(102)
+calls=1 0 0
+91 0 0
+cfl=(39)
+cfn=(103)
+calls=1 0 0
+95 0 0
+cfl=(39)
+cfn=(104)
+calls=1 0 0
+99 0 0
+cfl=(39)
+cfn=(105)
+calls=1 0 0
+103 0 0
+cfl=(39)
+cfn=(106)
+calls=1 0 0
+107 0 0
+cfl=(39)
+cfn=(83)
+calls=1 0 0
+111 0 0
+cfl=(39)
+cfn=(107)
+calls=1 0 0
+115 0 0
+cfl=(39)
+cfn=(108)
+calls=1 0 0
+119 0 0
+cfl=(39)
+cfn=(109)
+calls=1 0 0
+123 0 0
+cfl=(39)
+cfn=(110)
+calls=1 0 0
+127 0 0
+cfl=(39)
+cfn=(111)
+calls=1 0 0
+131 0 0
+cfl=(39)
+cfn=(112)
+calls=1 0 0
+135 0 0
+cfl=(39)
+cfn=(113)
+calls=1 0 0
+139 0 0
+cfl=(39)
+cfn=(86)
+calls=1 0 0
+143 0 0
+cfl=(39)
+cfn=(114)
+calls=1 0 0
+147 1 0
+cfl=(39)
+cfn=(115)
+calls=1 0 0
+151 0 0
+cfl=(39)
+cfn=(116)
+calls=1 0 0
+155 0 0
+cfl=(39)
+cfn=(117)
+calls=1 0 0
+159 0 0
+cfl=(39)
+cfn=(118)
+calls=1 0 0
+163 0 0
+cfl=(39)
+cfn=(119)
+calls=1 0 0
+167 0 0
+cfl=(39)
+cfn=(120)
+calls=1 0 0
+171 0 0
+cfl=(39)
+cfn=(121)
+calls=1 0 0
+175 0 0
+cfl=(39)
+cfn=(122)
+calls=1 0 0
+179 0 0
+cfl=(39)
+cfn=(123)
+calls=1 0 0
+183 0 0
+cfl=(39)
+cfn=(124)
+calls=1 0 0
+187 0 0
+cfl=(39)
+cfn=(125)
+calls=1 0 0
+191 0 0
+cfl=(39)
+cfn=(126)
+calls=1 0 0
+195 0 0
+cfl=(39)
+cfn=(127)
+calls=1 0 0
+199 0 0
+cfl=(39)
+cfn=(128)
+calls=1 0 0
+203 0 0
+cfl=(39)
+cfn=(129)
+calls=1 0 0
+207 0 0
+cfl=(39)
+cfn=(130)
+calls=1 0 0
+211 0 0
+cfl=(39)
+cfn=(131)
+calls=1 0 0
+215 1 0
+cfl=(39)
+cfn=(132)
+calls=1 0 0
+219 0 0
+cfl=(39)
+cfn=(133)
+calls=1 0 0
+223 0 0
+cfl=(39)
+cfn=(134)
+calls=1 0 0
+227 0 0
+cfl=(39)
+cfn=(135)
+calls=1 0 0
+231 0 0
+cfl=(39)
+cfn=(136)
+calls=1 0 0
+235 1 0
+cfl=(39)
+cfn=(137)
+calls=1 0 0
+239 0 0
+cfl=(39)
+cfn=(138)
+calls=1 0 0
+243 0 0
+cfl=(39)
+cfn=(139)
+calls=1 0 0
+247 0 0
+cfl=(39)
+cfn=(140)
+calls=1 0 0
+251 0 0
+cfl=(39)
+cfn=(141)
+calls=1 0 0
+255 0 0
+cfl=(39)
+cfn=(142)
+calls=1 0 0
+259 0 0
+cfl=(39)
+cfn=(143)
+calls=1 0 0
+263 0 0
+cfl=(39)
+cfn=(144)
+calls=1 0 0
+267 0 0
+cfl=(39)
+cfn=(145)
+calls=1 0 0
+271 0 0
+cfl=(39)
+cfn=(146)
+calls=1 0 0
+275 0 0
+cfl=(39)
+cfn=(147)
+calls=1 0 0
+279 0 0
+cfl=(39)
+cfn=(148)
+calls=1 0 0
+283 0 0
+cfl=(39)
+cfn=(149)
+calls=1 0 0
+287 0 0
+cfl=(39)
+cfn=(150)
+calls=1 0 0
+291 0 0
+cfl=(39)
+cfn=(151)
+calls=1 0 0
+295 0 0
+cfl=(39)
+cfn=(152)
+calls=1 0 0
+299 0 0
+cfl=(39)
+cfn=(153)
+calls=1 0 0
+303 0 0
+cfl=(39)
+cfn=(154)
+calls=1 0 0
+307 1 0
+cfl=(39)
+cfn=(155)
+calls=1 0 0
+311 0 0
+cfl=(39)
+cfn=(156)
+calls=1 0 0
+315 0 0
+cfl=(39)
+cfn=(157)
+calls=1 0 0
+319 0 0
+cfl=(39)
+cfn=(158)
+calls=1 0 0
+323 0 0
+cfl=(39)
+cfn=(159)
+calls=1 0 0
+327 0 0
+cfl=(39)
+cfn=(160)
+calls=1 0 0
+331 0 0
+cfl=(39)
+cfn=(161)
+calls=1 0 0
+335 0 0
+cfl=(39)
+cfn=(162)
+calls=1 0 0
+339 0 0
+cfl=(39)
+cfn=(163)
+calls=1 0 0
+343 0 0
+cfl=(39)
+cfn=(164)
+calls=1 0 0
+347 0 0
+cfl=(39)
+cfn=(165)
+calls=1 0 0
+351 0 0
+cfl=(39)
+cfn=(166)
+calls=1 0 0
+355 0 0
+cfl=(39)
+cfn=(167)
+calls=1 0 0
+359 0 0
+
+fl=(39)
+fn=(169) PHPUnit\TextUI\CliArguments\Configuration->unrecognizedOptions
+2018 0 0
+
+fl=(36)
+fn=(170) PHPUnit\TextUI\Command->handleCustomOptions
+823 0 0
+
+fl=(36)
+fn=(171) PHPUnit\TextUI\Command->handleCustomTestSuite
+584 0 0
+
+fl=(39)
+fn=(172) PHPUnit\TextUI\CliArguments\Configuration->hasArgument
+573 0 0
+
+fl=(1)
+fn=(173) php::getcwd
+316 25 96
+
+fl=(1)
+fn=(174) php::is_file
+906 9 80
+
+fl=(1)
+fn=(175) php::realpath
+907 7 112
+
+fl=(36)
+fn=(176) PHPUnit\TextUI\Command->configurationFileInDirectory
+898 16 -96
+cfl=(1)
+cfn=(174)
+calls=1 0 0
+906 9 80
+cfl=(1)
+cfn=(175)
+calls=1 0 0
+907 7 112
+
+fl=(39)
+fn=(177) PHPUnit\TextUI\CliArguments\Configuration->hasMigrateConfiguration
+1287 1 0
+
+fl=(39)
+fn=(178) PHPUnit\TextUI\CliArguments\Configuration->migrateConfiguration
+1295 0 0
+
+fl=(1)
+fn=(175)
+330 1 112
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(41) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Runner/Version.php
+fn=(179) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Runner/Version.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 89 6008
+cfl=(41)
+cfn=(179)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 90 6008
+
+fl=(1)
+fn=(13)
+594 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+594 107 6008
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(42) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/sebastian/version/src/Version.php
+fn=(180) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/sebastian/version/src/Version.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 114 9600
+cfl=(42)
+cfn=(180)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 115 9600
+
+fl=(1)
+fn=(13)
+44 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+44 133 9600
+
+fl=(1)
+fn=(181) php::dirname
+44 3 128
+
+fl=(42)
+fn=(182) SebastianBergmann\Version->__construct
+30 0 0
+
+fl=(1)
+fn=(183) php::substr_count
+39 1 0
+
+fl=(1)
+fn=(184) php::is_dir
+66 6 0
+
+fl=(42)
+fn=(185) SebastianBergmann\Version->getGitInformation
+64 7 0
+cfl=(1)
+cfn=(184)
+calls=1 0 0
+66 6 0
+
+fl=(42)
+fn=(186) SebastianBergmann\Version->getVersion
+36 20 0
+cfl=(1)
+cfn=(183)
+calls=1 0 0
+39 1 0
+cfl=(42)
+cfn=(185)
+calls=1 0 0
+45 14 0
+
+fl=(41)
+fn=(187) PHPUnit\Runner\Version::id
+37 35 -128
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+44 143 9600
+cfl=(1)
+cfn=(181)
+calls=1 0 0
+44 3 128
+cfl=(42)
+cfn=(182)
+calls=1 0 0
+44 0 0
+cfl=(42)
+cfn=(186)
+calls=1 0 0
+44 36 0
+
+fl=(41)
+fn=(188) PHPUnit\Runner\Version::getVersionString
+61 14 80
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+63 219 9600
+
+fl=(36)
+fn=(189) PHPUnit\TextUI\Command->printVersionString
+588 80 -48
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+594 117 6008
+cfl=(41)
+cfn=(188)
+calls=1 0 0
+594 233 9680
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(43) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SchemaDetector.php
+fn=(190) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SchemaDetector.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 167 4480
+cfl=(43)
+cfn=(190)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 168 4480
+
+fl=(1)
+fn=(13)
+797 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+797 185 4480
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(44) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/Loader.php
+fn=(191) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/Loader.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 131 12040
+cfl=(44)
+cfn=(191)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 18 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 132 12040
+
+fl=(1)
+fn=(13)
+22 12 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+22 151 12040
+
+fl=(1)
+fn=(192) php::error_reporting
+32 2 0
+
+fl=(1)
+fn=(193) php::file_get_contents
+33 45 1136
+
+fl=(1)
+fn=(192)
+35 0 32
+
+fl=(1)
+fn=(173)
+60 20 96
+
+fl=(1)
+fn=(181)
+61 0 112
+
+fl=(1)
+fn=(194) php::chdir
+61 13 0
+
+fl=(1)
+fn=(195) php::DOMDocument->__construct
+64 9 48
+
+fl=(1)
+fn=(196) php::libxml_use_internal_errors
+67 4 56
+
+fl=(1)
+fn=(192)
+69 0 -32
+
+fl=(1)
+fn=(197) php::DOMDocument->loadXML
+79 67 0
+
+fl=(1)
+fn=(198) php::DOMDocument->xinclude
+83 4 0
+
+fl=(1)
+fn=(199) php::libxml_get_errors
+86 0 56
+
+fl=(1)
+fn=(196)
+90 1 -56
+
+fl=(1)
+fn=(192)
+91 0 32
+
+fl=(1)
+fn=(194)
+94 5 0
+
+fl=(44)
+fn=(200) PHPUnit\Util\Xml\Loader->load
+52 159 -160
+cfl=(1)
+cfn=(173)
+calls=1 0 0
+60 20 96
+cfl=(1)
+cfn=(181)
+calls=1 0 0
+61 0 112
+cfl=(1)
+cfn=(194)
+calls=1 0 0
+61 13 0
+cfl=(1)
+cfn=(195)
+calls=1 0 0
+64 9 48
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+67 4 56
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+69 0 -32
+cfl=(1)
+cfn=(197)
+calls=1 0 0
+79 67 0
+cfl=(1)
+cfn=(198)
+calls=1 0 0
+83 4 0
+cfl=(1)
+cfn=(199)
+calls=1 0 0
+86 0 56
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+90 1 -56
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+91 0 32
+cfl=(1)
+cfn=(194)
+calls=1 0 0
+94 5 0
+
+fl=(44)
+fn=(201) PHPUnit\Util\Xml\Loader->loadFile
+30 51 -1024
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+32 2 0
+cfl=(1)
+cfn=(193)
+calls=1 0 0
+33 45 1136
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+35 0 32
+cfl=(44)
+cfn=(200)
+calls=1 0 0
+46 285 152
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(45) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SchemaFinder.php
+fn=(202) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SchemaFinder.php
+1 1 0
+
+fl=(4)
+fn=(56)
+442 78 4080
+cfl=(45)
+cfn=(202)
+calls=1 0 0
+444 1 0
+
+fl=(4)
+fn=(57)
+319 17 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 79 4080
+
+fl=(1)
+fn=(13)
+30 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+30 97 4080
+
+fl=(41)
+fn=(187)
+37 0 0
+
+fl=(1)
+fn=(203) php::strpos
+52 3 0
+
+fl=(41)
+fn=(187)
+37 0 0
+
+fl=(1)
+fn=(72)
+58 0 408
+
+fl=(1)
+fn=(204) php::array_slice
+58 0 376
+
+fl=(1)
+fn=(205) php::implode
+58 0 40
+
+fl=(41)
+fn=(206) PHPUnit\Runner\Version::series
+50 38 -784
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+52 0 0
+cfl=(1)
+cfn=(203)
+calls=1 0 0
+52 3 0
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+55 0 0
+cfl=(1)
+cfn=(72)
+calls=1 0 0
+58 0 408
+cfl=(1)
+cfn=(204)
+calls=1 0 0
+58 0 376
+cfl=(1)
+cfn=(205)
+calls=1 0 0
+58 0 40
+
+fl=(45)
+fn=(207) PHPUnit\Util\Xml\SchemaFinder->path
+45 0 0
+
+fl=(1)
+fn=(174)
+33 8 48
+
+fl=(45)
+fn=(208) PHPUnit\Util\Xml\SchemaFinder->find
+25 31 120
+cfl=(41)
+cfn=(206)
+calls=1 0 0
+27 43 40
+cfl=(45)
+cfn=(207)
+calls=1 0 0
+30 0 0
+cfl=(1)
+cfn=(174)
+calls=1 0 0
+33 8 48
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(46) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/Validator.php
+fn=(209) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/Validator.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 69 2536
+cfl=(46)
+cfn=(209)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 69 2536
+
+fl=(1)
+fn=(13)
+32 7 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+32 85 2536
+
+fl=(1)
+fn=(196)
+24 0 56
+
+fl=(1)
+fn=(210) php::DOMDocument->schemaValidate
+26 1122 224
+
+fl=(1)
+fn=(199)
+28 1 2216
+
+fl=(1)
+fn=(211) php::libxml_clear_errors
+29 4 -224
+
+fl=(1)
+fn=(196)
+30 0 -56
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(47) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/ValidationResult.php
+fn=(212) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/ValidationResult.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 102 5968
+cfl=(47)
+cfn=(212)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 26 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 102 5968
+
+fl=(1)
+fn=(13)
+32 11 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+32 130 5968
+
+fl=(1)
+fn=(65)
+39 0 320
+
+fl=(1)
+fn=(65)
+39 0 112
+
+fl=(47)
+fn=(213) PHPUnit\Util\Xml\ValidationResult->__construct
+45 0 0
+
+fl=(47)
+fn=(214) PHPUnit\Util\Xml\ValidationResult::fromArray
+30 29 808
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+39 0 320
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+39 0 112
+cfl=(47)
+cfn=(213)
+calls=1 0 0
+42 0 0
+
+fl=(46)
+fn=(215) PHPUnit\Util\Xml\Validator->validate
+22 66 -2216
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+24 0 56
+cfl=(1)
+cfn=(210)
+calls=1 0 0
+26 1122 224
+cfl=(1)
+cfn=(199)
+calls=1 0 0
+28 1 2216
+cfl=(1)
+cfn=(211)
+calls=1 0 0
+29 4 -224
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+30 0 -56
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+32 142 5968
+cfl=(47)
+cfn=(214)
+calls=1 0 0
+32 30 1240
+
+fl=(47)
+fn=(216) PHPUnit\Util\Xml\ValidationResult->hasValidationErrors
+50 1 0
+
+fl=(41)
+fn=(187)
+37 0 0
+
+fl=(1)
+fn=(203)
+52 0 0
+
+fl=(41)
+fn=(187)
+37 1 0
+
+fl=(1)
+fn=(72)
+58 0 408
+
+fl=(1)
+fn=(204)
+58 0 376
+
+fl=(1)
+fn=(205)
+58 0 40
+
+fl=(41)
+fn=(206)
+50 36 -784
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+52 0 0
+cfl=(1)
+cfn=(203)
+calls=1 0 0
+52 0 0
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+55 1 0
+cfl=(1)
+cfn=(72)
+calls=1 0 0
+58 0 408
+cfl=(1)
+cfn=(204)
+calls=1 0 0
+58 0 376
+cfl=(1)
+cfn=(205)
+calls=1 0 0
+58 0 40
+
+fl=(45)
+fn=(207)
+45 0 0
+
+fl=(1)
+fn=(174)
+33 10 0
+
+fl=(45)
+fn=(208)
+25 27 120
+cfl=(41)
+cfn=(206)
+calls=1 0 0
+27 39 40
+cfl=(45)
+cfn=(207)
+calls=1 0 0
+30 0 0
+cfl=(1)
+cfn=(174)
+calls=1 0 0
+33 10 0
+
+fl=(1)
+fn=(196)
+24 0 56
+
+fl=(1)
+fn=(210)
+26 936 0
+
+fl=(1)
+fn=(199)
+28 0 56
+
+fl=(1)
+fn=(211)
+29 0 0
+
+fl=(1)
+fn=(196)
+30 0 -56
+
+fl=(47)
+fn=(213)
+45 1 0
+
+fl=(47)
+fn=(214)
+30 7 56
+cfl=(47)
+cfn=(213)
+calls=1 0 0
+42 1 0
+
+fl=(46)
+fn=(215)
+22 48 -56
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+24 0 56
+cfl=(1)
+cfn=(210)
+calls=1 0 0
+26 936 0
+cfl=(1)
+cfn=(199)
+calls=1 0 0
+28 0 56
+cfl=(1)
+cfn=(211)
+calls=1 0 0
+29 0 0
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+30 0 -56
+cfl=(47)
+cfn=(214)
+calls=1 0 0
+32 9 56
+
+fl=(47)
+fn=(216)
+50 0 0
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(48) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SchemaDetectionResult.php
+fn=(217) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SchemaDetectionResult.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 56 1752
+cfl=(48)
+cfn=(217)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 18 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 56 1752
+
+fl=(1)
+fn=(13)
+17 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+17 77 1752
+
+fl=(49) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SuccessfulSchemaDetectionResult.php
+fn=(218) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SuccessfulSchemaDetectionResult.php
+1 9 -64
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+17 87 1752
+
+fl=(4)
+fn=(56)
+442 70 2704
+cfl=(49)
+cfn=(218)
+calls=1 0 0
+444 96 1688
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 166 4392
+
+fl=(1)
+fn=(13)
+33 9 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+33 182 4392
+
+fl=(49)
+fn=(219) PHPUnit\Util\Xml\SuccessfulSchemaDetectionResult->__construct
+24 0 0
+
+fl=(43)
+fn=(220) PHPUnit\Util\Xml\SchemaDetector->detect
+20 140 -1712
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+22 164 12040
+cfl=(44)
+cfn=(201)
+calls=1 0 0
+26 385 296
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+30 107 4080
+cfl=(45)
+cfn=(208)
+calls=1 0 0
+30 85 208
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+32 92 2536
+cfl=(46)
+cfn=(215)
+calls=1 0 0
+32 1368 7208
+cfl=(47)
+cfn=(216)
+calls=1 0 0
+32 1 0
+cfl=(45)
+cfn=(208)
+calls=1 0 0
+30 77 160
+cfl=(46)
+cfn=(215)
+calls=1 0 0
+32 995 56
+cfl=(47)
+cfn=(216)
+calls=1 0 0
+32 0 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+33 191 4392
+cfl=(49)
+cfn=(219)
+calls=1 0 0
+33 0 0
+
+fl=(49)
+fn=(221) PHPUnit\Util\Xml\SuccessfulSchemaDetectionResult->detected
+29 0 0
+
+fl=(1)
+fn=(222) php::copy
+803 222 -48
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(50) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrator.php
+fn=(223) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrator.php
+1 2 0
+
+fl=(4)
+fn=(56)
+442 1026 4320
+cfl=(50)
+cfn=(223)
+calls=1 0 0
+444 2 0
+
+fl=(4)
+fn=(57)
+319 21 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 1029 4320
+
+fl=(1)
+fn=(13)
+810 13 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+810 1052 4320
+
+fl=(1)
+fn=(192)
+32 0 -32
+
+fl=(1)
+fn=(193)
+33 89 1024
+
+fl=(1)
+fn=(192)
+35 0 32
+
+fl=(1)
+fn=(173)
+60 27 96
+
+fl=(1)
+fn=(181)
+61 0 112
+
+fl=(1)
+fn=(194)
+61 5 0
+
+fl=(1)
+fn=(195)
+64 2 48
+
+fl=(1)
+fn=(196)
+67 2 56
+
+fl=(1)
+fn=(192)
+69 0 -32
+
+fl=(1)
+fn=(197)
+79 55 0
+
+fl=(1)
+fn=(198)
+83 3 0
+
+fl=(1)
+fn=(199)
+86 0 56
+
+fl=(1)
+fn=(196)
+90 0 -56
+
+fl=(1)
+fn=(192)
+91 0 32
+
+fl=(1)
+fn=(194)
+94 5 0
+
+fl=(44)
+fn=(200)
+52 99 -160
+cfl=(1)
+cfn=(173)
+calls=1 0 0
+60 27 96
+cfl=(1)
+cfn=(181)
+calls=1 0 0
+61 0 112
+cfl=(1)
+cfn=(194)
+calls=1 0 0
+61 5 0
+cfl=(1)
+cfn=(195)
+calls=1 0 0
+64 2 48
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+67 2 56
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+69 0 -32
+cfl=(1)
+cfn=(197)
+calls=1 0 0
+79 55 0
+cfl=(1)
+cfn=(198)
+calls=1 0 0
+83 3 0
+cfl=(1)
+cfn=(199)
+calls=1 0 0
+86 0 56
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+90 0 -56
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+91 0 32
+cfl=(1)
+cfn=(194)
+calls=1 0 0
+94 5 0
+
+fl=(44)
+fn=(201)
+30 56 -1024
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+32 0 -32
+cfl=(1)
+cfn=(193)
+calls=1 0 0
+33 89 1024
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+35 0 32
+cfl=(44)
+cfn=(200)
+calls=1 0 0
+46 202 152
+
+fl=(41)
+fn=(187)
+37 3 0
+
+fl=(1)
+fn=(203)
+52 0 0
+
+fl=(41)
+fn=(187)
+37 1 0
+
+fl=(1)
+fn=(72)
+58 0 408
+
+fl=(1)
+fn=(204)
+58 0 376
+
+fl=(1)
+fn=(205)
+58 0 40
+
+fl=(41)
+fn=(206)
+50 37 -784
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+52 3 0
+cfl=(1)
+cfn=(203)
+calls=1 0 0
+52 0 0
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+55 1 0
+cfl=(1)
+cfn=(72)
+calls=1 0 0
+58 0 408
+cfl=(1)
+cfn=(204)
+calls=1 0 0
+58 0 376
+cfl=(1)
+cfn=(205)
+calls=1 0 0
+58 0 40
+
+fl=(45)
+fn=(207)
+45 0 0
+
+fl=(1)
+fn=(174)
+33 13 48
+
+fl=(45)
+fn=(208)
+25 33 120
+cfl=(41)
+cfn=(206)
+calls=1 0 0
+27 44 40
+cfl=(45)
+cfn=(207)
+calls=1 0 0
+30 0 0
+cfl=(1)
+cfn=(174)
+calls=1 0 0
+33 13 48
+
+fl=(1)
+fn=(196)
+24 1 56
+
+fl=(1)
+fn=(210)
+26 1076 224
+
+fl=(1)
+fn=(199)
+28 3 2216
+
+fl=(1)
+fn=(211)
+29 2 -224
+
+fl=(1)
+fn=(196)
+30 0 -56
+
+fl=(1)
+fn=(65)
+39 0 320
+
+fl=(1)
+fn=(65)
+39 0 112
+
+fl=(47)
+fn=(213)
+45 1 0
+
+fl=(47)
+fn=(214)
+30 25 808
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+39 0 320
+cfl=(1)
+cfn=(65)
+calls=1 0 0
+39 0 112
+cfl=(47)
+cfn=(213)
+calls=1 0 0
+42 1 0
+
+fl=(46)
+fn=(215)
+22 61 -2216
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+24 1 56
+cfl=(1)
+cfn=(210)
+calls=1 0 0
+26 1076 224
+cfl=(1)
+cfn=(199)
+calls=1 0 0
+28 3 2216
+cfl=(1)
+cfn=(211)
+calls=1 0 0
+29 2 -224
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+30 0 -56
+cfl=(47)
+cfn=(214)
+calls=1 0 0
+32 26 1240
+
+fl=(47)
+fn=(216)
+50 0 0
+
+fl=(41)
+fn=(187)
+37 1 0
+
+fl=(1)
+fn=(203)
+52 0 0
+
+fl=(41)
+fn=(187)
+37 0 0
+
+fl=(1)
+fn=(72)
+58 0 408
+
+fl=(1)
+fn=(204)
+58 0 376
+
+fl=(1)
+fn=(205)
+58 0 40
+
+fl=(41)
+fn=(206)
+50 37 -784
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+52 1 0
+cfl=(1)
+cfn=(203)
+calls=1 0 0
+52 0 0
+cfl=(41)
+cfn=(187)
+calls=1 0 0
+55 0 0
+cfl=(1)
+cfn=(72)
+calls=1 0 0
+58 0 408
+cfl=(1)
+cfn=(204)
+calls=1 0 0
+58 0 376
+cfl=(1)
+cfn=(205)
+calls=1 0 0
+58 0 40
+
+fl=(45)
+fn=(207)
+45 0 0
+
+fl=(1)
+fn=(174)
+33 13 0
+
+fl=(45)
+fn=(208)
+25 29 120
+cfl=(41)
+cfn=(206)
+calls=1 0 0
+27 40 40
+cfl=(45)
+cfn=(207)
+calls=1 0 0
+30 0 0
+cfl=(1)
+cfn=(174)
+calls=1 0 0
+33 13 0
+
+fl=(1)
+fn=(196)
+24 0 56
+
+fl=(1)
+fn=(210)
+26 970 0
+
+fl=(1)
+fn=(199)
+28 0 56
+
+fl=(1)
+fn=(211)
+29 0 0
+
+fl=(1)
+fn=(196)
+30 0 -56
+
+fl=(47)
+fn=(213)
+45 0 0
+
+fl=(47)
+fn=(214)
+30 8 56
+cfl=(47)
+cfn=(213)
+calls=1 0 0
+42 0 0
+
+fl=(46)
+fn=(215)
+22 48 -56
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+24 0 56
+cfl=(1)
+cfn=(210)
+calls=1 0 0
+26 970 0
+cfl=(1)
+cfn=(199)
+calls=1 0 0
+28 0 56
+cfl=(1)
+cfn=(211)
+calls=1 0 0
+29 0 0
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+30 0 -56
+cfl=(47)
+cfn=(214)
+calls=1 0 0
+32 9 56
+
+fl=(47)
+fn=(216)
+50 0 0
+
+fl=(49)
+fn=(219)
+24 0 0
+
+fl=(43)
+fn=(220)
+20 103 -1712
+cfl=(44)
+cfn=(201)
+calls=1 0 0
+26 349 152
+cfl=(45)
+cfn=(208)
+calls=1 0 0
+30 91 208
+cfl=(46)
+cfn=(215)
+calls=1 0 0
+32 1172 1240
+cfl=(47)
+cfn=(216)
+calls=1 0 0
+32 0 0
+cfl=(45)
+cfn=(208)
+calls=1 0 0
+30 83 160
+cfl=(46)
+cfn=(215)
+calls=1 0 0
+32 1029 56
+cfl=(47)
+cfn=(216)
+calls=1 0 0
+32 0 0
+cfl=(49)
+cfn=(219)
+calls=1 0 0
+33 0 0
+
+fl=(49)
+fn=(221)
+29 0 0
+
+fl=(1)
+fn=(192)
+32 0 -32
+
+fl=(1)
+fn=(193)
+33 30 1024
+
+fl=(1)
+fn=(192)
+35 0 32
+
+fl=(1)
+fn=(173)
+60 20 96
+
+fl=(1)
+fn=(181)
+61 0 112
+
+fl=(1)
+fn=(194)
+61 4 0
+
+fl=(1)
+fn=(195)
+64 0 48
+
+fl=(1)
+fn=(196)
+67 0 56
+
+fl=(1)
+fn=(192)
+69 0 -32
+
+fl=(1)
+fn=(197)
+79 41 0
+
+fl=(1)
+fn=(198)
+83 0 0
+
+fl=(1)
+fn=(199)
+86 0 56
+
+fl=(1)
+fn=(196)
+90 0 -56
+
+fl=(1)
+fn=(192)
+91 0 32
+
+fl=(1)
+fn=(194)
+94 4 0
+
+fl=(44)
+fn=(200)
+52 87 -160
+cfl=(1)
+cfn=(173)
+calls=1 0 0
+60 20 96
+cfl=(1)
+cfn=(181)
+calls=1 0 0
+61 0 112
+cfl=(1)
+cfn=(194)
+calls=1 0 0
+61 4 0
+cfl=(1)
+cfn=(195)
+calls=1 0 0
+64 0 48
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+67 0 56
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+69 0 -32
+cfl=(1)
+cfn=(197)
+calls=1 0 0
+79 41 0
+cfl=(1)
+cfn=(198)
+calls=1 0 0
+83 0 0
+cfl=(1)
+cfn=(199)
+calls=1 0 0
+86 0 56
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+90 0 -56
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+91 0 32
+cfl=(1)
+cfn=(194)
+calls=1 0 0
+94 4 0
+
+fl=(44)
+fn=(201)
+30 49 -1024
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+32 0 -32
+cfl=(1)
+cfn=(193)
+calls=1 0 0
+33 30 1024
+cfl=(1)
+cfn=(192)
+calls=1 0 0
+35 0 32
+cfl=(44)
+cfn=(200)
+calls=1 0 0
+46 159 152
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(51) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/MigrationBuilder.php
+fn=(224) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/MigrationBuilder.php
+1 4 0
+
+fl=(4)
+fn=(56)
+442 774 6808
+cfl=(51)
+cfn=(224)
+calls=1 0 0
+444 4 0
+
+fl=(4)
+fn=(57)
+319 19 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 778 6808
+
+fl=(1)
+fn=(13)
+48 13 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+48 799 6808
+
+fl=(49)
+fn=(225) PHPUnit\Util\Xml\SuccessfulSchemaDetectionResult->version
+34 0 0
+
+fl=(1)
+fn=(1)
+62 1 0
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(52) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/Migration.php
+fn=(226) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/Migration.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 345 1248
+cfl=(52)
+cfn=(226)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 49 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 346 1248
+
+fl=(1)
+fn=(13)
+19 13 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+19 398 1248
+
+fl=(53) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/RemoveLogTypes.php
+fn=(227) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/RemoveLogTypes.php
+1 15 -168
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+19 411 1248
+
+fl=(4)
+fn=(56)
+442 751 4320
+cfl=(53)
+cfn=(227)
+calls=1 0 0
+444 427 1080
+
+fl=(4)
+fn=(57)
+319 15 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 1178 5400
+
+fl=(1)
+fn=(13)
+67 12 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 1195 5400
+
+fl=(1)
+fn=(1)
+62 0 0
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(54) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/RemoveCacheTokensAttribute.php
+fn=(228) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/RemoveCacheTokensAttribute.php
+1 12 -168
+
+fl=(4)
+fn=(56)
+442 447 6080
+cfl=(54)
+cfn=(228)
+calls=1 0 0
+444 12 -168
+
+fl=(4)
+fn=(57)
+319 21 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 460 5912
+
+fl=(1)
+fn=(13)
+67 12 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 483 5912
+
+fl=(4)
+fn=(54)
+335 3 0
+
+fl=(55) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/IntroduceCoverageElement.php
+fn=(229) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/IntroduceCoverageElement.php
+1 2 -168
+
+fl=(4)
+fn=(56)
+442 226 2368
+cfl=(55)
+cfn=(229)
+calls=1 0 0
+444 2 -168
+
+fl=(4)
+fn=(57)
+319 20 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 3 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 228 2200
+
+fl=(1)
+fn=(13)
+67 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 252 2200
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(56) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveAttributesFromRootToCoverage.php
+fn=(230) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveAttributesFromRootToCoverage.php
+1 4 -168
+
+fl=(4)
+fn=(56)
+442 371 8496
+cfl=(56)
+cfn=(230)
+calls=1 0 0
+444 4 -168
+
+fl=(4)
+fn=(57)
+319 18 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 375 8328
+
+fl=(1)
+fn=(13)
+67 14 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 396 8328
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(57) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveAttributesFromFilterWhitelistToCoverage.php
+fn=(231) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveAttributesFromFilterWhitelistToCoverage.php
+1 4 -168
+
+fl=(4)
+fn=(56)
+442 424 74360
+cfl=(57)
+cfn=(231)
+calls=1 0 0
+444 4 -168
+
+fl=(4)
+fn=(57)
+319 23 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 428 74192
+
+fl=(1)
+fn=(13)
+67 14 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 453 74192
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(58) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveWhitelistDirectoriesToCoverage.php
+fn=(232) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveWhitelistDirectoriesToCoverage.php
+1 2 -168
+
+fl=(4)
+fn=(56)
+442 373 8696
+cfl=(58)
+cfn=(232)
+calls=1 0 0
+444 2 -168
+
+fl=(4)
+fn=(57)
+319 20 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 375 8528
+
+fl=(1)
+fn=(13)
+67 12 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 399 8528
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(59) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveWhitelistExcludesToCoverage.php
+fn=(233) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/MoveWhitelistExcludesToCoverage.php
+1 5 -168
+
+fl=(4)
+fn=(56)
+442 433 14872
+cfl=(59)
+cfn=(233)
+calls=1 0 0
+444 5 -168
+
+fl=(4)
+fn=(57)
+319 22 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 438 14704
+
+fl=(1)
+fn=(13)
+67 14 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 462 14704
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(60) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/RemoveEmptyFilter.php
+fn=(234) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/RemoveEmptyFilter.php
+1 5 -168
+
+fl=(4)
+fn=(56)
+442 895 5648
+cfl=(60)
+cfn=(234)
+calls=1 0 0
+444 5 -168
+
+fl=(4)
+fn=(57)
+319 23 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 901 5480
+
+fl=(1)
+fn=(13)
+67 14 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 926 5480
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(61) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/LogToReportMigration.php
+fn=(235) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/LogToReportMigration.php
+1 5 -168
+
+fl=(4)
+fn=(56)
+442 503 8376
+cfl=(61)
+cfn=(235)
+calls=1 0 0
+444 5 -168
+
+fl=(4)
+fn=(57)
+319 45 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 508 8208
+
+fl=(1)
+fn=(13)
+17 30 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+17 555 8208
+
+fl=(62) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageCloverToReport.php
+fn=(236) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageCloverToReport.php
+1 15 -72
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+17 586 8208
+
+fl=(4)
+fn=(56)
+442 303 2888
+cfl=(62)
+cfn=(236)
+calls=1 0 0
+444 602 8136
+
+fl=(4)
+fn=(57)
+319 18 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 906 11024
+
+fl=(1)
+fn=(13)
+67 12 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 928 11024
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(63) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageCrap4jToReport.php
+fn=(237) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageCrap4jToReport.php
+1 1 0
+
+fl=(4)
+fn=(56)
+442 411 3216
+cfl=(63)
+cfn=(237)
+calls=1 0 0
+444 1 0
+
+fl=(4)
+fn=(57)
+319 22 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 412 3216
+
+fl=(1)
+fn=(13)
+67 14 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 437 3216
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(64) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageHtmlToReport.php
+fn=(238) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageHtmlToReport.php
+1 1 0
+
+fl=(4)
+fn=(56)
+442 426 3216
+cfl=(64)
+cfn=(238)
+calls=1 0 0
+444 1 0
+
+fl=(4)
+fn=(57)
+319 20 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 427 3216
+
+fl=(1)
+fn=(13)
+67 16 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 450 3216
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(65) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoveragePhpToReport.php
+fn=(239) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoveragePhpToReport.php
+1 2 0
+
+fl=(4)
+fn=(56)
+442 406 13600
+cfl=(65)
+cfn=(239)
+calls=1 0 0
+444 2 0
+
+fl=(4)
+fn=(57)
+319 20 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 408 13600
+
+fl=(1)
+fn=(13)
+67 14 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 431 13600
+
+fl=(4)
+fn=(54)
+335 0 0
+
+fl=(66) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageTextToReport.php
+fn=(240) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageTextToReport.php
+1 0 0
+
+fl=(4)
+fn=(56)
+442 375 3184
+cfl=(66)
+cfn=(240)
+calls=1 0 0
+444 0 0
+
+fl=(4)
+fn=(57)
+319 21 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 0 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 375 3184
+
+fl=(1)
+fn=(13)
+67 13 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 398 3184
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(67) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageXmlToReport.php
+fn=(241) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/CoverageXmlToReport.php
+1 2 0
+
+fl=(4)
+fn=(56)
+442 429 2336
+cfl=(67)
+cfn=(241)
+calls=1 0 0
+444 2 0
+
+fl=(4)
+fn=(57)
+319 22 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 432 2336
+
+fl=(1)
+fn=(13)
+67 13 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 456 2336
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(68) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/ConvertLogTypes.php
+fn=(242) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/ConvertLogTypes.php
+1 5 -168
+
+fl=(4)
+fn=(56)
+442 476 5632
+cfl=(68)
+cfn=(242)
+calls=1 0 0
+444 5 -168
+
+fl=(4)
+fn=(57)
+319 21 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 481 5464
+
+fl=(1)
+fn=(13)
+67 15 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 504 5464
+
+fl=(4)
+fn=(54)
+335 2 0
+
+fl=(69) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/UpdateSchemaLocationTo93.php
+fn=(243) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/XmlConfiguration/Migration/Migrations/UpdateSchemaLocationTo93.php
+1 5 -168
+
+fl=(4)
+fn=(56)
+442 437 2280
+cfl=(69)
+cfn=(243)
+calls=1 0 0
+444 5 -168
+
+fl=(4)
+fn=(57)
+319 24 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 2 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 442 2112
+
+fl=(1)
+fn=(13)
+67 19 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+67 469 2112
+
+fl=(51)
+fn=(244) PHPUnit\TextUI\XmlConfiguration\MigrationBuilder->build
+48 276 1336
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+62 1 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 1208 5400
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+62 0 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 495 5912
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 262 2200
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 411 8328
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 468 74192
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 411 8528
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 476 14704
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 941 5480
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 940 11024
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 451 3216
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 467 3216
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 445 13600
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 411 3184
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 469 2336
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 519 5464
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+67 488 2112
+
+fl=(1)
+fn=(245) php::DOMDocument->getElementsByTagName
+23 11 120
+
+fl=(1)
+fn=(246) php::DOMNodeList->item
+23 18 88
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(70) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SnapshotNodeList.php
+fn=(247) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Util/Xml/SnapshotNodeList.php
+1 5 -96
+
+fl=(4)
+fn=(56)
+442 455 3872
+cfl=(70)
+cfn=(247)
+calls=1 0 0
+444 5 -96
+
+fl=(4)
+fn=(57)
+319 25 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 461 3776
+
+fl=(1)
+fn=(13)
+29 15 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+29 488 3776
+
+fl=(1)
+fn=(248) php::DOMElement->getElementsByTagName
+29 9 120
+
+fl=(70)
+fn=(249) PHPUnit\Util\Xml\SnapshotNodeList::fromNodeList
+28 11 752
+
+fl=(1)
+fn=(250) php::ArrayIterator->__construct
+46 1 320
+
+fl=(70)
+fn=(251) PHPUnit\Util\Xml\SnapshotNodeList->getIterator
+44 14 184
+cfl=(1)
+cfn=(250)
+calls=1 0 0
+46 1 320
+
+fl=(1)
+fn=(252) php::DOMElement->getAttribute
+30 41 32
+
+fl=(1)
+fn=(253) php::DOMElement->removeChild
+33 1 0
+
+fl=(1)
+fn=(252)
+30 0 32
+
+fl=(1)
+fn=(252)
+30 0 40
+
+fl=(1)
+fn=(252)
+30 0 40
+
+fl=(1)
+fn=(252)
+30 0 40
+
+fl=(53)
+fn=(254) PHPUnit\TextUI\XmlConfiguration\RemoveLogTypes->migrate
+21 135 -1768
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+23 11 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+23 18 88
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+29 504 3776
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+29 9 120
+cfl=(70)
+cfn=(249)
+calls=1 0 0
+29 11 752
+cfl=(70)
+cfn=(251)
+calls=1 0 0
+29 15 504
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+30 41 32
+cfl=(1)
+cfn=(253)
+calls=1 0 0
+33 1 0
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+30 0 32
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+30 0 40
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+30 0 40
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+30 0 40
+
+fl=(1)
+fn=(255) php::DOMElement->hasAttribute
+23 0 0
+
+fl=(54)
+fn=(256) PHPUnit\TextUI\XmlConfiguration\RemoveCacheTokensAttribute->migrate
+19 10 0
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+23 0 0
+
+fl=(1)
+fn=(257) php::DOMDocument->createElement
+21 4 88
+
+fl=(1)
+fn=(258) php::DOMElement->insertBefore
+25 4 0
+
+fl=(55)
+fn=(259) PHPUnit\TextUI\XmlConfiguration\IntroduceCoverageElement->migrate
+19 21 -88
+cfl=(1)
+cfn=(257)
+calls=1 0 0
+21 4 88
+cfl=(1)
+cfn=(258)
+calls=1 0 0
+25 4 0
+
+fl=(1)
+fn=(245)
+32 0 120
+
+fl=(1)
+fn=(246)
+32 1 88
+
+fl=(1)
+fn=(255)
+39 0 0
+
+fl=(1)
+fn=(255)
+39 0 0
+
+fl=(56)
+fn=(260) PHPUnit\TextUI\XmlConfiguration\MoveAttributesFromRootToCoverage->migrate
+23 47 -208
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+32 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+32 1 88
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+39 0 0
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+39 0 0
+
+fl=(1)
+fn=(245)
+25 0 120
+
+fl=(1)
+fn=(246)
+25 0 88
+
+fl=(1)
+fn=(245)
+31 0 120
+
+fl=(1)
+fn=(246)
+31 0 88
+
+fl=(1)
+fn=(255)
+43 0 0
+
+fl=(1)
+fn=(255)
+43 0 0
+
+fl=(1)
+fn=(252)
+47 0 32
+
+fl=(1)
+fn=(261) php::DOMElement->setAttribute
+47 4 88
+
+fl=(1)
+fn=(262) php::DOMElement->removeAttribute
+48 0 0
+
+fl=(57)
+fn=(263) PHPUnit\TextUI\XmlConfiguration\MoveAttributesFromFilterWhitelistToCoverage->migrate
+23 64 -536
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+25 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+25 0 88
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+31 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+31 0 88
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+43 0 0
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+43 0 0
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+47 0 32
+cfl=(1)
+cfn=(261)
+calls=1 0 0
+47 4 88
+cfl=(1)
+cfn=(262)
+calls=1 0 0
+48 0 0
+
+fl=(1)
+fn=(245)
+26 0 120
+
+fl=(1)
+fn=(246)
+26 0 88
+
+fl=(1)
+fn=(245)
+32 0 120
+
+fl=(1)
+fn=(246)
+32 0 88
+
+fl=(1)
+fn=(257)
+38 0 88
+
+fl=(1)
+fn=(264) php::DOMElement->appendChild
+39 2 0
+
+fl=(70)
+fn=(249)
+28 2 400
+
+fl=(1)
+fn=(250)
+46 0 320
+
+fl=(70)
+fn=(251)
+44 8 184
+cfl=(1)
+cfn=(250)
+calls=1 0 0
+46 0 320
+
+fl=(1)
+fn=(264)
+46 0 0
+
+fl=(58)
+fn=(265) PHPUnit\TextUI\XmlConfiguration\MoveWhitelistDirectoriesToCoverage->migrate
+24 70 -1408
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+26 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+26 0 88
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+32 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+32 0 88
+cfl=(1)
+cfn=(257)
+calls=1 0 0
+38 0 88
+cfl=(1)
+cfn=(264)
+calls=1 0 0
+39 2 0
+cfl=(70)
+cfn=(249)
+calls=1 0 0
+41 2 400
+cfl=(70)
+cfn=(251)
+calls=1 0 0
+41 8 504
+cfl=(1)
+cfn=(264)
+calls=1 0 0
+46 0 0
+
+fl=(1)
+fn=(245)
+26 0 120
+
+fl=(1)
+fn=(246)
+26 0 88
+
+fl=(1)
+fn=(248)
+32 0 120
+
+fl=(70)
+fn=(249)
+28 0 -64
+
+fl=(1)
+fn=(266) php::count
+41 1 0
+
+fl=(70)
+fn=(267) PHPUnit\Util\Xml\SnapshotNodeList->count
+39 6 0
+cfl=(1)
+cfn=(266)
+calls=1 0 0
+41 1 0
+
+fl=(59)
+fn=(268) PHPUnit\TextUI\XmlConfiguration\MoveWhitelistExcludesToCoverage->migrate
+24 36 -264
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+26 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+26 0 88
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+32 0 120
+cfl=(70)
+cfn=(249)
+calls=1 0 0
+32 0 -64
+cfl=(70)
+cfn=(267)
+calls=1 0 0
+34 8 0
+
+fl=(1)
+fn=(245)
+26 0 120
+
+fl=(1)
+fn=(246)
+26 0 88
+
+fl=(1)
+fn=(248)
+50 1 120
+
+fl=(60)
+fn=(269) PHPUnit\TextUI\XmlConfiguration\RemoveEmptyFilter->ensureEmpty
+44 8 -120
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+50 1 120
+
+fl=(1)
+fn=(253)
+30 0 0
+
+fl=(1)
+fn=(245)
+33 0 120
+
+fl=(1)
+fn=(246)
+33 1 88
+
+fl=(1)
+fn=(248)
+50 0 120
+
+fl=(60)
+fn=(269)
+44 6 -120
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+50 0 120
+
+fl=(1)
+fn=(253)
+37 0 0
+
+fl=(60)
+fn=(270) PHPUnit\TextUI\XmlConfiguration\RemoveEmptyFilter->migrate
+24 60 -416
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+26 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+26 0 88
+cfl=(60)
+cfn=(269)
+calls=1 0 0
+29 10 0
+cfl=(1)
+cfn=(253)
+calls=1 0 0
+30 0 0
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+33 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+33 1 88
+cfl=(60)
+cfn=(269)
+calls=1 0 0
+36 7 0
+cfl=(1)
+cfn=(253)
+calls=1 0 0
+37 0 0
+
+fl=(1)
+fn=(245)
+27 1 120
+
+fl=(1)
+fn=(246)
+27 0 88
+
+fl=(1)
+fn=(271) php::DOMXPath->__construct
+69 14 0
+
+fl=(62)
+fn=(272) PHPUnit\TextUI\XmlConfiguration\CoverageCloverToReport->forType
+19 0 0
+
+fl=(1)
+fn=(273) php::sprintf
+70 3 320
+
+fl=(1)
+fn=(274) php::DOMXPath->query
+70 23 584
+
+fl=(1)
+fn=(246)
+71 0 0
+
+fl=(61)
+fn=(275) PHPUnit\TextUI\XmlConfiguration\CoverageCloverToReport->findLogNode
+67 49 -816
+cfl=(1)
+cfn=(271)
+calls=1 0 0
+69 14 0
+cfl=(62)
+cfn=(272)
+calls=1 0 0
+70 0 0
+cfl=(1)
+cfn=(273)
+calls=1 0 0
+70 3 320
+cfl=(1)
+cfn=(274)
+calls=1 0 0
+70 23 584
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+71 0 0
+
+fl=(1)
+fn=(257)
+26 0 88
+
+fl=(1)
+fn=(252)
+27 0 48
+
+fl=(1)
+fn=(261)
+27 0 88
+
+fl=(62)
+fn=(276) PHPUnit\TextUI\XmlConfiguration\CoverageCloverToReport->toReportFormat
+24 22 -136
+cfl=(1)
+cfn=(257)
+calls=1 0 0
+26 0 88
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+27 0 48
+cfl=(1)
+cfn=(261)
+calls=1 0 0
+27 0 88
+
+fl=(1)
+fn=(248)
+41 1 120
+
+fl=(1)
+fn=(246)
+41 0 0
+
+fl=(1)
+fn=(257)
+44 0 88
+
+fl=(1)
+fn=(264)
+44 1 0
+
+fl=(1)
+fn=(264)
+47 0 0
+
+fl=(1)
+fn=(253)
+48 0 0
+
+fl=(61)
+fn=(277) PHPUnit\TextUI\XmlConfiguration\CoverageCloverToReport->migrate
+25 94 -592
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+27 1 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+27 0 88
+cfl=(61)
+cfn=(275)
+calls=1 0 0
+33 90 88
+cfl=(62)
+cfn=(276)
+calls=1 0 0
+39 25 88
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+41 1 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+41 0 0
+cfl=(1)
+cfn=(257)
+calls=1 0 0
+44 0 88
+cfl=(1)
+cfn=(264)
+calls=1 0 0
+44 1 0
+cfl=(1)
+cfn=(264)
+calls=1 0 0
+47 0 0
+cfl=(1)
+cfn=(253)
+calls=1 0 0
+48 0 0
+
+fl=(1)
+fn=(245)
+27 0 120
+
+fl=(1)
+fn=(246)
+27 0 88
+
+fl=(1)
+fn=(271)
+69 5 0
+
+fl=(63)
+fn=(278) PHPUnit\TextUI\XmlConfiguration\CoverageCrap4jToReport->forType
+19 0 0
+
+fl=(1)
+fn=(273)
+70 0 320
+
+fl=(1)
+fn=(274)
+70 10 120
+
+fl=(1)
+fn=(246)
+71 0 0
+
+fl=(61)
+fn=(279) PHPUnit\TextUI\XmlConfiguration\CoverageCrap4jToReport->findLogNode
+67 40 -440
+cfl=(1)
+cfn=(271)
+calls=1 0 0
+69 5 0
+cfl=(63)
+cfn=(278)
+calls=1 0 0
+70 0 0
+cfl=(1)
+cfn=(273)
+calls=1 0 0
+70 0 320
+cfl=(1)
+cfn=(274)
+calls=1 0 0
+70 10 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+71 0 0
+
+fl=(61)
+fn=(280) PHPUnit\TextUI\XmlConfiguration\CoverageCrap4jToReport->migrate
+25 27 -208
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+27 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+27 0 88
+cfl=(61)
+cfn=(279)
+calls=1 0 0
+33 56 0
+
+fl=(1)
+fn=(245)
+27 0 120
+
+fl=(1)
+fn=(246)
+27 1 88
+
+fl=(1)
+fn=(271)
+69 4 0
+
+fl=(64)
+fn=(281) PHPUnit\TextUI\XmlConfiguration\CoverageHtmlToReport->forType
+19 0 0
+
+fl=(1)
+fn=(273)
+70 0 320
+
+fl=(1)
+fn=(274)
+70 9 584
+
+fl=(1)
+fn=(246)
+71 0 0
+
+fl=(61)
+fn=(282) PHPUnit\TextUI\XmlConfiguration\CoverageHtmlToReport->findLogNode
+67 38 -816
+cfl=(1)
+cfn=(271)
+calls=1 0 0
+69 4 0
+cfl=(64)
+cfn=(281)
+calls=1 0 0
+70 0 0
+cfl=(1)
+cfn=(273)
+calls=1 0 0
+70 0 320
+cfl=(1)
+cfn=(274)
+calls=1 0 0
+70 9 584
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+71 0 0
+
+fl=(1)
+fn=(257)
+26 0 88
+
+fl=(1)
+fn=(252)
+27 0 40
+
+fl=(1)
+fn=(261)
+27 0 88
+
+fl=(1)
+fn=(255)
+54 0 0
+
+fl=(1)
+fn=(255)
+54 0 0
+
+fl=(61)
+fn=(283) PHPUnit\TextUI\XmlConfiguration\CoverageHtmlToReport->migrateAttributes
+51 14 0
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+54 0 0
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+54 0 0
+
+fl=(64)
+fn=(284) PHPUnit\TextUI\XmlConfiguration\CoverageHtmlToReport->toReportFormat
+24 31 -128
+cfl=(1)
+cfn=(257)
+calls=1 0 0
+26 0 88
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+27 0 40
+cfl=(1)
+cfn=(261)
+calls=1 0 0
+27 0 88
+cfl=(61)
+cfn=(283)
+calls=1 0 0
+29 15 0
+
+fl=(1)
+fn=(248)
+41 0 120
+
+fl=(1)
+fn=(246)
+41 0 88
+
+fl=(1)
+fn=(264)
+47 1 0
+
+fl=(1)
+fn=(253)
+48 0 0
+
+fl=(61)
+fn=(285) PHPUnit\TextUI\XmlConfiguration\CoverageHtmlToReport->migrate
+25 71 -592
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+27 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+27 1 88
+cfl=(61)
+cfn=(282)
+calls=1 0 0
+33 52 88
+cfl=(64)
+cfn=(284)
+calls=1 0 0
+39 49 88
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+41 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+41 0 88
+cfl=(1)
+cfn=(264)
+calls=1 0 0
+47 1 0
+cfl=(1)
+cfn=(253)
+calls=1 0 0
+48 0 0
+
+fl=(1)
+fn=(245)
+27 0 120
+
+fl=(1)
+fn=(246)
+27 0 88
+
+fl=(1)
+fn=(271)
+69 4 0
+
+fl=(65)
+fn=(286) PHPUnit\TextUI\XmlConfiguration\CoveragePhpToReport->forType
+19 0 0
+
+fl=(1)
+fn=(273)
+70 0 320
+
+fl=(1)
+fn=(274)
+70 6 120
+
+fl=(1)
+fn=(246)
+71 0 0
+
+fl=(61)
+fn=(287) PHPUnit\TextUI\XmlConfiguration\CoveragePhpToReport->findLogNode
+67 39 -440
+cfl=(1)
+cfn=(271)
+calls=1 0 0
+69 4 0
+cfl=(65)
+cfn=(286)
+calls=1 0 0
+70 0 0
+cfl=(1)
+cfn=(273)
+calls=1 0 0
+70 0 320
+cfl=(1)
+cfn=(274)
+calls=1 0 0
+70 6 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+71 0 0
+
+fl=(61)
+fn=(288) PHPUnit\TextUI\XmlConfiguration\CoveragePhpToReport->migrate
+25 29 -208
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+27 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+27 0 88
+cfl=(61)
+cfn=(287)
+calls=1 0 0
+33 52 0
+
+fl=(1)
+fn=(245)
+27 0 120
+
+fl=(1)
+fn=(246)
+27 0 88
+
+fl=(1)
+fn=(271)
+69 4 0
+
+fl=(66)
+fn=(289) PHPUnit\TextUI\XmlConfiguration\CoverageTextToReport->forType
+19 0 0
+
+fl=(1)
+fn=(273)
+70 0 320
+
+fl=(1)
+fn=(274)
+70 7 584
+
+fl=(1)
+fn=(246)
+71 0 0
+
+fl=(61)
+fn=(290) PHPUnit\TextUI\XmlConfiguration\CoverageTextToReport->findLogNode
+67 39 -816
+cfl=(1)
+cfn=(271)
+calls=1 0 0
+69 4 0
+cfl=(66)
+cfn=(289)
+calls=1 0 0
+70 0 0
+cfl=(1)
+cfn=(273)
+calls=1 0 0
+70 0 320
+cfl=(1)
+cfn=(274)
+calls=1 0 0
+70 7 584
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+71 0 0
+
+fl=(1)
+fn=(257)
+26 0 88
+
+fl=(1)
+fn=(252)
+27 0 48
+
+fl=(1)
+fn=(261)
+27 0 88
+
+fl=(1)
+fn=(255)
+54 0 0
+
+fl=(1)
+fn=(255)
+54 0 0
+
+fl=(61)
+fn=(291) PHPUnit\TextUI\XmlConfiguration\CoverageTextToReport->migrateAttributes
+51 12 0
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+54 0 0
+cfl=(1)
+cfn=(255)
+calls=1 0 0
+54 0 0
+
+fl=(66)
+fn=(292) PHPUnit\TextUI\XmlConfiguration\CoverageTextToReport->toReportFormat
+24 43 -136
+cfl=(1)
+cfn=(257)
+calls=1 0 0
+26 0 88
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+27 0 48
+cfl=(1)
+cfn=(261)
+calls=1 0 0
+27 0 88
+cfl=(61)
+cfn=(291)
+calls=1 0 0
+29 14 0
+
+fl=(1)
+fn=(248)
+41 1 120
+
+fl=(1)
+fn=(246)
+41 0 88
+
+fl=(1)
+fn=(264)
+47 0 0
+
+fl=(1)
+fn=(253)
+48 0 0
+
+fl=(61)
+fn=(293) PHPUnit\TextUI\XmlConfiguration\CoverageTextToReport->migrate
+25 68 -592
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+27 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+27 0 88
+cfl=(61)
+cfn=(290)
+calls=1 0 0
+33 51 88
+cfl=(66)
+cfn=(292)
+calls=1 0 0
+39 59 88
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+41 1 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+41 0 88
+cfl=(1)
+cfn=(264)
+calls=1 0 0
+47 0 0
+cfl=(1)
+cfn=(253)
+calls=1 0 0
+48 0 0
+
+fl=(1)
+fn=(245)
+27 0 120
+
+fl=(1)
+fn=(246)
+27 0 88
+
+fl=(1)
+fn=(271)
+69 4 0
+
+fl=(67)
+fn=(294) PHPUnit\TextUI\XmlConfiguration\CoverageXmlToReport->forType
+19 1 0
+
+fl=(1)
+fn=(273)
+70 0 320
+
+fl=(1)
+fn=(274)
+70 5 120
+
+fl=(1)
+fn=(246)
+71 0 0
+
+fl=(61)
+fn=(295) PHPUnit\TextUI\XmlConfiguration\CoverageXmlToReport->findLogNode
+67 36 -440
+cfl=(1)
+cfn=(271)
+calls=1 0 0
+69 4 0
+cfl=(67)
+cfn=(294)
+calls=1 0 0
+70 1 0
+cfl=(1)
+cfn=(273)
+calls=1 0 0
+70 0 320
+cfl=(1)
+cfn=(274)
+calls=1 0 0
+70 5 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+71 0 0
+
+fl=(61)
+fn=(296) PHPUnit\TextUI\XmlConfiguration\CoverageXmlToReport->migrate
+25 26 -208
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+27 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+27 0 88
+cfl=(61)
+cfn=(295)
+calls=1 0 0
+33 50 0
+
+fl=(1)
+fn=(245)
+22 0 120
+
+fl=(1)
+fn=(246)
+22 0 88
+
+fl=(1)
+fn=(248)
+38 0 120
+
+fl=(1)
+fn=(252)
+39 0 32
+
+fl=(1)
+fn=(252)
+47 0 32
+
+fl=(1)
+fn=(257)
+47 0 88
+
+fl=(1)
+fn=(252)
+48 0 48
+
+fl=(1)
+fn=(261)
+48 0 88
+
+fl=(1)
+fn=(297) php::DOMElement->replaceChild
+50 3 0
+
+fl=(68)
+fn=(298) PHPUnit\TextUI\XmlConfiguration\ConvertLogTypes->migrate
+20 69 -616
+cfl=(1)
+cfn=(245)
+calls=1 0 0
+22 0 120
+cfl=(1)
+cfn=(246)
+calls=1 0 0
+22 0 88
+cfl=(1)
+cfn=(248)
+calls=1 0 0
+38 0 120
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+39 0 32
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+47 0 32
+cfl=(1)
+cfn=(257)
+calls=1 0 0
+47 0 88
+cfl=(1)
+cfn=(252)
+calls=1 0 0
+48 0 48
+cfl=(1)
+cfn=(261)
+calls=1 0 0
+48 0 88
+cfl=(1)
+cfn=(297)
+calls=1 0 0
+50 3 0
+
+fl=(1)
+fn=(299) php::DOMElement->setAttributeNS
+24 8 0
+
+fl=(69)
+fn=(300) PHPUnit\TextUI\XmlConfiguration\UpdateSchemaLocationTo93->migrate
+19 8 0
+cfl=(1)
+cfn=(299)
+calls=1 0 0
+24 8 0
+
+fl=(1)
+fn=(301) php::DOMDocument->saveXML
+55 15 1024
+
+fl=(50)
+fn=(302) PHPUnit\TextUI\XmlConfiguration\Migrator->migrate
+28 431 -1544
+cfl=(43)
+cfn=(220)
+calls=1 0 0
+30 2830 104
+cfl=(49)
+cfn=(221)
+calls=1 0 0
+32 0 0
+cfl=(44)
+cfn=(201)
+calls=1 0 0
+45 240 152
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+48 813 6808
+cfl=(49)
+cfn=(225)
+calls=1 0 0
+48 0 0
+cfl=(51)
+cfn=(244)
+calls=1 0 0
+48 9150 170232
+cfl=(53)
+cfn=(254)
+calls=1 0 0
+49 751 3776
+cfl=(54)
+cfn=(256)
+calls=1 0 0
+49 10 0
+cfl=(55)
+cfn=(259)
+calls=1 0 0
+49 30 0
+cfl=(56)
+cfn=(260)
+calls=1 0 0
+49 51 0
+cfl=(57)
+cfn=(263)
+calls=1 0 0
+49 72 0
+cfl=(58)
+cfn=(265)
+calls=1 0 0
+49 85 0
+cfl=(59)
+cfn=(268)
+calls=1 0 0
+49 47 0
+cfl=(60)
+cfn=(270)
+calls=1 0 0
+49 81 0
+cfl=(61)
+cfn=(277)
+calls=1 0 0
+49 216 0
+cfl=(61)
+cfn=(280)
+calls=1 0 0
+49 85 0
+cfl=(61)
+cfn=(285)
+calls=1 0 0
+49 175 0
+cfl=(61)
+cfn=(288)
+calls=1 0 0
+49 82 0
+cfl=(61)
+cfn=(293)
+calls=1 0 0
+49 183 0
+cfl=(61)
+cfn=(296)
+calls=1 0 0
+49 78 0
+cfl=(68)
+cfn=(298)
+calls=1 0 0
+49 75 0
+cfl=(69)
+cfn=(300)
+calls=1 0 0
+49 16 0
+cfl=(1)
+cfn=(301)
+calls=1 0 0
+55 15 1024
+
+fl=(1)
+fn=(303) php::file_put_contents
+810 197 0
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(4)
+fn=(54)
+335 1 0
+
+fl=(71) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php
+fn=(304) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/Runner/BaseTestRunner.php
+1 1 0
+
+fl=(4)
+fn=(56)
+442 126 13768
+cfl=(71)
+cfn=(304)
+calls=1 0 0
+444 1 0
+
+fl=(4)
+fn=(57)
+319 34 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 128 13768
+
+fl=(1)
+fn=(13)
+87 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+87 164 13768
+
+fl=(72) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/TestRunner.php
+fn=(305) include::/Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/src/TextUI/TestRunner.php
+1 13 960
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+87 174 13768
+
+fl=(4)
+fn=(56)
+442 1119 154344
+cfl=(72)
+cfn=(305)
+calls=1 0 0
+444 188 14728
+
+fl=(4)
+fn=(57)
+319 18 0
+cfl=(4)
+cfn=(54)
+calls=1 0 0
+321 1 0
+cfl=(4)
+cfn=(56)
+calls=1 0 0
+322 1307 169072
+
+fl=(1)
+fn=(13)
+820 10 0
+cfl=(4)
+cfn=(57)
+calls=1 0 0
+820 1327 169072
+
+fl=(36)
+fn=(306) PHPUnit\TextUI\Command->migrateConfiguration
+793 248 -1080
+cfl=(36)
+cfn=(189)
+calls=1 0 0
+795 431 15640
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+797 195 4480
+cfl=(43)
+cfn=(220)
+calls=1 0 0
+797 3611 29264
+cfl=(49)
+cfn=(221)
+calls=1 0 0
+797 0 0
+cfl=(1)
+cfn=(222)
+calls=1 0 0
+803 222 -48
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+810 1065 4320
+cfl=(50)
+cfn=(302)
+calls=1 0 0
+810 15526 180552
+cfl=(1)
+cfn=(303)
+calls=1 0 0
+810 197 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+820 1338 169072
+
+fl=(36)
+fn=(307) PHPUnit\TextUI\Command->handleArguments
+221 336 696
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+224 476 80672
+cfl=(1)
+cfn=(59)
+calls=1 0 0
+224 3 0
+cfl=(37)
+cfn=(78)
+calls=1 0 0
+224 1741 269984
+cfl=(1)
+cfn=(69)
+calls=1 0 0
+229 0 0
+cfl=(39)
+cfn=(79)
+calls=1 0 0
+231 0 0
+cfl=(39)
+cfn=(80)
+calls=1 0 0
+235 0 0
+cfl=(39)
+cfn=(81)
+calls=1 0 0
+243 0 0
+cfl=(39)
+cfn=(82)
+calls=1 0 0
+249 0 0
+cfl=(39)
+cfn=(83)
+calls=1 0 0
+253 0 0
+cfl=(39)
+cfn=(84)
+calls=1 0 0
+259 0 0
+cfl=(39)
+cfn=(85)
+calls=1 0 0
+268 0 0
+cfl=(39)
+cfn=(86)
+calls=1 0 0
+274 0 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+281 243 38696
+cfl=(40)
+cfn=(168)
+calls=1 0 0
+281 609 0
+cfl=(39)
+cfn=(169)
+calls=1 0 0
+283 0 0
+cfl=(36)
+cfn=(170)
+calls=1 0 0
+283 0 0
+cfl=(36)
+cfn=(171)
+calls=1 0 0
+284 0 0
+cfl=(39)
+cfn=(172)
+calls=1 0 0
+290 0 0
+cfl=(1)
+cfn=(173)
+calls=1 0 0
+316 25 96
+cfl=(36)
+cfn=(176)
+calls=1 0 0
+316 32 96
+cfl=(39)
+cfn=(177)
+calls=1 0 0
+323 1 0
+cfl=(39)
+cfn=(178)
+calls=1 0 0
+323 0 0
+cfl=(1)
+cfn=(175)
+calls=1 0 0
+330 1 112
+cfl=(36)
+cfn=(306)
+calls=1 0 0
+330 22836 402200
+
+fl=(36)
+fn=(308) PHPUnit\TextUI\Command->run
+114 32 0
+cfl=(36)
+cfn=(307)
+calls=1 0 0
+116 26313 792552
+
+fl=(36)
+fn=(309) PHPUnit\TextUI\Command::main
+98 10 112
+cfl=(36)
+cfn=(308)
+calls=1 0 0
+101 26345 792552
+
+fl=(73) /Users/komal/Documents/dev/valet/poing/laravel-wombatdialer-api/vendor/phpunit/phpunit/phpunit
+fn=(310) {main}
+1 448 536
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+12 38 0
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+26 1 0
+cfl=(1)
+cfn=(3)
+calls=1 0 0
+27 5 0
+cfl=(1)
+cfn=(4)
+calls=1 0 0
+31 11 0
+cfl=(1)
+cfn=(5)
+calls=1 0 0
+32 2 24
+cfl=(1)
+cfn=(6)
+calls=1 0 0
+51 1 56
+cfl=(35)
+cfn=(53)
+calls=1 0 0
+59 9476 1090224
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+61 669 195336
+cfl=(36)
+cfn=(309)
+calls=1 0 0
+61 26356 792664
+
+summary: 37248 2868760
+
