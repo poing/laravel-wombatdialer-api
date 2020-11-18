@@ -1,31 +1,22 @@
 <?php
 
-
 namespace WombatDialer\Test;
-use WombatDialer\Controllers\Edit\Wombat;
-use Illuminate\Support\Facades\Http;
 
 class CallsTest extends UnitAbstract
 {
-
     /**
      * A basic unit test example.
      *
      * @return void
      */
+    public function testCalls()
+    {
 
-      public function testCalls()
-      {
-     
        //test addKey()
         $calls = new \WombatDialer\Controllers\Calls;
-       
+
         $show = $calls->calls('addcall', 'Beta', '446666332');
         $this->assertTrue(true);
         $this->assertIsString($show, 'The response is not a string');
-  
-        
- }
- 
+    }
 }
-
