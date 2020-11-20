@@ -52,7 +52,7 @@ class AsteriskTest extends UnitAbstract
         //test update()
         $asterisk = new \WombatDialer\Controllers\Edit\Asterisk;
         $data = [
-            'id' => 24,
+            'id' => 1,
             'description' => 'DeltaTest',
             'serverType' => 'ASTERISKAMI',
             'ipAddress' => '10.10.10.10',
