@@ -15,7 +15,7 @@ class CallInfoTest extends UnitAbstract
        //test addKey()
         $info = new \WombatDialer\Controllers\CallInfo;
 
-        $show = $info->callInfo(3);
+        $show = $info->callInfo(1);
         $this->assertIsArray($show, 'The response is not an array');
         $this->assertarrayHasKey('isLive', $show, 'Array does not have the key');
     }
