@@ -15,7 +15,7 @@ class CampaignOhTest extends UnitAbstract
         $record = new \WombatDialer\Controllers\Edit\Campaign\Oh;
         $data = [
             'rule'=>[
-                'openingHourId' => 28,
+                'openingHourId' => 1,
             ],
      ];
             $add = $record->addRecord(1, $data);
