@@ -49,6 +49,20 @@ class Reschedule extends WombatMovable
 
         return $response->json();
     }
+    
+     /**
+     * Perform API GET.
+     * Displays  the records based on the @param $campaignId.
+     *
+     * @param  $campaignId
+     * @return Json
+     */
+      public function showRules($campaignId)
+    {
+        
+        $response = self::indexRules($campaignId);
+        return $response;
+    }
 
     /**
      * Perform API POST.
