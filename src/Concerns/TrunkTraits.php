@@ -11,8 +11,8 @@ trait TrunkTraits
             'id' => 101,
         ],
         'name' => 'Gamma',
-         'dialstring' => 'Local/${num}@from-internal/n',
-         'capacity'  =>  10,
-         'securityKey' => '',
-      ];
+        'dialstring' => 'Local/${num}@from-internal/n',
+        'capacity'  =>  10,
+        'securityKey' => '',
+    ];
 }
