@@ -140,46 +140,46 @@ class CampaignTest extends UnitAbstract
             'amdFaxFile' => '',
             'campaignVars' => '',
             'loggingQmVars'=> '',
-            ];
-            $setDow = $campaignDow->setDow($data);
-            $this->assertContains('456', $setDow, 'The response is not an array');
-            $this->assertIsArray($setDow, 'The response is not an array');
+        ];
+        $setDow = $campaignDow->setDow($data);
+        $this->assertContains('456', $setDow, 'The response is not an array');
+        $this->assertIsArray($setDow, 'The response is not an array');
 
-            //test getDow
-            $campaignDow = new \WombatDialer\Controllers\Edit\Campaign;
-            $data = [
-                'campaignId' => $campaignId,
-                'name' => 'Gamma',
-                'priority' => 10,
-                'pace'=> 'RUNNABLE',
-                'dial_timeout' => 30000,
-                'dial_clid' => '',
-                'dial_account' =>  '',
-                'dial_pres' => '',
-                'addlLogging' => 'QM_COMPATIBLE',
-                'pauseWhenFinished' => 0,
-                'timeStartHr' => '000000',
-                'timeEndHr' => '235959',
-                'timeDow' => '234',
-                'maxCallLength' => 0,
-                'batchSize' => 1,
-                'httpNotify' => 'https://example.com',
-                'loggingAlias' => '',
-                'securityKey' => 'admin',
-                'autopause' => false,
-                'agentClid' => '',
-                'emailAddresses' => '',
-                'emailEvents' => 'NO',
-                'initialBoostFactor' => 1,
-                'initialPredictiveModel' =>  'OFF',
-                'amdTracking' => 'OFF',
-                'amdParams' => '',
-                'amdAudioFile' => '',
-                'amdFaxFile' => '',
-                'campaignVars' => '',
-                'loggingQmVars'=> '',
-            ];
-            $getDow = $campaignDow->getDow($data);
-            $this->assertIsArray($getDow['timeDow'], 'The response is not an array');
+        //test getDow
+        $campaignDow = new \WombatDialer\Controllers\Edit\Campaign;
+        $data = [
+            'campaignId' => $campaignId,
+            'name' => 'Gamma',
+            'priority' => 10,
+            'pace'=> 'RUNNABLE',
+            'dial_timeout' => 30000,
+            'dial_clid' => '',
+            'dial_account' =>  '',
+            'dial_pres' => '',
+            'addlLogging' => 'QM_COMPATIBLE',
+            'pauseWhenFinished' => 0,
+            'timeStartHr' => '000000',
+            'timeEndHr' => '235959',
+            'timeDow' => '234',
+            'maxCallLength' => 0,
+            'batchSize' => 1,
+            'httpNotify' => 'https://example.com',
+            'loggingAlias' => '',
+            'securityKey' => 'admin',
+            'autopause' => false,
+            'agentClid' => '',
+            'emailAddresses' => '',
+            'emailEvents' => 'NO',
+            'initialBoostFactor' => 1,
+            'initialPredictiveModel' =>  'OFF',
+            'amdTracking' => 'OFF',
+            'amdParams' => '',
+            'amdAudioFile' => '',
+            'amdFaxFile' => '',
+            'campaignVars' => '',
+            'loggingQmVars'=> '',
+        ];
+        $getDow = $campaignDow->getDow($data);
+        $this->assertIsArray($getDow['timeDow'], 'The response is not an array');
     }
 }

@@ -22,8 +22,8 @@ return [
         'user' => env('WOMBAT_SESSION_USER', 'wbt_user'),
         'pass' =>   env('WOMBAT_SESSION_PASS', 'wbt_pass'),
     ],
-     'chunk_size' => 100,
-     'toAddress' => 'abc@example.com',
+    'chunk_size' => 100,
+    'toAddress' => 'abc@example.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -36,9 +36,9 @@ return [
     |
     */
 
-     //  'admin' => [
-     //    'user' => env('WOMBAT_USER', 'demoadmin'),
-     //    'pass' => env('WOMBAT_PASS', 'demo'),
-     // ],
+    //  'admin' => [
+    //    'user' => env('WOMBAT_USER', 'demoadmin'),
+    //    'pass' => env('WOMBAT_PASS', 'demo'),
+    // ],
 
 ];
