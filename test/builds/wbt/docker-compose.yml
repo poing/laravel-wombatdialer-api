@@ -23,10 +23,7 @@ services:
       wbt:
         ipv4_address: 172.77.62.74
     ports:
-      - target: 8080
-        published: 8080
-        protocol: tcp
-        mode: ingress
+      - 8080:8080
 networks:
   wbt:
     driver: bridge
