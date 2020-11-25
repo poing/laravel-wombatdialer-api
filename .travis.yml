@@ -41,7 +41,8 @@ before_install:
 
 install:
   # Build WombatDialer for Integration Testing
-  - docker-compose -f test/builds/wbt/docker-compose.yml up -d
+  - docker-compose -f test/builds/wbt/docker-compose.yml up -d --force-recreate --build
+  - sleep 10
   
 jobs:
   allow_failures:
