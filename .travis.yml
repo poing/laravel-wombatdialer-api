@@ -54,8 +54,9 @@ before_script:
   
 script:
   - mkdir -p build/logs
-  - phpunit --verbose --coverage-clover build/logs/clover.xml
+  #- phpunit --verbose --coverage-clover build/logs/clover.xml
   #  - vendor/bin/phpunit --verbose
+  - phpunit --verbose --coverage-text
 
 after_success:
   - travis_retry php vendor/bin/php-coveralls
