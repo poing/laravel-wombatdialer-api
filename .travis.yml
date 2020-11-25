@@ -60,7 +60,7 @@ script:
 
 after_script:
 #after_success:
-  - travis_retry php vendor/bin/php-coveralls -v
+  - travis_retry php vendor/bin/php-coveralls
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
