@@ -58,7 +58,7 @@ script:
   #  - vendor/bin/phpunit --verbose
   # - phpunit --verbose --coverage-text
 
-after_success:
+#after_success:
   - travis_retry php vendor/bin/php-coveralls -v
 
 # configure notifications (email, IRC, campfire etc)
