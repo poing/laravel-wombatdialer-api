@@ -31,7 +31,7 @@ class AuthenticationTest extends UnitAbstract
 
         $create = $asterisk->create($data);
         $index = $asterisk->index();
-        $this->assertCount(1, $index, 'The count does not matches with the records');
+        $this->assertTrue(count($index) == 1, 'The count does not matches with the records');
 
         // test auth() with session values
         session(['wbt_user' => 'alpha']);
@@ -51,7 +51,7 @@ class AuthenticationTest extends UnitAbstract
         ];
         $create = $asterisk->create($data);
         $index = $asterisk->index();
-        $this->assertCount(1, $index, 'The count does not matches with the records');
+        $this->assertTrue(count($index) == 1, 'The count does not matches with the records');
 
         // test auth() with construct('user', 'pass')
 
@@ -70,13 +70,13 @@ class AuthenticationTest extends UnitAbstract
         ];
         $create = $asterisk->create($data);
         $index = $asterisk->index();
-        $this->assertCount(1, $index, 'The count does not matches with the records');
+        $this->assertTrue(count($index) == 1, 'The count does not matches with the records');
 
         // test auth() again with admin
         Session::pull('wbt_user', 'alpha');
         Session::pull('wbt_pass', 'alpha');
         $asterisk = new \WombatDialer\Controllers\Edit\Asterisk;
         $index = $asterisk->index();
-        $this->assertCount(3, $index, 'The count does not matches with the records');
+        $this->assertTrue(count($index) == 3, 'The count does not matches with the records');
     }
 }
