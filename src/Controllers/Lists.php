@@ -81,7 +81,7 @@ class Lists extends Wombat
         $model->chunk($chunks, function ($records) use ($list, $column) {
             $data = $this->formatResults($records, $column);
             $someOutput = $this->addToList($list, $data);
-            sleep(20);  
+            sleep(20);
         });
 
         return 'List has been successfully updated!';

@@ -14,6 +14,6 @@ class ListtestSeeder extends Seeder
      */
     public function run()
     {
-         factory(listtest::class, 1000)->create();
+        factory(listtest::class, 1000)->create();
     }
 }

@@ -26,5 +26,5 @@ trait EpTraits
         'description' => 'Sample',
         'dialFind' => '',
         'dialReplace' => '',
-         ];
+    ];
 }
