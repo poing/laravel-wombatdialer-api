@@ -16,8 +16,9 @@ class WombatdialerServiceProvider extends ServiceProvider
     {
         // Publish Configuration Files
         $this->publishes([
-            __DIR__.'/config/wombatdialer.php' => config_path('wombatdialer.php'),
+            __DIR__.'/configuration/wombatdialer.php' => config_path('wombatdialer.php'),
         ], 'wombatdialer-config');
+       // dd(config_path());
         // Load Commands
         if ($this->app->runningInConsole() && ! file_exists(config_path('wombatdialer.php'))) {
             $this->commands([
@@ -34,7 +35,7 @@ class WombatdialerServiceProvider extends ServiceProvider
     public function register()
     {
         // Default Package Configuration
-        $this->mergeConfigFrom(__DIR__.'/config/wombatdialer.php', 'wombatdialer');
-        $this->mergeConfigFrom(__DIR__.'/config/default.php', 'wombatdialer');
+        $this->mergeConfigFrom(__DIR__.'/configuration/wombatdialer.php', 'wombatdialer');
+        $this->mergeConfigFrom(__DIR__.'/configuration/default.php', 'wombatdialer');
     }
 }

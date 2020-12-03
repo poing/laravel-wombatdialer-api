@@ -59,7 +59,7 @@ abstract class Wombat extends BaseController
     public function __construct($user = null, $pass = null)
     {
         $this->resource = config('wombatdialer.url');
-         
+        
         if (isset($user) && isset($pass)) {
             $this->user = $user;
             $this->pass = $pass;
@@ -189,6 +189,7 @@ abstract class Wombat extends BaseController
      */
     public function index($items = null, $from = null)
     {
+        $this->query = ['mode' => 'L'];
         $items = $items ? $items : null;
         $from = $from ? $from : null;
         $this->query = ['items' => $items, 'from' => $from];
@@ -209,6 +210,7 @@ abstract class Wombat extends BaseController
      */
     public function show($id)
     {
+      $this->query = ['mode' => 'L'];
       $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
         // check response & send mail if error

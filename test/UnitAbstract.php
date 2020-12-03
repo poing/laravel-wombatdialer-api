@@ -12,6 +12,9 @@ abstract class UnitAbstract extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
+        $this->loadMigrationsFrom('/Users/komal/documents/dev/valet/poing/laravel-wombatdialer-api/test/database/migrations');
+        $this->withFactories('/Users/komal/documents/dev/valet/poing/laravel-wombatdialer-api/test/database/factories');
+        $this->artisan('migrate');
     }
 
     /**
@@ -26,12 +29,12 @@ abstract class UnitAbstract extends TestCase
         // Setup default database to use sqlite :memory:
         // Make sure php-sqlite3 is installed on the system.
 
-        // $app['config']->set('database.default', 'testbench');
-        // $app['config']->set('database.connections.testbench', [
-        // 	'driver'   => 'sqlite',
-        // 	'database' => ':memory:',
-        // 	'prefix'   => '',
-        // ]);
+           $app['config']->set('database.default', 'testbench');
+           $app['config']->set('database.connections.testbench', [
+         	'driver'   => 'sqlite',
+         	'database' => ':memory:',
+         	'prefix'   => '',
+         ]);
     }
 
     /**

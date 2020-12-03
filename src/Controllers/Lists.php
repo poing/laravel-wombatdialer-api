@@ -40,7 +40,7 @@ class Lists extends Wombat
     /**
      * Used to format the results returned from the Model Data.
      *
-     * @param $array is the data and $column is the column to be formatted.
+     * @param $array is theFor data and $column is the column to be formatted.
      * @returns String.
      */
     public function formatResults($array, $column)
@@ -81,6 +81,7 @@ class Lists extends Wombat
         $model->chunk($chunks, function ($records) use ($list, $column) {
             $data = $this->formatResults($records, $column);
             $someOutput = $this->addToList($list, $data);
+            sleep(20);  
         });
 
         return 'List has been successfully updated!';

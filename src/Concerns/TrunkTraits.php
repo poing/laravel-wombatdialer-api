@@ -8,7 +8,7 @@ trait TrunkTraits
     protected $primaryKeyname = 'trunkId';
     protected $default = [
         'astId' => [
-            'id' => 101,
+            'id' => 4,
         ],
         'name' => 'Gamma',
          'dialstring' => 'Local/${num}@from-internal/n',
