@@ -18,7 +18,7 @@ class WombatdialerServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/configuration/wombatdialer.php' => config_path('wombatdialer.php'),
         ], 'wombatdialer-config');
-       // dd(config_path());
+        // dd(config_path());
         // Load Commands
         if ($this->app->runningInConsole() && ! file_exists(config_path('wombatdialer.php'))) {
             $this->commands([

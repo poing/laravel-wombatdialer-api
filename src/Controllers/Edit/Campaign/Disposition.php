@@ -25,7 +25,6 @@ class Disposition extends Reschedule
         $this->checkDispData($data);
         //check response and send mail if errors
         $this->html_mail($response);
-       
 
         return $response->json();
     }
@@ -43,25 +42,24 @@ class Disposition extends Reschedule
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
-        $this->checkDispData($data);    
+        $this->checkDispData($data);
         //check response and send mail if errors
         $this->html_mail($response);
 
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
     }
-    
+
     /**
-    * To check, Whether the 'onState' data matches with  the  data in the GUI.
-    *  
-    * Returns a string, If the data does not matches.
-    */
+     * To check, Whether the 'onState' data matches with  the  data in the GUI.
+     *
+     * Returns a string, If the data does not matches.
+     */
     public function checkDispData($data)
     {
         if ((! in_array($data['onState'], $this->statusOptions())) || (! in_array($data['verb'], $this->actionsOptions()))) {
             trigger_error('Value not found in option array!');
         }
-    
     }
 
     /**
