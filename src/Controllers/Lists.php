@@ -60,12 +60,12 @@ class Lists extends Wombat
      */
     public function addToList($list, $numbers)
     {
-        $this->query = ['op' => 'addToList', 'list' => $list, 'numbers' => $numbers];
+        $this->query = ['op' => 'addToList', 'list' => $list, 'numbers' => $numbers, 'dedupe' => 1];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection());
 
-        return $response->body();
+        return $response;
     }
 
     /**
