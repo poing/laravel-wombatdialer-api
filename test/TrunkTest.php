@@ -42,7 +42,6 @@ class TrunkTest extends UnitAbstract
             'securityKey' => '',
         ];
         $trunkCreate = $trunk->create($trunkData);
-        print_r($trunkCreate);
         $trunkId = $trunkCreate['results'][0]['trunkId'];
         $this->assertIsArray($trunkCreate, 'The response is not an array');
         $this->assertContains('Calvin', $trunkCreate['results'][0], 'The Value is not present in the array');
