@@ -68,22 +68,4 @@ class Lists extends Wombat
         return $response;
     }
 
-    /**
-     * Used to update the List API.
-     * If the data is larger , It is broken into chunks using chunk().
-     *
-     * @param $list : ListName , $model: Model data, $column: column which we need to format.
-     * @returns String.
-     */
-    public function updateList($list, $model, $column)
-    {
-        $chunks = config('wombatdialer.chunk_size');
-        $model->chunk($chunks, function ($records) use ($list, $column) {
-            $data = $this->formatResults($records, $column);
-            $someOutput = $this->addToList($list, $data);
-            sleep(20);
-        });
-
-        return 'List has been successfully updated!';
-    }
 }
