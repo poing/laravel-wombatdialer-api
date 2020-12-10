@@ -15,7 +15,7 @@ class CampaignListTest extends UnitAbstract
         $record = new \WombatDialer\Controllers\Edit\Campaign\Lists;
         $data = [
             'cl'=>[
-                'listId' => 4,
+                'listId' => 1,
             ],
         ];
         $add = $record->addRecord(1, $data);
@@ -39,8 +39,8 @@ class CampaignListTest extends UnitAbstract
         //test updateRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Lists;
         $listData = [
-            'listId' => 4,
-            'name' => 'LouisTest',
+            'listId' => 1,
+            'name' => 'MercuryTest',
             'isHidden' => false,
             'securityKey' => '',
         ];
