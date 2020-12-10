@@ -15,7 +15,7 @@ class CampaignTrunkTest extends UnitAbstract
         $record = new \WombatDialer\Controllers\Edit\Campaign\Trunk;
         $data = [
             'trunkId'=> [
-                'trunkId' => 3,
+                'trunkId' => 1,
             ],
         ];
         $add = $record->addRecord(1, $data);
@@ -38,11 +38,11 @@ class CampaignTrunkTest extends UnitAbstract
         //test updateRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Trunk;
         $data = [
-            'trunkId' => 3,
+            'trunkId' => 1,
             'astId' => [
-                'id' => 4,
+                'id' => 1,
             ],
-            'name' => 'TestCheck',
+            'name' => 'Lambda',
             'dialstring' => 'Local/${num}@from-internal/n',
             'capacity'  =>  10,
             'securityKey' => '',
