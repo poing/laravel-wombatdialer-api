@@ -15,7 +15,7 @@ class CampaignEpTest extends UnitAbstract
         $record = new \WombatDialer\Controllers\Edit\Campaign\Ep;
         $data = [
             'epId'=> [
-                'epId' => 3,
+                'epId' => 1,
             ],
         ];
         $add = $record->addRecord(1, $data);
@@ -38,7 +38,7 @@ class CampaignEpTest extends UnitAbstract
         //test updateRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Ep;
         $data = [
-            'epId' => 4,
+            'epId' => 1,
             'type' => 'PHONE',
             'queueName' => '',
             'name' => '',
@@ -54,8 +54,8 @@ class CampaignEpTest extends UnitAbstract
             'maxWaitingCalls' => 2,
             'reverseDialing' => false,
             'stepwiseReverse' => false,
-            'securityKey' => 'Alpha',
-            'description' => 'Faraday',
+            'securityKey' => 'Ferry',
+            'description' => 'LambdaTest',
             'dialFind' => '',
             'dialReplace' => '',
         ];
@@ -67,7 +67,7 @@ class CampaignEpTest extends UnitAbstract
         $record = new \WombatDialer\Controllers\Edit\Campaign\Ep;
         $data = [
             'epId'=> [
-                'epId' => 4,
+                'epId' => 1,
             ],
         ];
         $destroy = $record->destroyRecord($campId, $data);
