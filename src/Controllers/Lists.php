@@ -38,20 +38,6 @@ class Lists extends Wombat
     }
 
     /**
-     * Used to format the results returned from the Model Data.
-     *
-     * @param $array is theFor data and $column is the column to be formatted.
-     * @returns String.
-     */
-    public function formatResults($array, $column)
-    {
-        $compact = $this->formatTableData($array, $column);
-        $string = $this->myImplode($compact);
-
-        return $string;
-    }
-
-    /**
      * Perform API POST.
      * Updates the List API with the newly creates ListName and the Numbers.
      *
