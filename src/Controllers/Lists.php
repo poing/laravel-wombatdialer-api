@@ -20,7 +20,7 @@ class Lists extends Wombat
         $numbers = [];
         //$valueField = 'value';
         foreach ($samples as $item) {
-            $numbers[] = $item->$valueField.',id:'.$item->id.',email:'.$item->email.',name:'.$item->name;
+            $numbers[] = $item->$valueField.',id:'.$item->id;
         }
 
         return $numbers;
@@ -60,7 +60,7 @@ class Lists extends Wombat
      */
     public function addToList($list, $numbers)
     {
-        $this->query = ['op' => 'addToList', 'list' => $list, 'numbers' => $numbers, 'dedupe' => 1];
+        $this->query = ['op' => 'addToList', 'list' => $list, 'numbers' => $numbers];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection());
