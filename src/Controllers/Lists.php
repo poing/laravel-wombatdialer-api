@@ -67,5 +67,4 @@ class Lists extends Wombat
 
         return $response;
     }
-
 }
