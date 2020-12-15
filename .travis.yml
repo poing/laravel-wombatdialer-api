@@ -12,7 +12,7 @@ env:
   global:
     - DOCKER_COMPOSE_VERSION=1.27.4
     #- WOMBAT_HOST=172.77.62.74 # Value from docker-compose.yml
-    - TESTBENCH=5.*
+  - TESTBENCH=5.*
 
   # Used with matrix for older testbench/Laravel versions
   #- TESTBENCH=3.7.*
