@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/poing/laravel-wombatdialer-api.svg?branch=main)](https://travis-ci.com/poing/laravel-wombatdialer-api)
+[![Coverage Status](https://coveralls.io/repos/github/poing/laravel-wombatdialer-api/badge.svg?branch=main)](https://coveralls.io/github/poing/laravel-wombatdialer-api?branch=main)
 [![StyleCI](https://github.styleci.io/repos/301573810/shield?branch=main&style=flat)](https://github.styleci.io/repos/301573810?branch=main)
 
 # laravel-wombatdialer-api

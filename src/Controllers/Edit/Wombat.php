@@ -2,12 +2,12 @@
 
 namespace WombatDialer\Controllers\Edit;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Session;
 
-abstract class Wombat extends Controller
+abstract class Wombat extends BaseController
 {
     /**
      * The connection resource for WombatDialer.
@@ -45,6 +45,13 @@ abstract class Wombat extends Controller
     protected $trailingslash = true;
 
     /**
+     * The pathAdded  to the 'resource['path'] is set using a flag.
+     *
+     * @var string|false(default)
+     */
+    protected $pathAdded = false;
+
+    /**
      * Fetch the URL, Username and Password from the Config File.
      *
      * @return void
@@ -52,6 +59,7 @@ abstract class Wombat extends Controller
     public function __construct($user = null, $pass = null)
     {
         $this->resource = config('wombatdialer.url');
+
         if (isset($user) && isset($pass)) {
             $this->user = $user;
             $this->pass = $pass;
@@ -156,12 +164,17 @@ abstract class Wombat extends Controller
      */
     public function addPath()
     {
-        $org_uri = explode('/', $this->resource['path']);
-        $add_uri = explode('/', $this->path);
-        $new_uri = array_merge($org_uri, $add_uri);
+        if ($this->pathAdded === false) {
+            $org_uri = explode('/', $this->resource['path']);
+            $add_uri = explode('/', $this->path);
 
-        $slash = $this->trailingslash ? '/' : null;
-        $this->resource['path'] = '/'.implode('/', array_filter($new_uri)).$slash;
+            $new_uri = array_merge($org_uri, $add_uri);
+
+            $slash = $this->trailingslash ? '/' : null;
+
+            $this->resource['path'] = '/'.implode('/', array_filter($new_uri)).$slash;
+            $this->pathAdded = true;
+        }
 
         return $this;
     }
@@ -175,6 +188,7 @@ abstract class Wombat extends Controller
      */
     public function index($items = null, $from = null)
     {
+        $this->query = ['mode' => 'L'];
         $items = $items ? $items : null;
         $from = $from ? $from : null;
         $this->query = ['items' => $items, 'from' => $from];
@@ -195,6 +209,7 @@ abstract class Wombat extends Controller
      */
     public function show($id)
     {
+        $this->query = ['mode' => 'L'];
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->get($this->connection());
         // check response & send mail if error

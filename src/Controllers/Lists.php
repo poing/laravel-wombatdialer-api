@@ -20,7 +20,7 @@ class Lists extends Wombat
         $numbers = [];
         //$valueField = 'value';
         foreach ($samples as $item) {
-            $numbers[] = $item->$valueField.',id:'.$item->id.',email:'.$item->email.',name:'.$item->name;
+            $numbers[] = $item->$valueField.',id:'.$item->id;
         }
 
         return $numbers;
@@ -38,20 +38,6 @@ class Lists extends Wombat
     }
 
     /**
-     * Used to format the results returned from the Model Data.
-     *
-     * @param $array is the data and $column is the column to be formatted.
-     * @returns String.
-     */
-    public function formatResults($array, $column)
-    {
-        $compact = $this->formatTableData($array, $column);
-        $string = $this->myImplode($compact);
-
-        return $string;
-    }
-
-    /**
      * Perform API POST.
      * Updates the List API with the newly creates ListName and the Numbers.
      *
@@ -65,24 +51,6 @@ class Lists extends Wombat
             ->asForm()
             ->post($this->connection());
 
-        return $response->body();
-    }
-
-    /**
-     * Used to update the List API.
-     * If the data is larger , It is broken into chunks using chunk().
-     *
-     * @param $list : ListName , $model: Model data, $column: column which we need to format.
-     * @returns String.
-     */
-    public function updateList($list, $model, $column)
-    {
-        $chunks = config('wombatdialer.chunk_size');
-        $model->chunk($chunks, function ($records) use ($list, $column) {
-            $data = $this->formatResults($records, $column);
-            $someOutput = $this->addToList($list, $data);
-        });
-
-        return 'List has been successfully updated!';
+        return $response;
     }
 }

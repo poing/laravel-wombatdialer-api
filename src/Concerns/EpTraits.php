@@ -11,7 +11,7 @@ trait EpTraits
         'queueName' => '',
         'name' => 'DefaultSample',
         'astId' => [
-            'id' => 106,
+            'id' => 25,
         ],
         'idx' => '',
         'campaignId' => '',
@@ -26,5 +26,5 @@ trait EpTraits
         'description' => 'Sample',
         'dialFind' => '',
         'dialReplace' => '',
-         ];
+    ];
 }

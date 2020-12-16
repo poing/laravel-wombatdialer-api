@@ -23,11 +23,9 @@ class Reschedule extends WombatMovable
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
+        $this->checkRulesData($data);
         //check response and &send mail if error
         $this->html_mail($response);
-        if (! in_array($data['status'], $this->statusOptions())) {
-            trigger_error('Value not found in option array!');
-        }
 
         return $response->json();
     }
@@ -51,6 +49,20 @@ class Reschedule extends WombatMovable
     }
 
     /**
+     * Perform API GET.
+     * Displays  the records based on the @param $campaignId.
+     *
+     * @param  $campaignId
+     * @return Json
+     */
+    public function showRules($campaignId)
+    {
+        $response = self::indexRules($campaignId);
+
+        return $response;
+    }
+
+    /**
      * Perform API POST.
      * Updates the existing  Rules for the API.
      *
@@ -63,11 +75,9 @@ class Reschedule extends WombatMovable
         $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection(), ['data' => json_encode($data)]);
+        $this->checkRulesData($data);
         //check response and &send mail if error
         $this->html_mail($response);
-        if (! in_array($data['status'], $this->statusOptions())) {
-            trigger_error('Value not found in option array!');
-        }
 
         // $record = collect($results['results'])->first()[$this->primaryKeyname];
         return $response->json();
@@ -91,6 +101,18 @@ class Reschedule extends WombatMovable
         $this->html_mail($response);
 
         return $response->json();
+    }
+
+    /**
+     * To check, Whether the 'Status' data matches with  the  data in the GUI.
+     *
+     * Returns a string, If the data does not matches.
+     */
+    public function checkRulesData($data)
+    {
+        if (! in_array($data['status'], $this->statusOptions())) {
+            trigger_error('Value not found in option array!');
+        }
     }
 
     /**
