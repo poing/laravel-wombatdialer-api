@@ -56,6 +56,7 @@ before_script:
   
 script:
   - mkdir -p build/logs
+  - export XDEBUG_MODE=debug
   - phpunit --verbose --coverage-clover build/logs/clover.xml
   #  - vendor/bin/phpunit --verbose
   # - phpunit --verbose --coverage-text

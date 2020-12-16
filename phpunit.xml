@@ -16,4 +16,9 @@
   <logging>
     <junit outputFile="build/report.junit.xml"/>
   </logging>
+  <filter>
+    <whitelist processUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">./src</directory>
+    </whitelist>
+  </filter>
 </phpunit>
