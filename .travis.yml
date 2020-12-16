@@ -43,7 +43,7 @@ before_install:
 install:
   # Build WombatDialer for Integration Testing
   - docker-compose -f test/builds/wbt/docker-compose.yml up -d --force-recreate --build
-  - sleep 10
+  - sleep 10 # Allow WombatDialer time to start
   
 jobs:
   allow_failures:
@@ -55,10 +55,10 @@ before_script:
   - travis_retry composer install --no-interaction
   
 script:
-  - mkdir -p build/logs
-  - export XDEBUG_MODE=debug
-  - phpunit --verbose --coverage-clover build/logs/clover.xml
-  #  - vendor/bin/phpunit --verbose
+  #- mkdir -p build/logs
+  #- export XDEBUG_MODE=debug
+  #- phpunit --verbose --coverage-clover build/logs/clover.xml
+  - vendor/bin/phpunit --verbose
   # - phpunit --verbose --coverage-text
 
 after_script:
