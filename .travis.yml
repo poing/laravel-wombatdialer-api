@@ -4,9 +4,9 @@ php:
   # - 7.1 # Version 7.1.33 | End of Life: 1 Dec 2019
   # - 7.2 # Version 7.2.30 | End of Life: 30 Nov 2020
   - 7.3 # End of Life: 6 Dec 2021
-  - 7.4 # End of Life: 28 Nov 2022
-  - 8.0 # End of Life: 26 Nov 2023
-  - nightly
+  #- 7.4 # End of Life: 28 Nov 2022
+  #- 8.0 # End of Life: 26 Nov 2023
+  #- nightly
 
 env:
   global:
@@ -63,7 +63,7 @@ script:
 
 after_script:
 #after_success:
-  - travis_retry php vendor/bin/php-coveralls
+  - travis_retry php vendor/bin/php-coveralls -v
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
