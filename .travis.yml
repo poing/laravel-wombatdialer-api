@@ -20,8 +20,8 @@ env:
     #- TESTBENCH=3.8.*
     #- TESTBENCH=3.*
     #- TESTBENCH=4.*
-    - TESTBENCH=5.*
-    - TESTBENCH=6.*
+    - TESTBENCH=5.* # Laravel 7.x
+    # - TESTBENCH=6.* # Laravel 8.x
     #- TESTBENCH=dev-master
 
 services:
