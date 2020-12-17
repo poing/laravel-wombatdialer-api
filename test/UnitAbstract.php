@@ -12,8 +12,8 @@ abstract class UnitAbstract extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
-        $this->loadMigrationsFrom('/Users/komal/documents/dev/valet/poing/laravel-wombatdialer-api/test/database/migrations');
-        $this->withFactories('/Users/komal/documents/dev/valet/poing/laravel-wombatdialer-api/test/database/factories');
+        $this->loadMigrationsFrom(env('TRAVIS_BUILD_DIR').'/test/database/migrations');
+        $this->withFactories(env('TRAVIS_BUILD_DIR').'/test/database/factories');
         $this->artisan('migrate');
     }
 
