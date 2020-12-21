@@ -10,45 +10,45 @@ class CampaignTrunkTest extends UnitAbstract
      * @return void
      */
     public function testCampaignTrunk()
-    { 
-           //create and test Campaign API
-      $campaign = new \WombatDialer\Controllers\Edit\Campaign;
-      $campaignData =[
-        'name' => 'Omega',
-        'priority' => 10,
-        'pace'=> 'RUNNABLE',
-        'dial_timeout' => 30000,
-        'dial_clid' => '',
-        'dial_account' =>  '',
-        'dial_pres' => '',
-        'addlLogging' => 'QM_COMPATIBLE',
-        'pauseWhenFinished' => 0,
-        'timeStartHr' => '000000',
-        'timeEndHr' => '235959',
-        'timeDow' => '345',
-        'maxCallLength' => 0,
-        'batchSize' => 1,
-        'httpNotify' => 'https://example.com',
-        'loggingAlias' => '',
-        'securityKey' => 'admin',
-        'autopause' => false,
-        'agentClid' => '',
-        'emailAddresses' => '',
-        'emailEvents' => 'NO',
-        'initialBoostFactor' => 1,
-        'initialPredictiveModel' =>  'OFF',
-        'amdTracking' => 'OFF',
-        'amdParams' => '',
-        'amdAudioFile' => '',
-        'amdFaxFile' => '',
-        'campaignVars' => '',
-        'loggingQmVars'=> '',
-    ];
-      $campaignCreate = $campaign->create($campaignData);
-      $campaignId = $campaignCreate['results'][0]['campaignId'];
-      $this->assertIsArray($campaignCreate, 'The response is not an array'); 
-      $this->assertContains('Omega', $campaignCreate['results'][0], 'The Value is not present in the array');
-     
+    {
+        //create and test Campaign API
+        $campaign = new \WombatDialer\Controllers\Edit\Campaign;
+        $campaignData = [
+            'name' => 'Omega',
+            'priority' => 10,
+            'pace'=> 'RUNNABLE',
+            'dial_timeout' => 30000,
+            'dial_clid' => '',
+            'dial_account' =>  '',
+            'dial_pres' => '',
+            'addlLogging' => 'QM_COMPATIBLE',
+            'pauseWhenFinished' => 0,
+            'timeStartHr' => '000000',
+            'timeEndHr' => '235959',
+            'timeDow' => '345',
+            'maxCallLength' => 0,
+            'batchSize' => 1,
+            'httpNotify' => 'https://example.com',
+            'loggingAlias' => '',
+            'securityKey' => 'admin',
+            'autopause' => false,
+            'agentClid' => '',
+            'emailAddresses' => '',
+            'emailEvents' => 'NO',
+            'initialBoostFactor' => 1,
+            'initialPredictiveModel' =>  'OFF',
+            'amdTracking' => 'OFF',
+            'amdParams' => '',
+            'amdAudioFile' => '',
+            'amdFaxFile' => '',
+            'campaignVars' => '',
+            'loggingQmVars'=> '',
+        ];
+        $campaignCreate = $campaign->create($campaignData);
+        $campaignId = $campaignCreate['results'][0]['campaignId'];
+        $this->assertIsArray($campaignCreate, 'The response is not an array');
+        $this->assertContains('Omega', $campaignCreate['results'][0], 'The Value is not present in the array');
+
         // test create CampaignEp
         $record = new \WombatDialer\Controllers\Edit\Campaign\Trunk;
         $data = [
