@@ -63,6 +63,7 @@ class CampaignListTest extends UnitAbstract
         // test indexRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Lists;
         $index = $record->indexRecord($campaignId);
+        $cclId = $index['results'][0]['cclId'];
         $this->assertIsArray($index, 'The response is not an array');
         $this->assertArrayHasKey('status', $index, 'The Key is not present in the given array');
 
@@ -87,7 +88,6 @@ class CampaignListTest extends UnitAbstract
 
         //test deleteRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Lists;
-        $cclId = $index['results'][0]['cclId'];
         $data = ['cclId' => $cclId];
         $destroy = $record->destroyRecord($campaignId, $data);
         $this->assertIsArray($destroy, 'The response is not an array');
