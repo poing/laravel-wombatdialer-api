@@ -57,12 +57,12 @@ class CampaignEpTest extends UnitAbstract
             ],
         ];
         $add = $record->addRecord($campaignId, $data);
-        $campId = $add['results'][0]['campaignId'];
         $this->assertIsArray($add, 'The response is not an array');
         $this->assertArrayHasKey('campaignId', $add['results'][0], 'The Value is not present in the array');
 
         // test indexRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Ep;
+        $campId = $add['results'][0]['campaignId'];
         $index = $record->indexRecord($campId);
         $this->assertIsArray($index, 'The response is not an array');
         $this->assertArrayHasKey('status', $index, 'The Key is not present in the given array');
