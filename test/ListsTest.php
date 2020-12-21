@@ -25,19 +25,19 @@ class ListsTest extends UnitAbstract
             //formatTableData
             $lists = new \WombatDialer\Controllers\Lists;
             $data = $lists->formatTableData($records, $column);
-            print_r($data);
+            //print_r($data);
             $this->assertEquals(50, count($data));
 
             //To implode
             $listsAPI = new \WombatDialer\Controllers\Lists;
             $string = $listsAPI->myImplode($data);
-            echo $string;
+            //echo $string;
             $this->assertIsString($string);
 
             //To addToList
             $listToList = new \WombatDialer\Controllers\Lists;
             $response = $listToList->addToList($listName, $string);
-            echo $response;
+            //echo $response;
             $this->assertTrue($response->ok(), 'Something is wrong');
         });
     }

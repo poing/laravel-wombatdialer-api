@@ -11,7 +11,45 @@ class CampaignRescheduleTest extends UnitAbstract
      */
     public function testReschedule()
     {
-        // test create dispositiom
+        // create Campaign
+       $campaign = new \WombatDialer\Controllers\Edit\Campaign;
+       $campaignData =[
+        'name' => 'Proton',
+        'priority' => 10,
+        'pace'=> 'RUNNABLE',
+        'dial_timeout' => 30000,
+        'dial_clid' => '',
+        'dial_account' =>  '',
+        'dial_pres' => '',
+        'addlLogging' => 'QM_COMPATIBLE',
+        'pauseWhenFinished' => 0,
+        'timeStartHr' => '000000',
+        'timeEndHr' => '235959',
+        'timeDow' => '345',
+        'maxCallLength' => 0,
+        'batchSize' => 1,
+        'httpNotify' => 'https://example.com',
+        'loggingAlias' => '',
+        'securityKey' => 'admin',
+        'autopause' => false,
+        'agentClid' => '',
+        'emailAddresses' => '',
+        'emailEvents' => 'NO',
+        'initialBoostFactor' => 1,
+        'initialPredictiveModel' =>  'OFF',
+        'amdTracking' => 'OFF',
+        'amdParams' => '',
+        'amdAudioFile' => '',
+        'amdFaxFile' => '',
+        'campaignVars' => '',
+        'loggingQmVars'=> '',
+    ];
+      $campaignCreate = $campaign->create($campaignData);
+      $campaignId = $campaignCreate['results'][0]['campaignId'];
+      $this->assertIsArray($campaignCreate, 'The response is not an array'); 
+      $this->assertContains('Proton', $campaignCreate['results'][0], 'The Value is not present in the array');
+     
+        // test create Reschedule
         $rules = new \WombatDialer\Controllers\Edit\Campaign\Reschedule;
         $data = [
             'rescheduleRuleId' => null,
@@ -21,7 +59,7 @@ class CampaignRescheduleTest extends UnitAbstract
             'retryAfterS' => 120,
             'mode' => 'FIXED',
         ];
-        $addRules = $rules->addRules(1, $data);
+        $addRules = $rules->addRules($campaignId, $data);
         $reschId = $addRules['results'][0]['rescheduleRuleId'];
         $campId = $addRules['results'][0]['campaignId'];
         $this->assertNull($rules->checkRulesData($data), 'The value is not null');
