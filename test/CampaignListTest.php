@@ -57,7 +57,7 @@ class CampaignListTest extends UnitAbstract
             ],
         ];
         $add = $record->addRecord($campaignId, $data);
-        echo $add;
+        //echo $add;
         $this->assertIsArray($add, 'The response is not an array');
         //$this->assertArrayHasKey('campaignId', $add['results'][0], 'The Value is not present in the array');
 
