@@ -70,9 +70,9 @@ class CampaignListTest extends UnitAbstract
             ],
         ];
         $add = $record->addRecord($campaignId, $data);
-        print_r($add);
+        //print_r($add);
         $this->assertIsArray($add, 'The response is not an array');
-        //$this->assertArrayHasKey('campaignId', $add['results'][0], 'The Value is not present in the array');
+        $this->assertArrayHasKey('campaignId', $add['results'][0], 'The Value is not present in the array');
 
         // test indexRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Lists;
