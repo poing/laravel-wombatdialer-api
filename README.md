@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.com/poing/laravel-wombatdialer-api.svg?branch=0.0.8)](https://travis-ci.com/poing/laravel-wombatdialer-api)
-[![Coverage Status](https://coveralls.io/repos/github/poing/laravel-wombatdialer-api/badge.svg?branch=0.0.8)](https://coveralls.io/github/poing/laravel-wombatdialer-api?branch=0.0.8)
-[![StyleCI](https://github.styleci.io/repos/301573810/shield?branch=0.0.8&style=flat)](https://github.styleci.io/repos/301573810?branch=0.0.8)
+[![Build Status](https://travis-ci.com/poing/laravel-wombatdialer-api.svg?branch=main)](https://travis-ci.com/poing/laravel-wombatdialer-api)
+[![Coverage Status](https://coveralls.io/repos/github/poing/laravel-wombatdialer-api/badge.svg?branch=main)](https://coveralls.io/github/poing/laravel-wombatdialer-api?branch=main)
+[![StyleCI](https://github.styleci.io/repos/301573810/shield?branch=main&style=flat)](https://github.styleci.io/repos/301573810?branch=main)
 
 # laravel-wombatdialer-api
 WombatDialer API Library for Laravel
