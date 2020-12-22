@@ -48,20 +48,20 @@ class CampaignListTest extends UnitAbstract
         $campaignId = $campaignCreate['results'][0]['campaignId'];
         $this->assertIsArray($campaignCreate, 'The response is not an array');
         $this->assertContains('Markus', $campaignCreate['results'][0], 'The Value is not present in the array');
-        
+
         //create and test List API
-      $list = new \WombatDialer\Controllers\Edit\Lists;
-      $listData =[
-        'name' => 'KenTest',
-        'isHidden' => false,
-        'securityKey' => '',
-     ];
-      $Create = $list->create($listData);
-      //dd($Create);
-      $listId = $Create['results'][0]['listId'];
-      $this->assertIsArray($Create, 'The response is not an array'); 
-      $this->assertContains('KenTest', $Create['results'][0], 'The Value is not present in the array');
-     
+        $list = new \WombatDialer\Controllers\Edit\Lists;
+        $listData = [
+            'name' => 'KenTest',
+            'isHidden' => false,
+            'securityKey' => '',
+        ];
+        $Create = $list->create($listData);
+        //dd($Create);
+        $listId = $Create['results'][0]['listId'];
+        $this->assertIsArray($Create, 'The response is not an array');
+        $this->assertContains('KenTest', $Create['results'][0], 'The Value is not present in the array');
+
         // test create CampaignEp
         $record = new \WombatDialer\Controllers\Edit\Campaign\Lists;
         $data = [
