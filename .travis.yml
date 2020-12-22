@@ -20,9 +20,11 @@ env:
     #- TESTBENCH=3.8.*
     #- TESTBENCH=3.*
     #- TESTBENCH=4.*
-    - TESTBENCH=5.* # Laravel 7.x
-    - TESTBENCH=6.* # Laravel 8.x
+    #- TESTBENCH=5.* # Laravel 7.x
+    #- TESTBENCH=6.* # Laravel 8.x
     #- TESTBENCH=dev-master
+    - LARAVEL=7
+    - LARAVEL=8
 
 services:
   - docker
@@ -41,7 +43,8 @@ before_install:
 
   # Fix used when working with older versions of testbench/Laravel 
   #- composer require --dev "phpunit/phpunit:8.*" --prefer-dist --no-update
-  - composer require --dev "orchestra/testbench:${TESTBENCH}" --prefer-dist --no-update
+  - TESTBENCH=`expr $LARAVEL - 2`
+  - composer require --dev "orchestra/testbench:${TESTBENCH}.*" --prefer-dist --no-update
 
 install:
   # Build WombatDialer for Integration Testing
