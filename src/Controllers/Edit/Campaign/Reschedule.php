@@ -113,7 +113,7 @@ class Reschedule extends WombatMovable
         if (! in_array($data['status'], $this->statusOptions())) {
             // @codeCoverageIgnoreStart
             trigger_error('Value not found in option array!');
-          // @codeCoverageIgnoreEnd
+            // @codeCoverageIgnoreEnd
         }
     }
 
