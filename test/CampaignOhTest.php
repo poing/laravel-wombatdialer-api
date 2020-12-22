@@ -57,20 +57,20 @@ class CampaignOhTest extends UnitAbstract
             ],
         ];
         $add = $record->addRecord($campaignId, $data);
-        $campId = $add['results'][0]['campaignId'];
+        //$campId = $add['results'][0]['campaignId'];
         $cohId = $add['results'][0]['cohId'];
         $this->assertIsArray($add, 'The response is not an array');
         $this->assertArrayHasKey('campaignId', $add['results'][0], 'The Value is not present in the array');
 
         // test indexRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Oh;
-        $index = $record->indexRecord($campId);
+        $index = $record->indexRecord($campaignId);
         $this->assertIsArray($index, 'The response is not an array');
         $this->assertArrayHasKey('status', $index, 'The Key is not present in the given array');
 
         // test showRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Oh;
-        $show = $record->showRecord($campId);
+        $show = $record->showRecord($campaignId);
         $this->assertIsArray($show, 'The response is not an array');
         $this->assertArrayHasKey('status', $show, 'The Key is not present in the given array');
 
@@ -92,21 +92,21 @@ class CampaignOhTest extends UnitAbstract
         //test deleteRecord()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Oh;
         $data = ['cohId' => $cohId];
-        $destroy = $record->destroyRecord($campId, $data);
+        $destroy = $record->destroyRecord($campaignId, $data);
         $this->assertIsArray($destroy, 'The response is not an array');
         // $this->assertArrayNotHasKey('status', $index, 'The Key is not present in the given array');
 
         //test moveUP()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Oh;
         $data = ['cohId' => $cohId];
-        $up = $record->moveUp($campId, $data);
+        $up = $record->moveUp($campaignId, $data);
         $this->assertIsArray($up, 'The response is not an array');
         $this->assertTrue(true);
 
         //test moveDown()
         $record = new \WombatDialer\Controllers\Edit\Campaign\Oh;
         $data = ['cohId' => $cohId];
-        $down = $record->moveDown($campId, $data);
+        $down = $record->moveDown($campaignId, $data);
         $this->assertIsArray($down, 'The response is not an array');
         $this->assertTrue(true);
     }
