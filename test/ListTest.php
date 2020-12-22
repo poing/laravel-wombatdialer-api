@@ -33,6 +33,7 @@ class ListTest extends UnitAbstract
         //test index()
         $Index = new \WombatDialer\Controllers\Edit\Lists;
         $index = $Index->index();
+        print_r($index);
         $this->assertIsArray($index, 'The response is not an array');
         $this->assertArrayHasKey('status', $index, 'The Key is not present in the given array');
 
