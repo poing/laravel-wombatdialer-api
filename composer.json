@@ -5,7 +5,7 @@
   "type": "library",
   "require": {
     "laravel/framework": ">=7.0",
-    "guzzlehttp/guzzle": ">=6.0"
+    "guzzlehttp/guzzle": ">=6.1"
   },
   "license": "GPL-3.0-or-later",
   "authors": [
