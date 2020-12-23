@@ -58,7 +58,9 @@ class Disposition extends Reschedule
     public function checkDispData($data)
     {
         if ((! in_array($data['onState'], $this->statusOptions())) || (! in_array($data['verb'], $this->actionsOptions()))) {
+            // @codeCoverageIgnoreStart
             trigger_error('Value not found in option array!');
+            // @codeCoverageIgnoreEnd
         }
     }
 
