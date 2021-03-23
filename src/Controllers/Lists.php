@@ -1,4 +1,5 @@
 <?php
+
 namespace WombatDialer\Controllers;
 
 use Illuminate\Support\Facades\Http;
@@ -17,15 +18,14 @@ class Lists extends Wombat
     public function formatTableData($samples, $valueField)
     {
         $chunk_size = config('wombatdialer.chunk_size');
-        $samples::chunk($chunk_size, function ($records)
-        {
+        $samples::chunk($chunk_size, function ($records) {
             $numbers = [];
             //$valueField = 'value';
-            foreach ($records as $item)
-            {
-                $numbers[] = $item->$valueField . ',id:' . $item->id;
+            foreach ($records as $item) {
+                $numbers[] = $item->$valueField.',id:'.$item->id;
             }
         });
+
         return $numbers;
     }
 
@@ -50,11 +50,10 @@ class Lists extends Wombat
     public function addToList($list, $numbers)
     {
         $this->query = ['op' => 'addToList', 'list' => $list, 'numbers' => $numbers];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection());
 
         return $response;
     }
 }
-
