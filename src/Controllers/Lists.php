@@ -57,7 +57,6 @@ class Lists extends Wombat
 
     /**
      * Added chunk() to the List of data and chunk_size from the config file.
-     *
      * @param $list is the ListName (Project name)
      * @param $table is the TableName
      * @param $column is the column name(Number, phone, num) from the table to be added to the List.
