@@ -1,4 +1,5 @@
 <?php
+
 namespace WombatDialer\Controllers;
 
 use Illuminate\Support\Facades\Http;
@@ -16,15 +17,13 @@ class Lists extends Wombat
      */
     public function formatTableData($samples, $valueField)
     {
-
         $numbers = [];
         //$valueField = 'value';
-        foreach ($samples as $item)
-        {
-            $numbers[] = $item->$valueField . ',id:' . $item->id;
+        foreach ($samples as $item) {
+            $numbers[] = $item->$valueField.',id:'.$item->id;
         }
-        return $numbers;
 
+        return $numbers;
     }
 
     /**
@@ -48,7 +47,7 @@ class Lists extends Wombat
     public function addToList($list, $numbers)
     {
         $this->query = ['op' => 'addToList', 'list' => $list, 'numbers' => $numbers];
-        $response = Http::withBasicAuth($this->userAuth() , $this->passAuth())
+        $response = Http::withBasicAuth($this->userAuth(), $this->passAuth())
             ->asForm()
             ->post($this->connection());
 
@@ -62,19 +61,15 @@ class Lists extends Wombat
      * @param $column is the column name(Number, phone, num) from the table to be added to the List.
      * @returns  the response.
      */
-
     public function chunkData($list, $table, $column)
     {
         $chunk = config('wombatdialer.chunk_size');
-        $table->chunk($chunk, function ($records) use ($list, $column)
-        {
+        $table->chunk($chunk, function ($records) use ($list, $column) {
             $data = $this->formatTableData($records, $column);
             $output = $this->myImplode($data);
             $final = $this->addToList($list, $output);
-
         });
-        return 'List has been successfully updated!';
 
+        return 'List has been successfully updated!';
     }
 }
-
