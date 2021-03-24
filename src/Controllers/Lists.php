@@ -39,7 +39,7 @@ class Lists extends Wombat
 
     /**
      * Perform API POST.
-     * Updates the List API with the newly creates ListName and the Numbers.
+     * Updates the List API with the newly created ListName and the Numbers.
      *
      * @param array $number holds all the data from the table and $list the ListName which is created from tableToList()
      * @returns  the response of 'List: ListName added numbers'.
@@ -52,5 +52,24 @@ class Lists extends Wombat
             ->post($this->connection());
 
         return $response;
+    }
+
+    /**
+     * Added chunk() to the List of data and chunk_size from the config file.
+     * @param $list is the ListName (Project name)
+     * @param $table is the TableName
+     * @param $column is the column name(Number, phone, num) from the table to be added to the List.
+     * @returns  the response.
+     */
+    public function chunkData($list, $table, $column)
+    {
+        $chunk = config('wombatdialer.chunk_size');
+        $table->chunk($chunk, function ($records) use ($list, $column) {
+            $data = $this->formatTableData($records, $column);
+            $output = $this->myImplode($data);
+            $final = $this->addToList($list, $output);
+        });
+
+        return 'List has been successfully updated!';
     }
 }
