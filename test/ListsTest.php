@@ -39,10 +39,10 @@ class ListsTest extends UnitAbstract
             $response = $listToList->addToList($listName, $string);
             //echo $response;
             $this->assertTrue($response->ok(), 'Something is wrong');
-            
+
             // To Test chunkData
             $chunkList = new \WombatDialer\Controllers\Lists;
-            $chunkData =  $chunkList->chunkData($listName, $table, $column);
+            $chunkData = $chunkList->chunkData($listName, $table, $column);
             $this->assertTrue(true);
         });
     }
